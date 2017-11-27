@@ -14,76 +14,109 @@
 		<p>Rellena tu CV</p>
 	</section>
 	<section class="forms">
-		<form method="post" class="">
-			<div>
-				<label class="" for="job">Puesto de trabajo:</label>
-				<input class="" id="job" type="text" name="job">
-			</div>
-			<div>
-				<label class="" for="job-charge">Cargo:</label>
-				<input class="" id="job-charge" type="text" name="job-charge">
-			</div>
-			<div>
-				<label class="" for="job-bussines">Empresa:</label>
-				<input class="" id="job-bussines" type="text" name="job-bussines">
-			</div>
-			<div>
+		<div class="profile-section1">
+			<form method="post" class="">
 				<div>
-					<label class="" for="job-month-start">Mes de inicio</label>
-					<select id="job-month-start" name="job-month-start">
-
-					</select>
+					<label class="" for="job">Puesto de trabajo:</label>
+					<input class="" id="job" type="text" name="job">
 				</div>
 				<div>
-					<label class="" for="job-year-start">Año de inicio</label>
-					<select id="job-year-start" name="job-year-start">
-
-					</select>
-				</div>
-			</div>
-			<div>
-				<div>
-					<label class="" for="job-month-end">Mes de final</label>
-					<select id="job-month-end" name="job-month-end">
-
-					</select>
+					<label class="" for="job-charge">Cargo:</label>
+					<input class="" id="job-charge" type="text" name="job-charge">
 				</div>
 				<div>
-					<label class="" for="job-year-end">Año de final</label>
-					<select id="job-year-end" name="job-year-end">
-
-					</select>
+					<label class="" for="job-bussines">Empresa:</label>
+					<input class="" id="job-bussines" type="text" name="job-bussines">
 				</div>
-			</div>
-			<div class="job-extract">
-				<label class="" for="messjob-extract">
+				<div>
+					<div>
+						<label class="" for="job-month-start">Mes de inicio</label>
+						<select id="job-month-start" name="job-month-start">
+						</select>
+					</div>
+					<div>
+						<label class="" for="job-year-start">Año de inicio</label>
+						<select id="job-year-start" name="job-year-start">
+						</select>
+					</div>
+				</div>
+				<div>
+					<div>
+						<label class="" for="job-month-end">Mes de final</label>
+						<select id="job-month-end" name="job-month-end">
+						</select>
+					</div>
+					<div>
+						<label class="" for="job-year-end">Año de final</label>
+						<select id="job-year-end" name="job-year-end">
+						</select>
+					</div>
+				</div>
+				<div class="job-extract">
+					<label class="" for="messjob-extract">
 					Mensaje
-				</label>
-				<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
-			</div>
-		</form>
-<div>
-		<form method="post" class="form-skills">
-			<div class="box-skills">
-				<label for="skills">Habilidades</label>
-				<input id="skills" type="text" name="skills" class="skills">
-			</div>
-			<div class="box-nivel">
-				<label for="nivel">Nivel</label>
-				<input id="nivel" type="text" name="nivel" class="nivel">
-			</div>
-		</form>
-</div>
-		<form method="post" class="">
-			<div class="box-otherdetails">
-				<label for="details">Datos de interés</label>
-				<input id="details" type="text" name="details" class="details">
-			</div>
-			<div class="box-nivel">
-				<label for="nivel">Nivel</label>
-				<input id="nivel" type="text" name="nivel" class="nivel">
-			</div>
-					</form>
+					</label>
+					<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
+				</div>
+		  </form>
+		</div>
+		<div class="profile-section2">
+			<form method="post" class="form-education">
+				<div class="studies">
+					<label class="" for="education-studies">Titulación</label>
+					<input class="" type="text" id="education-studies" name="education-studies" required>
+				</div>
+				<div class="type-studies">
+					<label class="" for="education-type-studies">Tipo de estudios</label>
+					<select id="education-type-studies" name="education-type-studies" required>
+					</select>
+				</div>
+				<div class="institution">
+					<label class="" for="education-institution">Centro de estudios</label>
+					<input class="" type="text" id="education-institution" name="education-institution" required>
+				</div>
+				<div class="time-period">
+					<div>
+						<label class="" for="education-year-start">Año de inicio</label>
+						<select id="education-year-start" name="education-year-start">
+						</select>
+					</div>
+					<div>
+						<label class="" for="education-year-end">Año de finalización</label>
+						<select id="education-year-end" name="education-year-end">
+						</select>
+					</div>
+				</div>
+				<div class="description-education">
+					<label class="" for="education-extract">Descripción</label>
+					<textarea class="" id="education-extract" name="education-extract" rows="8" cols="40" placeholder="Escribe aquí una breve descripción..."></textarea>
+				</div>
+			</form>
+		</div>
+		<div class="profile-section3">
+			<form method="post" class="form-skills">
+				<div class="box-skills">
+					<label for="skills">Habilidades</label>
+					<input id="skills" type="text" name="skills" class="skills">
+				</div>
+				<div class="box-nivel">
+					<label for="nivel">Nivel</label>
+					<input id="nivel" type="text" name="nivel" class="nivel">
+				</div>
+			</form>
+		</div>
+		<div class="profile-section4">
+			<form method="post" class="">
+				<div class="box-otherdetails">
+					<label for="details">Datos de interés</label>
+					<input id="details" type="text" name="details" class="details">
+				</div>
+				<div class="box-nivel">
+					<label for="nivel">Nivel</label>
+					<input id="nivel" type="text" name="nivel" class="nivel">
+				</div>
+			</form>
+		</div>
 	</section>
 	<main></main>
 	<footer class="footer">
