@@ -47,6 +47,7 @@
 			<fieldset class="job-section">
 				<div>
 				<legend>Experiencia Laboral</legend>
+				<input class="" type="button" name="complete-laboral" value="rellenar" onclick="Rellenar">
 				</div>
 				<label class="" for="job">Puesto de trabajo:</label>
 				<input class="" id="job" type="text" name="job">
@@ -62,7 +63,7 @@
 				<select id="job-month-end" name="job-month-end"></select>
 				<label class="" for="job-year-end">Año de final</label>
 				<select id="job-year-end" name="job-year-end"></select>
-				<label class="" for="messjob-extract">Mensaje</label>
+				<label class="" for="messjob-extract">Descripción del cargo</label>
 				<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
 			</fieldset>
 			<!-- experiencia educativa -->
@@ -149,15 +150,15 @@
 		<section class="prev-professionalexperience">
 			<h1 class="prev-titles">Formación profesional</h1>
 				<ul class="prev-jobdetails">
-					<li class="prev-jobdetails-charge"></li>
-					<li class="prev-jobdetails-description"></li>
-					<li class="prev-jobdetails-company"></li>
+					<li class="prev-jobdetails-charge"><span id="jobdetails-charge">Cargo: </span></li>
+					<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: </li>
 					<li class="prev-jobdetails-date">
 						<ul class="prev-jobdate">
-							<li class="prev-jobdate-start"></li>
-							<li class="prev-jobdate-end"></li>
+							<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: </li>
+							<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: </li>
 						</ul>
 					</li>
+					<li id="jobdetails-description" class="prev-jobdetails-description">Descripción del cargo: </li>
 				</ul>
 		</section>
 
