@@ -14,12 +14,12 @@
 		<p>Rellena tu CV</p>
 	</section>
 	<section class="forms">
-		<form method="post" class="">
+		<form method="post" class="" enctype="multipart/form-data">
 			<!-- Datos personales -->
 			<fieldset class="personaldetails-section">
 				<legend>Datos personales:</legend>
 				<label for="phto">Introduce tu foto</label>
-				<input type="file" name="photo">
+				<input type="file" name="photo" accept="image/*">
 				<label for="name">Nombre</label>
 				<input type="text" name="name" required>
 				<label for="surnames" required>Apellidos</label>
