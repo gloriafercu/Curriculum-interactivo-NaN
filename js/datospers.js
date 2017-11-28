@@ -1,7 +1,6 @@
 'use strict'
 
-var photo = document.querySelector('#photo');
-var name = document.querySelector('#name');
+/*var name = document.querySelector('#name');
 var surnames = document.querySelector('#surnames');
 var email = document.querySelector('#email');
 var phone = document.querySelector('#phone');
@@ -15,4 +14,4 @@ function fillcontactdetails=(){
 var firstName = prompt('¿Cuál es tu nombre?');
 alert(firstName);
 var surnames = prompt('¿Cuál es tu nombre?');
-alert(firstName);
+alert(firstName);*/

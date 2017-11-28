@@ -14,26 +14,33 @@
 		<p>Rellena tu CV</p>
 	</section>
 	<section class="forms">
-		<form method="post" class="" enctype="multipart/form-data">
+		<form id="personsaldetails-content" method="post" class="" enctype="multipart/form-data">
 			<!-- Datos personales -->
 			<fieldset class="personaldetails-section">
 				<legend>Datos personales:</legend>
-				<label for="photo">Introduce tu foto</label>
-				<input id=photo type="file" name="photo" accept="image/*">
-				<label for="name">Nombre</label>
-				<input id=name type="text" name="name" required>
-				<label for="surnames" required>Apellidos</label>
-				<input id= surnames type="text" name="surnames">
-				<label for="email">Email</label>
-				<input id=email type="email" name="email" required>
-				<label for="phone">Teléfono</label>
-				<input id=tel type="tel" name="phone">
-				<label for="socialmedia">Redes Sociales</label>
-				<input id=socialmedia type="text" name="socialmedia">
-				<label for="address">Dirección</label>
-				<input id= address type="text" name="address">
-				<label for="profession">Profesión</label>
-				<input id= profession type="text" name="profession" required>
+				<div class="boxfieldsetdetails">
+					<label for="photo">Introduce tu foto</label>
+					<input id=photo type="file" name="photo" accept="image/*">
+					<label for="name">Nombre</label>
+					<input id=name type="text" name="name" required>
+					<label for="surnames" required>Apellidos</label>
+					<input id= surnames type="text" name="surnames">
+					<label for="email">Email</label>
+					<input id=email type="email" name="email" required>
+					<label for="phone">Teléfono</label>
+					<input id=tel type="tel" name="phone">
+					<label for="socialmedia">Redes Sociales</label>
+					<input id=socialmedia type="text" name="socialmedia">
+					<label for="address">Dirección</label>
+					<input id= address type="text" name="address">
+					<label for="profession">Profesión</label>
+					<input id= profession type="text" name="profession" required>
+					<input type="button" name="hide" value="cerrar" onclick="closeForm()" >
+				</div>
+
+				<input type="button" name="edit" value="Editar" onclick="desplegar()">
+
+
 			</fieldset>
 			<fieldset class="personaldetails">
 				<div>
@@ -43,26 +50,29 @@
 			</fieldset>
 			<!-- experiencia laboral -->
 			<fieldset class="job-section">
-				<div>
+
 				<legend>Experiencia Laboral</legend>
-				<input class="" type="button" name="complete-laboral" value="rellenar" onclick="Rellenar">
-				</div>
-				<label class="" for="job">Puesto de trabajo:</label>
-				<input class="" id="job" type="text" name="job">
-				<label class="" for="job-charge">Cargo:</label>
-				<input class="" id="job-charge" type="text" name="job-charge">
-				<label class="" for="job-bussines">Empresa:</label>
-				<input class="" id="job-bussines" type="text" name="job-bussines">
-				<label class="" for="job-month-start">Mes de inicio</label>
-				<select id="job-month-start" name="job-month-start"></select>
-				<label class="" for="job-year-start">Año de inicio</label>
-				<select id="job-year-start" name="job-year-start"></select>
-				<label class="" for="job-month-end">Mes de final</label>
-				<select id="job-month-end" name="job-month-end"></select>
-				<label class="" for="job-year-end">Año de final</label>
-				<select id="job-year-end" name="job-year-end"></select>
-				<label class="" for="messjob-extract">Descripción del cargo</label>
-				<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
+				<div class="boxfieldsetjob">
+					<label class="" for="job">Puesto de trabajo:</label>
+					<input class="" id="job" type="text" name="job">
+					<label class="" for="job-charge">Cargo:</label>
+					<input class="" id="job-charge" type="text" name="job-charge">
+					<label class="" for="job-bussines">Empresa:</label>
+					<input class="" id="job-bussines" type="text" name="job-bussines">
+					<label class="" for="job-month-start">Mes de inicio</label>
+					<select id="job-month-start" name="job-month-start"></select>
+					<label class="" for="job-year-start">Año de inicio</label>
+					<select id="job-year-start" name="job-year-start"></select>
+					<label class="" for="job-month-end">Mes de final</label>
+					<select id="job-month-end" name="job-month-end"></select>
+					<label class="" for="job-year-end">Año de final</label>
+					<select id="job-year-end" name="job-year-end"></select>
+					<label class="" for="messjob-extract">Descripción del cargo</label>
+					<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
+				<input type="button" name="hide" value="cerrar" onclick="closeForm()">
+			</div>
+			<input type="button" name="edit" value="Editar" onclick="desplegar()">
+
 			</fieldset>
 			<!-- experiencia educativa -->
 			<fieldset class="education-section">
@@ -177,5 +187,6 @@
 	</footer>
 
 	<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/datospers.js"></script>
 </body>
 </html>
