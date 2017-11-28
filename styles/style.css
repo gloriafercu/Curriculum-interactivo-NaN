@@ -19,3 +19,7 @@
 	justify-content: flex-start;
 	align-items: center;
 }
+
+.boxfieldsetjob {
+	display: none;
+}

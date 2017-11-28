@@ -1,7 +1,16 @@
 "use strict"
+function desplegar(classContent) {
+	document.querySelector(classContent).style.display = "block";
+}
 
+function closeForm(classContent) {
+	document.querySelector(classContent).style.display = "none";
+}
 
-function formJobs() {
+desplegar(".boxfieldsetjob");
+closeForm(".boxfieldsetjob");
+
+/*function formJobs() {
 	var indicateJobCharge = document.querySelector("#jobdetails-charge");
 	var indicateJobCompany = document.querySelector("#jobdetails-company");
 	var indicateJobDateStart = document.querySelector("#jobdate-start");
@@ -34,7 +43,7 @@ function desplegar(){
 
 document.querySelector(".boxfieldset").style.display = 'block';
 
-}
+}*/
 
 
 // var indicateEducationStudies = document.querySelector("#educationdetails-studies");
