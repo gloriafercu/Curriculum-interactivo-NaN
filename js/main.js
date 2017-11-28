@@ -1,5 +1,6 @@
 "use strict"
 
+
 function formJobs() {
 	var indicateJobCharge = document.querySelector("#jobdetails-charge");
 	var indicateJobCompany = document.querySelector("#jobdetails-company");
@@ -34,3 +35,25 @@ function desplegar(){
 document.querySelector(".boxfieldset").style.display = 'block';
 
 }
+
+
+// var indicateEducationStudies = document.querySelector("#educationdetails-studies");
+// var indicateEducationTypeStudies = document.querySelector("#educationdetails-type-studies");
+// var indicateEducationCentre = document.querySelector("#educationdetails-centre");
+// var indicateEducationDateStart = document.querySelector("#educationdate-start");
+// var indicateEducationDateEnd = document.querySelector("#educationdate-end");
+// var indicateEducationDescription = document.querySelector("#educationdetails-description");
+
+
+// var currentMood = indicateEducationStudies.innerHTML;
+// indicateEducationStudies= prompt("Titulación");
+// var currentMood = indicateEducationTypeStudies.innerHTML;
+// indicateEducationTypeStudies = prompt("Tipo de estudios");
+// var currentMood = indicateEducationCentre.innerHTML;
+// indicateEducationCentre.innerHTML= prompt("Centro de estudios");
+// var currentMood = indicateEducationDateStart.innerHTML;
+// indicateEducationDateStart.innerHTML= prompt("Año de inicio");
+// var currentMood = indicateEducationDateEnd.innerHTML;
+// indicateEducationDateEnd.innerHTML= prompt("Año de finalización");
+// var currentMood = indicateEducationDescription.innerHTML;
+// indicateEducationDescription= prompt("Descripción");
