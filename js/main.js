@@ -1,9 +1,33 @@
 "use strict"
+
+
+// var indicateEducationStudies = document.querySelector("#educationdetails-studies");
+// var indicateEducationTypeStudies = document.querySelector("#educationdetails-type-studies");
+// var indicateEducationCentre = document.querySelector("#educationdetails-centre");
+// var indicateEducationDateStart = document.querySelector("#educationdate-start");
+// var indicateEducationDateEnd = document.querySelector("#educationdate-end");
+// var indicateEducationDescription = document.querySelector("#educationdetails-description");
+
+
+// var currentMood = indicateEducationStudies.innerHTML;
+// indicateEducationStudies= prompt("Titulación");
+// var currentMood = indicateEducationTypeStudies.innerHTML;
+// indicateEducationTypeStudies = prompt("Tipo de estudios");
+// var currentMood = indicateEducationCentre.innerHTML;
+// indicateEducationCentre.innerHTML= prompt("Centro de estudios");
+// var currentMood = indicateEducationDateStart.innerHTML;
+// indicateEducationDateStart.innerHTML= prompt("Año de inicio");
+// var currentMood = indicateEducationDateEnd.innerHTML;
+// indicateEducationDateEnd.innerHTML= prompt("Año de finalización");
+// var currentMood = indicateEducationDescription.innerHTML;
+// indicateEducationDescription= prompt("Descripción");
+
 var indicateJobCharge = document.querySelector("#jobdetails-charge");
 var indicateJobCompany = document.querySelector("#jobdetails-company");
 var indicateJobDateStart = document.querySelector("#jobdate-start");
 var indicateJobDateEnd = document.querySelector("#jobdate-end");
 var indicateJobDescription = document.querySelector("#jobdetails-description");
+
 
 var currentMood = indicateJobCharge.innerHTML;
 indicateJobCharge.innerHTML= prompt("Cargo en la empresa");
