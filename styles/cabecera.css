@@ -24,6 +24,7 @@
 .menu-principal ul{
 list-style-type: none;
 background-color: #911F27;
+display: none;
 }
 .menu-principal li {
 display: inline-block;
