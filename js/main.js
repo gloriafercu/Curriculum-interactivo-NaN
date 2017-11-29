@@ -29,19 +29,18 @@ closeForm(".boxfieldsetjob");
 
 }
 
-function closeForm(){
+function ocultar(item){
 
-document.querySelector(".boxfieldsetdetails").style.display = 'none';
-
+document.querySelector("[id=" + item + "]").style.display = 'none';
 }
-function closeForm(){
+// function closeForm(){
+//
+// document.querySelector(".boxfieldsetjob").style.display = 'none';
+//
+// }
+function mostrar(item){
 
-document.querySelector(".boxfieldsetjob").style.display = 'none';
-
-}
-function desplegar(){
-
-document.querySelector(".boxfieldset").style.display = 'block';
+document.querySelector("[id=" + item + "]").style.display = 'block';
 
 }*/
 
