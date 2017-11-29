@@ -1,78 +1,52 @@
 /*CABECERA*/
-.cabecera-full  {
-text-align: center;
-margin-top:3.6em;
-background-color: white;
-}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	width: 100%;
+	background-color: #911F27;
+	font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  max-width: 480px;
+	}
+
 .logo-cabecera {
-width: 50%;
-height: auto;
-padding-top: 2px;
+	width: 20%;
+	height: auto;
+	padding-top: 2px;
 }
-.menu-principal{
-position: fixed;
-z-index: 10000;
-width: 100%;
-top: 0;
-background: #911F27;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.minilogo {
-	padding-right: 8px;
-	padding-top: 5.75px;
-}
-.primera-lista {
-	padding-left: 12px;
-}
-.menu-principal ul{
+
+.menu-rayas ul{
 list-style-type: none;
+background-color: #911F27;
 }
-.menu-principal li {
+.menu-rayas li {
 display: inline-block;
-margin: 0 10px 0 0;
+margin-right: 0 8px 0 0;
+background-color: #911F27;
 }
-.menu-principal li a {
-color:white;
+.menu-rayas li a {
+color:#FCF0F8;
 text-decoration: none;
 display: block;
+background-color: #911F27;
 }
-.menu-principal li ul {
-display: none;
+.menu-rayas li ul {
 position: absolute;
 padding: 1%;
+background-color: #911F27;
 }
-.menu-principal li:hover ul{
-display:block;
-}
-.menu-principal li ul li{
+
+.menu-rayas li ul li{
 display: block;
-background-color: white;
+background-color: #911F27;
 padding: 4px;
 }
-.menu-principal li a:hover {
-color: white;
-font-weight:bold;
-}
-.introduccion{
-color: white;
-top:50px;
-text-align: justify;
-margin-bottom: 1.5em;
-margin-left: 15%;
-margin-right: 15%;
-}
-.introduccion a {
-text-decoration: none;
-color:black;
-}
-.introduccion a:hover {
-text-decoration: none;
-color: white;
-}
-.minilogo:hover {
-	opacity: 0.5;
+
 }
 .menu-rayas {
 	display: none;
