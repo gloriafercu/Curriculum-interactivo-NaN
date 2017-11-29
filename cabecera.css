@@ -1,0 +1,99 @@
+/*CABECERA*/
+.cabecera-full  {
+text-align: center;
+margin-top:3.6em;
+background-color: white;
+}
+.logo-cabecera {
+width: 50%;
+height: auto;
+padding-top: 2px;
+}
+.menu-principal{
+position: fixed;
+z-index: 10000;
+width: 100%;
+top: 0;
+background: #911F27;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.minilogo {
+	padding-right: 8px;
+	padding-top: 5.75px;
+}
+.primera-lista {
+	padding-left: 12px;
+}
+.menu-principal ul{
+list-style-type: none;
+}
+.menu-principal li {
+display: inline-block;
+margin: 0 10px 0 0;
+}
+.menu-principal li a {
+color:white;
+text-decoration: none;
+display: block;
+}
+.menu-principal li ul {
+display: none;
+position: absolute;
+padding: 1%;
+}
+.menu-principal li:hover ul{
+display:block;
+}
+.menu-principal li ul li{
+display: block;
+background-color: #FCF0C8;
+padding: 4px;
+}
+.menu-principal li a:hover {
+color: white;
+font-weight:bold;
+}
+.introduccion{
+color: white;
+top:50px;
+text-align: justify;
+margin-bottom: 1.5em;
+margin-left: 15%;
+margin-right: 15%;
+}
+.introduccion a {
+text-decoration: none;
+color:black;
+}
+.introduccion a:hover {
+text-decoration: none;
+color: white;
+}
+.minilogo:hover {
+	opacity: 0.5;
+}
+.menu-rayas {
+	display: none;
+	position: relative;
+	left:0;
+}
+ul.rayas {
+	margin-top: 17px;
+	padding-left: 12px;
+}
+
+@media all and (max-width:420px) {
+	.menu-rayas {
+		display: inline-block;
+	}
+	.minirayas {
+		display: inline-block;
+		left:10px;
+		top:22px;
+	}
+	.primera-lista {
+		display: none;
+	}
+}
