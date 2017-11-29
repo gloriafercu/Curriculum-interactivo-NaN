@@ -16,8 +16,23 @@
 
 .footer {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: center;
+
+	background-color: #240406
+}
+.copy {
+	color: #FCF0C8;
+	}
+
+.up-button {
+	background-image: url(../images/up-button.png);
+	overflow: hidden;
+	display: block;
+	background-size: 40px 40px;
+	padding-top: 40px;
+	height: 0;
+	width: 40px;
 }
 
 .boxfieldsetjob {
