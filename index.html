@@ -9,14 +9,49 @@
 <body>
 	<header class="header">
 		<p>NaN!</p>
-	</header>
+		<div class="menu-principal">
+			<div class="menu-rayas">
+					<ul class="rayas">
+						<li><img class="minirayas" src="images/botonrayas.png" alt="Menú">
+							<ul class="lista-rayas">
+								<li><a href="#persdetfiel">Datos personales</a></li>
+								<li><a href="#persdetextfiel">Extracto</a></li>
+								<li><a href="#edufiel">Educación</a></li>
+								<li><a href="#jobfiel">Experiencia laboral</a></li>
+								<li><a href="#skillsfiel">Habilidades</a></li>
+								<li><a href="#otherdetfiel">Otros datos de interés</a></li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+			<ul class="primera-lista">
+						<li> Completa tu CV
+							<ul class="menu-equipo">
+								<li> <a href="#persdetfiel"> Datos personales </a></li>
+								<li> <a href="#persdetextfiel"> Extracto </a></li>
+								<li> <a href="#edufiel"> Educación </a></li>
+								<li> <a href="#jobfiel"> Experiencia laboral </a></li>
+								<li> <a href="#skillsfiel"> Habilidades </a></li>
+								<li> <a href="#otherdetfiel"> Otros datos de interés </a></li>
+							</ul>
+						</li>
+						<li> <a href="************"> ******** </a></li>
+						<li><a href="*******">About us?</a></li>
+				</ul>
+						<a href="index.html"> <img class="minilogo" src="images/minilogo.jpg" alt="mini-logo-grupo"></a>
+		</div>
+			<div class="cabecera-full">
+						<img class="logo-cabecera" src="images/Logo****.jpg" alt="logo-equipo"/>
+			</div>
+		</header>
+
 	<section class="text-principal">
-		<p>Rellena tu CV</p>
+		<p>Crea tu propio CV</p>
 	</section>
 	<section class="forms">
 		<form id="personsaldetails-content" method="post" class="" enctype="multipart/form-data">
 			<!-- Datos personales -->
-			<fieldset class="personaldetails-section">
+			<fieldset id=perdetfiel class="personaldetails-section">
 				<legend>Datos personales:</legend>
 				<div class="boxfieldsetdetails">
 					<label for="photo">Introduce tu foto</label>
@@ -42,14 +77,14 @@
 
 
 			</fieldset>
-			<fieldset class="personaldetails">
-				<div>
+			<fieldset id=persdetextfiel class="personaldetails">
+
 				<legend>Extracto</legend>
-				</div>
+
 				<textarea    name="comments"    rows="8"    cols="80"></textarea>
 			</fieldset>
 			<!-- experiencia laboral -->
-			<fieldset class="job-section">
+			<fieldset id=jobfiel class="job-section">
 
 				<legend>Experiencia Laboral</legend>
 				<div class="boxfieldsetjob">
@@ -71,14 +106,14 @@
 					<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
 				<input type="button" name="hide" value="cerrar" onclick="closeForm()">
 			</div>
-			<input type="button" name="edit" value="Editar" onclick="desplegar()">
+			<input type="button" name="edit" value="Editar" onclick="desplegar(">
 
 			</fieldset>
 			<!-- experiencia educativa -->
-			<fieldset class="education-section">
-				<div>
+			<fieldset id=edufiel class="education-section">
+				
 				<legend>Educación</legend>
-				</div>
+
 				<label class="" for="education-studies">Titulación</label>
 				<input class="" type="text" id="education-studies" name="education-studies" required>
 				<label class="" for="education-type-studies">Tipo de estudios</label>
@@ -93,7 +128,7 @@
 				<textarea class="" id="education-extract" name="education-extract" rows="8" cols="40" placeholder="Escribe aquí una breve descripción..."></textarea>
 			</fieldset>
 			<!-- habilidades -->
-			<fieldset class="skills-section">
+			<fieldset id=skillsfiel class="skills-section">
 				<div>
 				<legend>Habilidades</legend>
 				</div>
@@ -107,7 +142,7 @@
 				<input id="nivel3" type="radio" name="nivel" class="nivel">
 			</fieldset>
 			<!-- otros datos-->
-			<fieldset class="details-section">
+			<fieldset  id=otherdetfiel class="details-section">
 				<div>
 				<legend>Otros datos de interés</legend>
 				<input type="button" value="rellenar" onclick="rellenar">
