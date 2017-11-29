@@ -1,12 +1,15 @@
 * {
 	box-sizing: border-box;
-}
+	font-family: 'Raleway', sans-serif;
 
+}
+/*HEADER*/
 .header {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
+
 .text-principal {
 	display: flex;
 	justify-content: center;
@@ -14,6 +17,156 @@
 	text-align: center;
 }
 
+/*FORMULARIO*/
+
+.total-form {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	max-width: 480px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+
+.input-form {
+	padding: 5px 0;
+}
+
+.input-form input {
+	width: 100%;
+	padding: 5px;
+	height: 30px;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: inset;
+	font-size: 15px;
+}
+
+.input-form input[type="file"]{
+	border: 0;
+}
+
+.input-form textarea {
+	width: 100%;
+	border: 0;
+	padding: 2px 5px;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: inset;
+	font-size: 15px;
+}
+.input-form label {
+	display: flex;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.input-form-close {
+	display: flex;
+	justify-content: flex-end;
+}
+.input-form-close input[type="button"]{
+	position: absolute;
+	top:  10px;
+	right:  12px;
+	width: 30px;
+	height: 30px;
+	background-color: #fcac0c;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+}
+.input-form-open {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+
+}
+.input-form-open input[type="button"]{
+	width: 170px;
+	height: 35px;
+	background-color: #fcac0c;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	font-weight: bold;
+}
+ fieldset {
+	 margin-top: 15px;
+ }
+/*DATOS PERSONALES*/
+
+.personaldetails-section,
+.job-section,
+.education-section,
+.skills-section,
+.details-section {
+	background-color: #fcf0c8;
+	padding: 63px 15px 15px;
+	position: relative;
+}
+.personaldetails-section legend,
+.job-section legend,
+.education-section legend,
+.skills-section legend,
+.details-section legend {
+	background-color: #911f27;
+	padding: 15px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-weight: bold;
+}
+
+.boxfieldsetdetails,
+.boxfieldsetjob,
+.boxfieldseteducation,
+.boxfieldsetskills,
+.boxfieldsetother {
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+/*EXPERIENCIA LABORAL*/
+
+
+
+
+
+
+/*EDUCACIÓN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
 .footer {
 	display: flex;
 	justify-content: flex-start;

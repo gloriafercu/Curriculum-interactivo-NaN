@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crea tu CV online</title>
 </head>
@@ -13,108 +16,189 @@
 	<section class="text-principal">
 		<p>Rellena tu CV</p>
 	</section>
+
 	<section class="forms">
-		<form id="personsaldetails-content" method="post" class="" enctype="multipart/form-data">
+
+		<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
+
 			<!-- Datos personales -->
 			<fieldset class="personaldetails-section">
-				<legend>Datos personales:</legend>
-				<div class="boxfieldsetdetails">
-					<label for="photo">Introduce tu foto</label>
-					<input id=photo type="file" name="photo" accept="image/*">
-					<label for="name">Nombre</label>
-					<input id=name type="text" name="name" required>
-					<label for="surnames" required>Apellidos</label>
-					<input id= surnames type="text" name="surnames">
-					<label for="email">Email</label>
-					<input id=email type="email" name="email" required>
-					<label for="phone">Teléfono</label>
-					<input id=tel type="tel" name="phone">
-					<label for="socialmedia">Redes Sociales</label>
-					<input id=socialmedia type="text" name="socialmedia">
-					<label for="address">Dirección</label>
-					<input id= address type="text" name="address">
-					<label for="profession">Profesión</label>
-					<input id= profession type="text" name="profession" required>
-					<input type="button" name="hide" value="cerrar" onclick="closeForm()" >
-				</div>
-
-				<input type="button" name="edit" value="Editar" onclick="desplegar()">
-
-
+				<legend>Datos personales</legend>
+					<div id="personal-data" class="boxfieldsetdetails">
+						<div class="input-form-close">
+							<input type="button" name="hide" value="X" onclick="ocultar('personal-data')" >
+						</div>
+						<div class="input-form photo">
+							<label for="photo">Introduce tu foto</label>
+							<input id="photo" type="file" name="photo" accept="image/*">
+						</div>
+						<div class="input-form">
+							<label for="name">Nombre</label>
+							<input id="name" type="text" name="name" required>
+						</div>
+						<div class="input-form">
+							<label for="surnames" required>Apellidos</label>
+							<input id="surnames" type="text" name="surnames">
+						</div>
+						<div class="input-form">
+							<label for="email">Email</label>
+							<input id="email" type="email" name="email" required>
+						</div>
+						<div class="input-form">
+							<label for="phone">Teléfono</label>
+							<input id="tel" type="tel" name="phone">
+						</div>
+						<div class="input-form">
+							<label for="socialmedia">Redes Sociales</label>
+							<input id="socialmedia" type="text" name="socialmedia">
+						</div>
+						<div class="input-form">
+							<label for="address">Dirección</label>
+							<input id="address" type="text" name="address">
+						</div>
+						<div class="input-form">
+							<label for="profession">Profesión</label>
+							<input id="profession" type="text" name="profession" required>
+						</div>
+						<div class="input-form">
+							<label for="summary">Extracto</label>
+							<textarea id="summary" name="comments"    rows="6"    cols="40"></textarea>
+						</div>
+					</div>
+					<div class="input-form-open">
+				  	<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('personal-data')">
+					</div>
 			</fieldset>
-			<fieldset class="personaldetails">
-				<div>
-				<legend>Extracto</legend>
-				</div>
-				<textarea    name="comments"    rows="8"    cols="80"></textarea>
-			</fieldset>
+
 			<!-- experiencia laboral -->
 			<fieldset class="job-section">
-
 				<legend>Experiencia Laboral</legend>
-				<div class="boxfieldsetjob">
-					<label class="" for="job">Puesto de trabajo:</label>
-					<input class="" id="job" type="text" name="job">
-					<label class="" for="job-charge">Cargo:</label>
-					<input class="" id="job-charge" type="text" name="job-charge">
-					<label class="" for="job-bussines">Empresa:</label>
-					<input class="" id="job-bussines" type="text" name="job-bussines">
-					<label class="" for="job-month-start">Mes de inicio</label>
-					<select id="job-month-start" name="job-month-start"></select>
-					<label class="" for="job-year-start">Año de inicio</label>
-					<select id="job-year-start" name="job-year-start"></select>
-					<label class="" for="job-month-end">Mes de final</label>
-					<select id="job-month-end" name="job-month-end"></select>
-					<label class="" for="job-year-end">Año de final</label>
-					<select id="job-year-end" name="job-year-end"></select>
-					<label class="" for="messjob-extract">Descripción del cargo</label>
-					<textarea class="" id="job-extract" name="job-extract" rows="8" cols="40"></textarea>
-				<input type="button" name="hide" value="cerrar" onclick="closeForm()">
-			</div>
-			<input type="button" name="edit" value="Editar" onclick="desplegar()">
-
+					<div id="job-data" class="boxfieldsetjob">
+						<div class="input-form-close">
+							<input type="button" name="hide" value="X" onclick="ocultar('job-data')">
+						</div>
+						<div class="input-form">
+							<label for="job">Puesto de trabajo:</label>
+							<input id="job" type="text" name="job">
+						</div>
+						<div class="input-form">
+							<label for="job-charge">Cargo:</label>
+							<input id="job-charge" type="text" name="job-charge">
+						</div>
+						<div class="input-form">
+							<label for="job-bussines">Empresa:</label>
+							<input id="job-bussines" type="text" name="job-bussines">
+						</div>
+						<div class="input-form">
+							<label for="job-month-start">Mes de inicio</label>
+							<select id="job-month-start" name="job-month-start"></select>
+						</div>
+						<div class="input-form">
+							<label for="job-year-start">Año de inicio</label>
+							<select id="job-year-start" name="job-year-start"></select>
+						</div>
+						<div class="input-form">
+							<label for="job-month-end">Mes de final</label>
+							<select id="job-month-end" name="job-month-end"></select>
+						</div>
+						<div class="input-form">
+							<label for="job-year-end">Año de final</label>
+							<select id="job-year-end" name="job-year-end"></select>
+						</div>
+						<div class="input-form">
+							<label for="messjob-extract">Descripción del cargo</label>
+							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40"></textarea>
+						</div>
+					</div>
+					<div class="input-form-open">
+					 	<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('job-data')">
+					</div>
 			</fieldset>
+
 			<!-- experiencia educativa -->
 			<fieldset class="education-section">
-				<div>
 				<legend>Educación</legend>
+					<div id="education-data" class="boxfieldseteducation">
+						<div class="input-form-close">
+							<input type="button" name="hide" value="X" onclick="ocultar('education-data')">
+						</div>
+					 	<div class="input-form">
+							<label for="education-studies">Titulación</label>
+							<input type="text" id="education-studies" name="education-studies" required>
+						</div>
+						<div class="input-form">
+							<label for="education-type-studies">Tipo de estudios</label>
+							<select id="education-type-studies" name="education-type-studies" required></select>
+						</div>
+						<div class="input-form">
+							<label for="education-institution">Centro de estudios</label>
+							<input class="" type="text" id="education-institution" name="education-institution" required>
+						</div>
+						<div class="input-form">
+							<label for="education-year-start">Año de inicio</label>
+							<select id="education-year-start" name="education-year-start"></select>
+						</div>
+						<div class="input-form">
+							<label for="education-year-end">Año de finalización</label>
+							<select id="education-year-end" name="education-year-end"></select>
+						</div>
+						<div class="input-form">
+							<label for="education-extract">Descripción</label>
+							<textarea class="" id="education-extract" name="education-extract" rows="6" cols="40"></textarea>
+						</div>
 				</div>
-				<label class="" for="education-studies">Titulación</label>
-				<input class="" type="text" id="education-studies" name="education-studies" required>
-				<label class="" for="education-type-studies">Tipo de estudios</label>
-				<select id="education-type-studies" name="education-type-studies" required></select>
-				<label class="" for="education-institution">Centro de estudios</label>
-				<input class="" type="text" id="education-institution" name="education-institution" required>
-				<label class="" for="education-year-start">Año de inicio</label>
-				<select id="education-year-start" name="education-year-start"></select>
-				<label class="" for="education-year-end">Año de finalización</label>
-				<select id="education-year-end" name="education-year-end"></select>
-				<label class="" for="education-extract">Descripción</label>
-				<textarea class="" id="education-extract" name="education-extract" rows="8" cols="40" placeholder="Escribe aquí una breve descripción..."></textarea>
+				<div class="input-form-open">
+					<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('education-data')">
+				</div>
 			</fieldset>
+
 			<!-- habilidades -->
 			<fieldset class="skills-section">
-				<div>
 				<legend>Habilidades</legend>
-				</div>
-				<label for="skills">Habilidades</label>
-				<input id="skills" type="text" name="skills" class="skills">
-				<label for="nivel1">Principiante</label>
-				<input id="nivel1" type="radio" name="nivel" class="nivel">
-				<label for="nivel2">Medio</label>
-				<input id="nivel2" type="radio" name="nivel" class="nivel">
-				<label for="nivel3">Experto</label>
-				<input id="nivel3" type="radio" name="nivel" class="nivel">
+					<div id="skills-data" class="boxfieldsetskills">
+						<div class="input-form-close">
+							<input type="button" name="hide" value="X" onclick="ocultar('skills-data')">
+						</div>
+						<div class="input-form-skills">
+							<label for="skillstext">Habilidades</label>
+							<input id="skillstext" type="text" name="skillstext" class="skillstext">
+						</div>
+						<div class="input-form-beginner">
+							<label for="nivel1">Principiante</label>
+							<input id="nivel1" type="radio" name="nivel" class="nivel">
+						</div>
+						<div class="input-form-medio">
+							<label for="nivel2">Medio</label>
+							<input id="nivel2" type="radio" name="nivel" class="nivel">
+						</div>
+						<div class="input-form-expert">
+							<label for="nivel3">Experto</label>
+							<input id="nivel3" type="radio" name="nivel" class="nivel">
+						</div>
+					</div>
+					<div class="input-form-open">
+						<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('skills-data')">
+					</div>
 			</fieldset>
-			<!-- otros datos-->
-			<fieldset class="details-section">
-				<div>
-				<legend>Otros datos de interés</legend>
-				<input type="button" value="rellenar" onclick="rellenar">
-				</div>
-				<label for="details">Datos de interés</label>
-				<input id="details" type="text" name="details" class="details">
 
+		 <!-- otros datos -->
+			<fieldset class="details-section">
+				<legend>Otros datos de interés</legend>
+					<div id="other-data" class="boxfieldsetother">
+						<div class="input-form-close">
+							<input type="button" name="hide" value="X" onclick="ocultar('other-data')" >
+						</div>
+						<div class="input-form">
+							<label for="details">Datos de interés</label>
+							<input id="details" type="text" name="details" class="details">
+						</div>
+						<div class="input-form-rellenar">
+							<input type="button" value="rellenar" onclick="rellenar">
+						</div>
+					</div>
+					<div class="input-form-open">
+						<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('other-data')">
+					</div>
 			</fieldset>
 		</form>
 	</section>
