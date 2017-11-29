@@ -27,16 +27,16 @@ document.querySelector("[id=" + item + "]").style.display = 'block';
 
 //SELECT
 
-function yearDesplegable (ano) {
-  var initialYear = 1900;
-  var years = 150;
-  var options = '';
+// function yearDesplegable (ano) {
+//   var initialYear = 1900;
+//   var years = 150;
+//   var options = '';
 
-  for (var i=0; i<years; i++) {
-  options = options + '<option value=""' + (initialYear+i) + '>' + (initialYear+i) + '</option>';
-}
-document.querySelector('[id=" + ano + "]').innerHTML = options;
-}
+//   for (var i=0; i<years; i++) {
+//   options = options + '<option value=""' + (initialYear+i) + '>' + (initialYear+i) + '</option>';
+// }
+// document.querySelector('[id=" + ano + "]').innerHTML = options;
+// }
 
 
 
