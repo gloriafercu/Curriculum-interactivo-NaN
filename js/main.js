@@ -19,14 +19,18 @@ function formJobs() {
 function ocultar(item){
 document.querySelector("[id=" + item + "]").style.display = 'none';
 }
-// function closeForm(){
-//
-// document.querySelector(".boxfieldsetjob").style.display = 'none';
-//
-// }
 function mostrar(item){
 document.querySelector("[id=" + item + "]").style.display = 'block';
 }
+
+var seleccion;
+function seleccionar(item2) {
+	var seleccion = document.querySelector("[id=" + item2 + "]");
+	var rellenar = document.querySelector(".prev-contactdetails-name");
+	var relleno = rellenar.innerHTML;
+	rellenar.innerHTML= prompt("Indica tu " + item2);
+}
+
 // var indicateEducationStudies = document.querySelector("#educationdetails-studies");
 // var indicateEducationTypeStudies = document.querySelector("#educationdetails-type-studies");
 // var indicateEducationCentre = document.querySelector("#educationdetails-centre");

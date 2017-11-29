@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crea tu CV online</title>
 </head>
-<body>
+<body class="body">
 	<header class="header">
 		<p>NaN!</p>
 		<div class="menu-principal">
@@ -68,35 +68,35 @@
 						</div>
 						<div class="input-form">
 							<label for="name">Nombre</label>
-							<input id="name" type="text" name="name" required>
+							<input id="name" type="text" name="name" required onclick="seleccionar('name')">
 						</div>
 						<div class="input-form">
 							<label for="surnames" required>Apellidos</label>
-							<input id="surnames" type="text" name="surnames">
+							<input id="surnames" type="text" name="surnames" onclick="seleccionar('surname')">
 						</div>
 						<div class="input-form">
 							<label for="email">Email</label>
-							<input id="email" type="email" name="email" required>
+							<input id="email" type="email" name="email" required onclick="seleccionar('email')">
 						</div>
 						<div class="input-form">
 							<label for="phone">Teléfono</label>
-							<input id="tel" type="tel" name="phone">
+							<input id="tel" type="tel" name="phone" onclick="seleccionar('phone')">
 						</div>
 						<div class="input-form">
 							<label for="socialmedia">Redes Sociales</label>
-							<input id="socialmedia" type="text" name="socialmedia">
+							<input id="socialmedia" type="text" name="socialmedia" onclick="seleccionar('socialmedia')">
 						</div>
 						<div class="input-form">
 							<label for="address">Dirección</label>
-							<input id="address" type="text" name="address">
+							<input id="address" type="text" name="address" onclick="seleccionar('address')">
 						</div>
 						<div class="input-form">
 							<label for="profession">Profesión</label>
-							<input id="profession" type="text" name="profession" required>
+							<input id="profession" type="text" name="profession" required onclick="seleccionar('profession')">
 						</div>
 						<div class="input-form">
 							<label for="summary">Extracto</label>
-							<textarea id="summary" name="comments"    rows="6"    cols="40"></textarea>
+							<textarea id="summary" name="comments"    rows="6"    cols="40" onclick="seleccionar('summary')"></textarea>
 						</div>
 					</div>
 					<div class="input-form-open">
@@ -242,67 +242,72 @@
 		</form>
 	</section>
 
-	<main>
-		<section class="prev-contact">
-			<h1 class="prev-titles">Datos de contacto</h1>
+	<main class="cv">
+		<section class="prev-info-personaldates prev-contact">
+			<!--<h1 class="prev-titles">Datos de contacto</h1>-->
 				<div class="prev-photo">
-					<img src="http://via.placeholder.com/150x150" alt="Foto Personal">
+					<img src="http://via.placeholder.com/120x120" alt="Foto Personal">
 				</div>
 				<ul class="prev-contactdetails">
-					<li class="prev-contactdetails-name"></li>
-					<li class="prev-contactdetails-surname"></li>
+					<li class="prev-contactdetails-name">Nombre</li>
+					<li class="prev-contactdetails-surname">Apellidos</li>
+					<li class="prev-contactdetails-proffession">Profesión</li>
 					<li class="prev-contactdetails-address"></li>
-					<li class="prev-contactdetails-email"></li>
-					<li class="prev-contactdetails-phone"></li>
-					<li class="prev-contactdetails-socialmedia"></li>
-					<li class="prev-contactdetails-proffession"></li>
+					<li class="prev-contactdetails-email">ejemplo@gmail.com</li>
+					<li class="prev-contactdetails-phone">666998811</li>
+					<li class="prev-contactdetails-socialmedia">RRSS</li>
+
 				</ul>
 		</section>
 
 		<section class="prev-description">
-			<h1 class="prev-titles">Extracto</h1>
-				<p></p>
+			<h2 class="prev-titles">Extracto<hr></h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 		</section>
+		<div class="prev-content">
+		<section class="prev-info-experience">
+			<section class="prev-education">
+				<h2 class="prev-titles">Formación académica<hr></h2>
+					<ul class="prev-educationdetails">
+						<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación:</li>
+						<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios:</li>
+						<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios:</li>
+						<li class="prev-educationdetails-date">
+							<ul class="prev-educationdate">
+								<li id="educationdate-start" class="prev-educationdate-start">Año de inicio:</li>
+								<li id="educationdate-end" class="prev-educationdate-end">Año de finalización:</li>
+							</ul>
+						</li>
+						<li id="educationdetails-description" class="prev-educationdetails-description">Descripción</li>
+					</ul>
+			</section>
 
-		<section class="prev-education">
-			<h1 class="prev-titles">Formación académica</h1>
-				<ul class="prev-educationdetails">
-					<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación:</li>
-					<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios:</li>
-					<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios:</li>
-					<li class="prev-educationdetails-date">
-						<ul class="prev-educationdate">
-							<li id="educationdate-start" class="prev-educationdate-start">Año de inicio:</li>
-							<li id="educationdate-end" class="prev-educationdate-end">Año de finalización:</li>
-						</ul>
-					</li>
-					<li id="educationdetails-description" class="prev-educationdetails-description">Descripción</li>
-				</ul>
-		</section>
+			<section class="prev-professionalexperience">
+				<h2 class="prev-titles">Formación profesional<hr></h2>
+					<ul class="prev-jobdetails">
+						<li class="prev-jobdetails-charge"><span id="jobdetails-charge">Cargo: </span></li>
+						<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: </li>
+						<li class="prev-jobdetails-date">
+							<ul class="prev-jobdate">
+								<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: </li>
+								<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: </li>
+							</ul>
+						</li>
+						<li id="jobdetails-description" class="prev-jobdetails-description">Descripción del cargo: </li>
+					</ul>
+			</section>
+	</section>
 
-		<section class="prev-professionalexperience">
-			<h1 class="prev-titles">Formación profesional</h1>
-				<ul class="prev-jobdetails">
-					<li class="prev-jobdetails-charge"><span id="jobdetails-charge">Cargo: </span></li>
-					<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: </li>
-					<li class="prev-jobdetails-date">
-						<ul class="prev-jobdate">
-							<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: </li>
-							<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: </li>
-						</ul>
-					</li>
-					<li id="jobdetails-description" class="prev-jobdetails-description">Descripción del cargo: </li>
-				</ul>
-		</section>
-
+	<section class="prev-info-extra">
 		<section class="prev-skills">
-			<h1 class="prev-titles">Habilidades</h1>
+			<h2 class="prev-titles">Habilidades<hr></h2>
 		</section>
 
 		<section class="prev-interestdetails">
-			<h1 class="prev-titles">Otros datos de interés</h1>
+			<h2 class="prev-titles">Otros datos de interés<hr></h2>
 		</section>
-
+	</section>
+</div>
 	</main>
 
 	<footer class="footer">

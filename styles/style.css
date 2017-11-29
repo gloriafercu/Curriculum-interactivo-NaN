@@ -17,6 +17,38 @@
 	text-align: center;
 }
 
+/*PREVIO CV*/
+.cv {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #262626;
+	width: 95%;
+	max-width: 600px;
+	margin: 20px auto;
+	font-size: 15px;
+}
+.prev-info-personaldates {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	background-color: #f2f2f2;
+}
+.prev-photo {
+	margin-right: 10px;
+}
+.prev-photo img{
+	border-radius: 50%;
+}
+.prev-description, .prev-education, .prev-professionalexperience, .prev-skills, .prev-interestdetails {
+	padding: 10px;
+}
+.prev-titles {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
 /*FORMULARIO*/
 
 .total-form {
@@ -190,4 +222,63 @@
 
 .boxfieldsetjob {
 	display: none;
+}
+
+/*MEDIAQUERIES*/
+@media all and (min-width: 700px) {
+	.cv {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		height: 100%;
+	}
+	.prev-info-personaldates {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 30%;
+		flex-shrink:1;
+	}
+	.prev-description {
+		width: 70%;
+	}
+	.prev-content {
+		display: flex;
+		flex-direction: row-reverse;
+		height: 100vh;
+		width: 100%;
+	}
+	.prev-info-experience {
+		width: 70%;
+	}
+	.prev-info-extra {
+		width: 30%;
+		background-color: #f2f2f2;
+	}
+
+}
+
+@media all and (min-width: 900px) {
+.body {
+	display: flex;
+	flex-wrap: wrap;
+}
+.header {
+	width: 100%;
+}
+.text-principal {
+	width: 100%;
+}
+.forms {
+	width: 45%;
+}
+.cv{
+	flex-shrink: none;
+	width: 55%;
+	margin: 0;
+}
+.footer {
+	width: 100%;
+}
 }
