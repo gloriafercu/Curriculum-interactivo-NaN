@@ -11,10 +11,9 @@
 	<title>Crea tu CV online</title>
 </head>
 <body class="body">
-	<header class="header">
-		<p>NaN!</p>
-		<div class="menu-principal">
-			<div class="menu-rayas">
+
+	<header id="header" class="header">
+			<nav class="menu-rayas">
 					<ul class="rayas">
 						<li><img class="minirayas" src="images/botonrayas.png" alt="Menú">
 							<ul class="lista-rayas">
@@ -25,28 +24,12 @@
 								<li><a href="#skillsfiel">Habilidades</a></li>
 								<li><a href="#otherdetfiel">Otros datos de interés</a></li>
 							</ul>
-						</li>
+							<li><a href="*******">About us</a></li>
 					</ul>
-			</div>
-			<ul class="primera-lista">
-						<li> Completa tu CV
-							<ul class="menu-equipo">
-								<li> <a href="#persdetfiel"> Datos personales </a></li>
-								<li> <a href="#persdetextfiel"> Extracto </a></li>
-								<li> <a href="#edufiel"> Educación </a></li>
-								<li> <a href="#jobfiel"> Experiencia laboral </a></li>
-								<li> <a href="#skillsfiel"> Habilidades </a></li>
-								<li> <a href="#otherdetfiel"> Otros datos de interés </a></li>
-							</ul>
-						</li>
-						<li> <a href="************"> ******** </a></li>
-						<li><a href="*******">About us?</a></li>
-				</ul>
-						<a href="index.html"> <img class="minilogo" src="images/minilogo.jpg" alt="mini-logo-grupo"></a>
-		</div>
-			<div class="cabecera-full">
-						<img class="logo-cabecera" src="images/Logo****.jpg" alt="logo-equipo"/>
-			</div>
+			</nav>
+				<div class="cabecera-full">
+							<img class="logo-cabecera" src="imagenlogo.jpg" alt="logo-equipo"/>
+				</div>
 		</header>
 
 	<section class="text-principal">
@@ -125,19 +108,19 @@
 						</div>
 						<div class="input-form">
 							<label for="job-month-start">Mes de inicio</label>
-							<select id="job-month-start" name="job-month-start"></select>
+							<select id="job-month-start" name="job-month-start" class="month"></select>
 						</div>
 						<div class="input-form">
 							<label for="job-year-start">Año de inicio</label>
-							<select id="job-year-start" name="job-year-start"></select>
+							<select id="job-year-start" name="job-year-start" class="years"></select>
 						</div>
 						<div class="input-form">
 							<label for="job-month-end">Mes de final</label>
-							<select id="job-month-end" name="job-month-end"></select>
+							<select id="job-month-end" name="job-month-end" class="month"></select>
 						</div>
 						<div class="input-form">
 							<label for="job-year-end">Año de final</label>
-							<select id="job-year-end" name="job-year-end"></select>
+							<select id="job-year-end" name="job-year-end" class="years"></select>
 						</div>
 						<div class="input-form">
 							<label for="messjob-extract">Descripción del cargo</label>
@@ -172,11 +155,11 @@
 						</div>
 						<div class="input-form">
 							<label for="education-year-start">Año de inicio</label>
-							<select id="education-year-start" name="education-year-start"></select>
+							<select id="education-year-start" name="education-year-start" class="years"></select>
 						</div>
 						<div class="input-form">
 							<label for="education-year-end">Año de finalización</label>
-							<select id="education-year-end" name="education-year-end"></select>
+							<select id="education-year-end" name="education-year-end" class="years"></select>
 						</div>
 						<div class="input-form">
 							<label for="education-extract">Descripción</label>
@@ -311,9 +294,9 @@
 	</main>
 
 	<footer class="footer">
+
 		<p class="copy">Copyright &copy;NaN!</p>
-		<div class="up-button">
-			up-button
+		<div class="up-button"><a href="#header">up-button</a>
 		</div>
 	</footer>
 
