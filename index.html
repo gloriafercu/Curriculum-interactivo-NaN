@@ -12,10 +12,72 @@
 <body>
 	<header class="header">
 		<p>NaN!</p>
-	</header>
+		<div class="menu-principal">
+			<div class="menu-rayas">
+					<ul class="rayas">
+						<li><img class="minirayas" src="images/botonrayas.png" alt="Menú">
+							<ul class="lista-rayas">
+								<li><a href="#persdetfiel">Datos personales</a></li>
+								<li><a href="#persdetextfiel">Extracto</a></li>
+								<li><a href="#edufiel">Educación</a></li>
+								<li><a href="#jobfiel">Experiencia laboral</a></li>
+								<li><a href="#skillsfiel">Habilidades</a></li>
+								<li><a href="#otherdetfiel">Otros datos de interés</a></li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+			<ul class="primera-lista">
+						<li> Completa tu CV
+							<ul class="menu-equipo">
+								<li> <a href="#persdetfiel"> Datos personales </a></li>
+								<li> <a href="#persdetextfiel"> Extracto </a></li>
+								<li> <a href="#edufiel"> Educación </a></li>
+								<li> <a href="#jobfiel"> Experiencia laboral </a></li>
+								<li> <a href="#skillsfiel"> Habilidades </a></li>
+								<li> <a href="#otherdetfiel"> Otros datos de interés </a></li>
+							</ul>
+						</li>
+						<li> <a href="************"> ******** </a></li>
+						<li><a href="*******">About us?</a></li>
+				</ul>
+						<a href="index.html"> <img class="minilogo" src="images/minilogo.jpg" alt="mini-logo-grupo"></a>
+		</div>
+			<div class="cabecera-full">
+						<img class="logo-cabecera" src="images/Logo****.jpg" alt="logo-equipo"/>
+			</div>
+		</header>
+
 	<section class="text-principal">
-		<p>Rellena tu CV</p>
+		<p>Crea tu propio CV</p>
 	</section>
+<<<<<<< HEAD
+=======
+	<section class="forms">
+		<form id="personsaldetails-content" method="post" class="" enctype="multipart/form-data">
+			<!-- Datos personales -->
+			<fieldset id=perdetfiel class="personaldetails-section">
+				<legend>Datos personales:</legend>
+				<div class="boxfieldsetdetails">
+					<label for="photo">Introduce tu foto</label>
+					<input id=photo type="file" name="photo" accept="image/*">
+					<label for="name">Nombre</label>
+					<input id=name type="text" name="name" required>
+					<label for="surnames" required>Apellidos</label>
+					<input id= surnames type="text" name="surnames">
+					<label for="email">Email</label>
+					<input id=email type="email" name="email" required>
+					<label for="phone">Teléfono</label>
+					<input id=tel type="tel" name="phone">
+					<label for="socialmedia">Redes Sociales</label>
+					<input id=socialmedia type="text" name="socialmedia">
+					<label for="address">Dirección</label>
+					<input id= address type="text" name="address">
+					<label for="profession">Profesión</label>
+					<input id= profession type="text" name="profession" required>
+					<input type="button" name="hide" value="cerrar" onclick="closeForm()" >
+				</div>
+>>>>>>> 604076dca4c6d948aad2977526b32f287e89d1d8
 
 	<section class="forms">
 
@@ -71,7 +133,7 @@
 			</fieldset>
 
 			<!-- experiencia laboral -->
-			<fieldset class="job-section">
+			<fieldset id="jobfiel" class="job-section">
 				<legend>Experiencia Laboral</legend>
 					<div id="job-data" class="boxfieldsetjob">
 						<div class="input-form-close">
@@ -113,10 +175,11 @@
 					<div class="input-form-open">
 					 	<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('job-data')">
 					</div>
+
 			</fieldset>
 
 			<!-- experiencia educativa -->
-			<fieldset class="education-section">
+			<fieldset id="edufiel" class="education-section">
 				<legend>Educación</legend>
 					<div id="education-data" class="boxfieldseteducation">
 						<div class="input-form-close">
@@ -150,10 +213,12 @@
 				<div class="input-form-open">
 					<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('education-data')">
 				</div>
+
 			</fieldset>
 
 			<!-- habilidades -->
-			<fieldset class="skills-section">
+
+			<fieldset id=skillsfiel class="skills-section">
 				<legend>Habilidades</legend>
 					<div id="skills-data" class="boxfieldsetskills">
 						<div class="input-form-close">
@@ -181,8 +246,9 @@
 					</div>
 			</fieldset>
 
-		 <!-- otros datos -->
-			<fieldset class="details-section">
+			<!-- otros datos-->
+			<fieldset  id=otherdetfiel class="details-section">
+
 				<legend>Otros datos de interés</legend>
 					<div id="other-data" class="boxfieldsetother">
 						<div class="input-form-close">
