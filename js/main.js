@@ -30,25 +30,26 @@ document.querySelector("#" + item).style.display = 'block';
 //
 // }
 
-/*Funcion para añadir años a los select*/
+/*Funcion para añadir numeros a los select*/
 
 var select = document.querySelectorAll('.years');
 
-function listYear(firstyear, totalyears) {
+function list(firstyear, totalyears) {
 	var options = '';
 	for (var x = 0; x < totalyears; x++){
 	options = options + '<option value="">'+(firstyear + x)+'</option>';
 	}
-	console.log(options)
 	return options
 }
-
+//Añadir años a los select
 	for (var i = 0; i < select.length; i++){
-		select[i].innerHTML=listYear(1900, 150);
+		select[i].innerHTML=list(1900, 150);
 	}
-
-
-
+//Añadir meses a los selct
+	var select = document.querySelectorAll('.month');
+for (var i = 0; i < select.length; i++){
+	select[i].innerHTML=list(1, 12);
+}
 
 
 
