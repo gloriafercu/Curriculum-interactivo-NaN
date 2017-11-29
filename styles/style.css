@@ -178,7 +178,7 @@
 	color: #FCF0C8;
 	}
 
-.up-button {
+.up-button a {
 	background-image: url(../images/up-button.png);
 	overflow: hidden;
 	display: block;
