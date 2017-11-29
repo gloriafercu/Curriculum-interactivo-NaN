@@ -9,7 +9,6 @@
 	z-index: 10000;
 	width: 100%;
 	background-color: #911F27;
-	text-align: center;
 	font-family: 'Raleway', sans-serif;
   font-size: 18px;
   max-width: 480px;
@@ -21,29 +20,29 @@
 	padding-top: 2px;
 }
 
-.menu-principal ul{
+.menu-rayas ul{
 list-style-type: none;
 background-color: #911F27;
 display: none;
 }
-.menu-principal li {
+.menu-rayas li {
 display: inline-block;
 margin-right: 0 8px 0 0;
 background-color: #911F27;
 }
-.menu-principal li a {
+.menu-rayas li a {
 color:#FCF0F8;
 text-decoration: none;
 display: block;
 background-color: #911F27;
 }
-.menu-principal li ul {
+.menu-rayas li ul {
 position: absolute;
 padding: 1%;
 background-color: #911F27;
 }
 
-.menu-principal li ul li{
+.menu-rayas li ul li{
 display: block;
 background-color: #911F27;
 padding: 4px;
