@@ -24,7 +24,7 @@
 	border: 1px solid #262626;
 	width: 95%;
 	max-width: 600px;
-	margin: 20px auto;
+	margin: auto;
 	font-size: 15px;
 }
 .prev-info-personaldates {
@@ -275,9 +275,9 @@
 	width: 45%;
 }
 .cv{
-	flex-shrink: none;
 	width: 55%;
-	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 .footer {
 	width: 100%;

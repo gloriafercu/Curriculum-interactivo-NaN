@@ -51,11 +51,11 @@
 						</div>
 						<div class="input-form">
 							<label for="name">Nombre</label>
-							<input id="name" type="text" name="name" required onclick="seleccionar('name')">
+							<input id="name" type="text" name="name" required onclick="seleccionar('nombre', 'Dime tu nombre')">
 						</div>
 						<div class="input-form">
 							<label for="surnames" required>Apellidos</label>
-							<input id="surnames" type="text" name="surnames" onclick="seleccionar('surname')">
+							<input id="surnames" type="text" name="surnames" onclick="seleccionar('apellidos' , 'Dime tu apellido')">
 						</div>
 						<div class="input-form">
 							<label for="email">Email</label>
@@ -232,8 +232,8 @@
 					<img src="http://via.placeholder.com/120x120" alt="Foto Personal">
 				</div>
 				<ul class="prev-contactdetails">
-					<li class="prev-contactdetails-name">Nombre</li>
-					<li class="prev-contactdetails-surname">Apellidos</li>
+					<li id="nombre" class="prev-contactdetails-name">Nombre</li>
+					<li id="apellidos" class="prev-contactdetails-surname">Apellidos</li>
 					<li class="prev-contactdetails-proffession">Profesión</li>
 					<li class="prev-contactdetails-address"></li>
 					<li class="prev-contactdetails-email">ejemplo@gmail.com</li>
@@ -296,7 +296,7 @@
 	<footer class="footer">
 
 		<p class="copy">Copyright &copy;NaN!</p>
-		<div class="up-button"><a href="#header">up-button</a>
+		<div class="up-button"><a href="#personsaldetails-content">up-button</a>
 		</div>
 	</footer>
 
