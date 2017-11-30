@@ -51,35 +51,35 @@
 						</div>
 						<div class="input-form">
 							<label for="name">Nombre</label>
-							<input id="name" type="text" name="name" required onclick="seleccionar('nombre', 'Dime tu nombre')">
+							<input id="name" type="text" name="name" required onclick="seleccionar('nombre', 'Introduce tu nombre')">
 						</div>
 						<div class="input-form">
 							<label for="surnames" required>Apellidos</label>
-							<input id="surnames" type="text" name="surnames" onclick="seleccionar('apellidos' , 'Dime tu apellido')">
+							<input id="surnames" type="text" name="surnames" onclick="seleccionar('apellidos' , 'Introduce tus apellidos')">
 						</div>
 						<div class="input-form">
 							<label for="email">Email</label>
-							<input id="email" type="email" name="email" required onclick="seleccionar('email')">
+							<input id="email" type="email" name="email" required onclick="seleccionar('mail', 'Introduce tu email')">
 						</div>
 						<div class="input-form">
 							<label for="phone">Teléfono</label>
-							<input id="tel" type="tel" name="phone" onclick="seleccionar('phone')">
+							<input id="tel" type="tel" name="phone" onclick="seleccionar('telefono', 'Introduce tu número de teléfono')">
 						</div>
 						<div class="input-form">
 							<label for="socialmedia">Redes Sociales</label>
-							<input id="socialmedia" type="text" name="socialmedia" onclick="seleccionar('socialmedia')">
+							<input id="socialmedia" type="text" name="socialmedia" onclick="seleccionar('rrss', 'Introduce los enlaces a tus redes sociales' )">
 						</div>
 						<div class="input-form">
 							<label for="address">Dirección</label>
-							<input id="address" type="text" name="address" onclick="seleccionar('address')">
+							<input id="address" type="text" name="address" onclick="seleccionar('direccion', 'Introduce tu dirección')">
 						</div>
 						<div class="input-form">
 							<label for="profession">Profesión</label>
-							<input id="profession" type="text" name="profession" required onclick="seleccionar('profession')">
+							<input id="profession" type="text" name="profession" required onclick="seleccionar('profesion', 'Introduce tu profesion')">
 						</div>
 						<div class="input-form">
 							<label for="summary">Extracto</label>
-							<textarea id="summary" name="comments"    rows="6"    cols="40" onclick="seleccionar('summary')"></textarea>
+							<textarea id="summary" name="comments"    rows="6"    cols="40" onclick="seleccionar('resumen', 'Escribe tu presentación')"></textarea>
 						</div>
 					</div>
 					<div class="input-form-open">
@@ -234,18 +234,18 @@
 				<ul class="prev-contactdetails">
 					<li id="nombre" class="prev-contactdetails-name">Nombre</li>
 					<li id="apellidos" class="prev-contactdetails-surname">Apellidos</li>
-					<li class="prev-contactdetails-proffession">Profesión</li>
-					<li class="prev-contactdetails-address"></li>
-					<li class="prev-contactdetails-email">ejemplo@gmail.com</li>
-					<li class="prev-contactdetails-phone">666998811</li>
-					<li class="prev-contactdetails-socialmedia">RRSS</li>
+					<li id="profesion" class="prev-contactdetails-proffession">Profesión</li>
+					<li id="direccion" class="prev-contactdetails-address"></li>
+					<li id="mail" class="prev-contactdetails-email">ejemplo@gmail.com</li>
+					<li id="telefono" class="prev-contactdetails-phone">666998811</li>
+					<li id="rrss" class="prev-contactdetails-socialmedia">RRSS</li>
 
 				</ul>
 		</section>
 
 		<section class="prev-description">
 			<h2 class="prev-titles">Extracto<hr></h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+				<p id="resumen">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 		</section>
 		<div class="prev-content">
 		<section class="prev-info-experience">
