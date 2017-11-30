@@ -32,6 +32,7 @@ function seleccionar(item2) {
 	var relleno = rellenar.innerHTML;
 	rellenar.innerHTML= prompt("Indica tu " + item2);
 }
+
 // function closeForm(){
 //
 // document.querySelector(".boxfieldsetjob").style.display = 'none';
