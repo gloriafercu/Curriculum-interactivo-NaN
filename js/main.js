@@ -32,6 +32,20 @@ function seleccionar(item2) {
 	var relleno = rellenar.innerHTML;
 	rellenar.innerHTML= prompt("Indica tu " + item2);
 }
+
+//DESPLEGABLE CABECERA
+
+function mostrarcapa()
+{
+document.getElementById("menudespleg").style.visibility = 'visible';
+
+}
+
+function ocultarcapa()
+{
+document.getElementById("menudespleg").style.visibility = 'hidden';
+
+}
 // function closeForm(){
 //
 // document.querySelector(".boxfieldsetjob").style.display = 'none';
