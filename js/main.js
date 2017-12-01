@@ -9,7 +9,6 @@ document.querySelector("#" + item).style.display = 'block';
 }
 
 //RELLENO DE CAMPOS CON PROMPT
-var seleccion;
 function seleccionar(item, pregunta) {
 	var rellenar = document.querySelector("#" + item);
 	rellenar.innerHTML= prompt(pregunta);
