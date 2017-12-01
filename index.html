@@ -14,7 +14,7 @@
 
 	<header id="header" class="header">
 			<nav class="menu-rayas">
-					<ul class="rayas" >
+					<ul class="rayas">
 						<li onmouseover="mostrarcapa()" onmouseout="ocultarcapa()">Menú
 							<ul id="menudespleg" class="lista-rayas">
 								<li><a href="#persdetfiel">Datos personales</a></li>
@@ -24,12 +24,12 @@
 								<li><a href="#skillsfiel">Habilidades</a></li>
 								<li><a href="#otherdetfiel">Otros datos de interés</a></li>
 							</li></ul>
-							<li><a href="*******">About us</a></li>
+							<li class="about-us"><a href="*******">About us</a></li>
 					</ul>
 			</nav>
-				<div class="cabecera-full">
-							<img class="logo-cabecera" src="imagenlogo.jpg" alt="logo-equipo"/>
-				</div>
+
+							<img class="logo-cabecera" src="images/logo.png" alt="logo-equipo"/>
+
 		</header>
 
 	<section class="text-principal">
@@ -47,18 +47,18 @@
 						</div>
 						<div class="input-form photo">
 							<label for="photo">Introduce tu foto</label>
-							<input id="photo" type="file" name="photo" accept="image/*">
+							<input id="photo" type="file" name="photo" accept="image/*" onclick="seleccionar('foto', Sube tu foto)">
 						</div>
 						<div class="input-form">
-							<label for="name">Nombre</label>
+							<label for="name">Nombre*</label>
 							<input id="name" type="text" name="name" required onclick="seleccionar('nombre', 'Introduce tu nombre')">
 						</div>
 						<div class="input-form">
-							<label for="surnames" required>Apellidos</label>
-							<input id="surnames" type="text" name="surnames" onclick="seleccionar('apellidos' , 'Introduce tus apellidos')">
+							<label for="surnames" required>Apellidos*</label>
+							<input id="surnames" type="text" name="surnames" required onclick="seleccionar('apellidos' , 'Introduce tus apellidos')">
 						</div>
 						<div class="input-form">
-							<label for="email">Email</label>
+							<label for="email">Email*</label>
 							<input id="email" type="email" name="email" required onclick="seleccionar('mail', 'Introduce tu email')">
 						</div>
 						<div class="input-form">
@@ -74,7 +74,7 @@
 							<input id="address" type="text" name="address" onclick="seleccionar('direccion', 'Introduce tu dirección')">
 						</div>
 						<div class="input-form">
-							<label for="profession">Profesión</label>
+							<label for="profession">Profesión*</label>
 							<input id="profession" type="text" name="profession" required onclick="seleccionar('profesion', 'Introduce tu profesion')">
 						</div>
 						<div class="input-form">
@@ -96,35 +96,35 @@
 						</div>
 						<div class="input-form">
 							<label for="job">Puesto de trabajo:</label>
-							<input id="job" type="text" name="job">
+							<input id="job" type="text" name="job" onclick= "seleccionar('trabajo', 'Indica tu puesto de trabajo')">
 						</div>
 						<div class="input-form">
 							<label for="job-charge">Cargo:</label>
-							<input id="job-charge" type="text" name="job-charge">
+							<input id="job-charge" type="text" name="job-charge" onclick="seleccionar('cargo', 'Dime tu cargo')">
 						</div>
 						<div class="input-form">
 							<label for="job-bussines">Empresa:</label>
-							<input id="job-bussines" type="text" name="job-bussines">
+							<input id="job-bussines" type="text" name="job-bussines" onclick="seleccionar('empresa', 'Dime tu empresa')">
 						</div>
 						<div class="input-form">
 							<label for="job-month-start">Mes de inicio</label>
-							<select id="job-month-start" name="job-month-start" class="month"></select>
+							<select id="job-month-start" name="job-month-start" class="month" onclick="seleccionar('inicio-mes', 'Mes de inicio')"></select>
 						</div>
 						<div class="input-form">
 							<label for="job-year-start">Año de inicio</label>
-							<select id="job-year-start" name="job-year-start" class="years"></select>
+							<select id="job-year-start" name="job-year-start" class="years" onclick="seleccionar('inicio-año', 'Año de inicio')"></select>
 						</div>
 						<div class="input-form">
 							<label for="job-month-end">Mes de final</label>
-							<select id="job-month-end" name="job-month-end" class="month"></select>
+							<select id="job-month-end" name="job-month-end" class="month" onclick="seleccionar('fin-mes', 'Mes de final')"></select>
 						</div>
 						<div class="input-form">
 							<label for="job-year-end">Año de final</label>
-							<select id="job-year-end" name="job-year-end" class="years"></select>
+							<select id="job-year-end" name="job-year-end" class="years" onclick="seleccionar('fin-año', 'Año de final')"></select>
 						</div>
 						<div class="input-form">
 							<label for="messjob-extract">Descripción del cargo</label>
-							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40"></textarea>
+							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40" onclick="seleccionar('descripcion-trabajo', 'Describe tus funciones en el puesto')"></textarea>
 						</div>
 					</div>
 					<div class="input-form-open">
@@ -147,7 +147,7 @@
 						</div>
 						<div class="input-form">
 							<label for="education-type-studies">Tipo de estudios</label>
-							<select id="education-type-studies" name="education-type-studies" required></select>
+							<select id="education-type-studies" name="education-type-studies" class="type-studies" required></select>
 						</div>
 						<div class="input-form">
 							<label for="education-institution">Centro de estudios</label>
@@ -229,7 +229,7 @@
 		<section class="prev-info-personaldates prev-contact">
 			<!--<h1 class="prev-titles">Datos de contacto</h1>-->
 				<div class="prev-photo">
-					<img src="http://via.placeholder.com/120x120" alt="Foto Personal">
+					<img src="http://via.placeholder.com/120x120" alt="Foto Personal" id="foto">
 				</div>
 				<ul class="prev-contactdetails">
 					<li id="nombre" class="prev-contactdetails-name">Nombre</li>
@@ -268,15 +268,16 @@
 			<section class="prev-professionalexperience">
 				<h2 class="prev-titles">Formación profesional<hr></h2>
 					<ul class="prev-jobdetails">
-						<li class="prev-jobdetails-charge"><span id="jobdetails-charge">Cargo: </span></li>
-						<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: </li>
+						<li class="prev-jobdetails-job">Puesto de trabajo:  <span id="trabajo"></span></li>
+						<li class="prev-jobdetails-charge">Cargo:  <span id="cargo"></span></li>
+						<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa"></span></li>
 						<li class="prev-jobdetails-date">
 							<ul class="prev-jobdate">
-								<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: </li>
-								<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: </li>
+								<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes"></span>/<span id="inicio-año"></span></li>
+								<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes"></span>/<span id="fin-año"></span></li>
 							</ul>
 						</li>
-						<li id="jobdetails-description" class="prev-jobdetails-description">Descripción del cargo: </li>
+						<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo"></span></li>
 					</ul>
 			</section>
 	</section>

@@ -59,7 +59,8 @@
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
-	margin-top: 40px;
+	margin-top: 48px;
+
 }
 
 .input-form {
@@ -167,36 +168,7 @@
 /*EXPERIENCIA LABORAL*/
 
 
-
-
-
-
 /*EDUCACIÓN*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*FOOTER*/
@@ -277,7 +249,7 @@
 }
 .cv{
 	width: 55%;
-	margin-top: 30px;
+	margin-top: 78px;
 	margin-bottom: 20px;
 }
 .footer {
