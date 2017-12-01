@@ -24,11 +24,11 @@
 								<li><a href="#skillsfiel">Habilidades</a></li>
 								<li><a href="#otherdetfiel">Otros datos de interés</a></li>
 							</li></ul>
-							<li><a href="*******">About us</a></li>
+							<li class="about-us"><a href="*******">About us</a></li>
 					</ul>
 			</nav>
 				<div class="cabecera-full">
-							<img class="logo-cabecera" src="imagenlogo.jpg" alt="logo-equipo"/>
+							<img class="logo-cabecera" src="images/logo.png" alt="logo-equipo"/>
 				</div>
 		</header>
 
@@ -55,7 +55,7 @@
 						</div>
 						<div class="input-form">
 							<label for="surnames" required>Apellidos</label>
-							<input id="surnames" type="text" name="surnames" onclick="seleccionar('apellidos' , 'Dime tu apellido')">
+							<input id="surnames" type="text" name="surnames" onclick="seleccionar('apellidos', 'Dime tu apellido')">
 						</div>
 						<div class="input-form">
 							<label for="email">Email</label>
@@ -95,36 +95,41 @@
 							<input type="button" name="hide" value="X" onclick="ocultar('job-data')">
 						</div>
 						<div class="input-form">
-							<label for="job">Puesto de trabajo:</label>
-							<input id="job" type="text" name="job">
+							<label for="job">Puesto de trabajo</label>
+							<input id="job" type="text" name="job" onclick= "seleccionar('trabajo', 'Indica tu puesto de trabajo')">
 						</div>
 						<div class="input-form">
 							<label for="job-charge">Cargo:</label>
-							<input id="job-charge" type="text" name="job-charge">
+							<input id="job-charge" type="text" name="job-charge" onclick="seleccionar('cargo', 'Dime tu cargo')">
 						</div>
 						<div class="input-form">
 							<label for="job-bussines">Empresa:</label>
-							<input id="job-bussines" type="text" name="job-bussines">
+							<input id="job-bussines" type="text" name="job-bussines" onclick="seleccionar('empresa', 'Dime tu empresa')">
 						</div>
-						<div class="input-form">
-							<label for="job-month-start">Mes de inicio</label>
-							<select id="job-month-start" name="job-month-start" class="month"></select>
+						<div class="input-form date">
+							<div class="input-form initialmonth">
+								<label for="job-month-start">Mes de inicio</label>
+								<select id="job-month-start" name="job-month-start" class="month" onclick="seleccionar('inicio-mes', 'Mes de inicio')"></select>
+							</div>
+							<div class="input-form initialyear">
+								<label for="job-year-start">Año de inicio</label>
+								<select id="job-year-start" name="job-year-start" class="years" onclick="seleccionar('inicio-año', 'Año de inicio')"></select>
+							</div>
 						</div>
-						<div class="input-form">
-							<label for="job-year-start">Año de inicio</label>
-							<select id="job-year-start" name="job-year-start" class="years"></select>
+						<div class="input-form date">
+							<div class="input-form finalmonth">
+								<label for="job-month-end">Mes de final</label>
+								<select id="job-month-end" name="job-month-end" class="month" onclick="seleccionar('fin-mes', 'Mes de final')"></select>
+							</div>
+							<div class="input-form finalyear">
+								<label for="job-year-end">Año de final</label>
+								<select id="job-year-end" name="job-year-end" class="years" onclick="seleccionar('fin-año', 'Año de final')"></select>
+							</div>
 						</div>
-						<div class="input-form">
-							<label for="job-month-end">Mes de final</label>
-							<select id="job-month-end" name="job-month-end" class="month"></select>
-						</div>
-						<div class="input-form">
-							<label for="job-year-end">Año de final</label>
-							<select id="job-year-end" name="job-year-end" class="years"></select>
-						</div>
+
 						<div class="input-form">
 							<label for="messjob-extract">Descripción del cargo</label>
-							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40"></textarea>
+							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40" onclick="seleccionar('descripcion-trabajo', 'Describe tus funciones en el puesto')"></textarea>
 						</div>
 					</div>
 					<div class="input-form-open">
@@ -143,27 +148,29 @@
 						</div>
 					 	<div class="input-form">
 							<label for="education-studies">Titulación</label>
-							<input type="text" id="education-studies" name="education-studies" required>
+							<input type="text" id="education-studies" name="education-studies" onclick=" seleccionar('titulacion', 'Indica tus estudios')" required>
 						</div>
 						<div class="input-form">
 							<label for="education-type-studies">Tipo de estudios</label>
-							<select id="education-type-studies" name="education-type-studies" class="type-studies" required></select>
+							<select id="education-type-studies" name="education-type-studies" class="type-studies" onclick=" seleccionar('tipo-estudios', 'Selecciona tu nivel de estudios')" required></select>
 						</div>
 						<div class="input-form">
 							<label for="education-institution">Centro de estudios</label>
-							<input class="" type="text" id="education-institution" name="education-institution" required>
+							<input class="" type="text" id="education-institution" name="education-institution" onclick=" seleccionar('centro', 'Indica tu centro de estudios')" required>
 						</div>
-						<div class="input-form">
-							<label for="education-year-start">Año de inicio</label>
-							<select id="education-year-start" name="education-year-start" class="years"></select>
-						</div>
-						<div class="input-form">
-							<label for="education-year-end">Año de finalización</label>
-							<select id="education-year-end" name="education-year-end" class="years"></select>
+						<div class="input-form date">
+							<div class="input-form initialyear">
+								<label for="education-year-start">Año de inicio</label>
+								<select id="education-year-start" name="education-year-start" class="years" onclick=" seleccionar('año-inicio', 'Año de inicio')"></select>
+							</div>
+							<div class="input-form finalyear">
+								<label for="education-year-end">Año de finalización</label>
+								<select id="education-year-end" name="education-year-end" class="years" onclick=" seleccionar('año-fin', 'Año de finalización')"></select>
+							</div>
 						</div>
 						<div class="input-form">
 							<label for="education-extract">Descripción</label>
-							<textarea class="" id="education-extract" name="education-extract" rows="6" cols="40"></textarea>
+							<textarea class="" id="education-extract" name="education-extract" rows="6" cols="40" onclick=" seleccionar('descripcion-estudios', 'Escribe una breve descripción de tus estudios')"></textarea>
 						</div>
 				</div>
 				<div class="input-form-open">
@@ -174,7 +181,7 @@
 
 			<!-- habilidades -->
 
-			<fieldset id=skillsfiel class="skills-section">
+			<fieldset id="skillsfiel" class="skills-section">
 				<legend>Habilidades</legend>
 					<div id="skills-data" class="boxfieldsetskills">
 						<div class="input-form-close">
@@ -203,7 +210,7 @@
 			</fieldset>
 
 			<!-- otros datos-->
-			<fieldset  id=otherdetfiel class="details-section">
+			<fieldset  id="otherdetfiel" class="details-section">
 
 				<legend>Otros datos de interés</legend>
 					<div id="other-data" class="boxfieldsetother">
@@ -252,31 +259,32 @@
 			<section class="prev-education">
 				<h2 class="prev-titles">Formación académica<hr></h2>
 					<ul class="prev-educationdetails">
-						<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación:</li>
-						<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios:</li>
-						<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios:</li>
+						<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion"></span></li>
+						<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios"></span></li>
+						<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro"></span></li>
 						<li class="prev-educationdetails-date">
 							<ul class="prev-educationdate">
-								<li id="educationdate-start" class="prev-educationdate-start">Año de inicio:</li>
-								<li id="educationdate-end" class="prev-educationdate-end">Año de finalización:</li>
+								<li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio"></span></li>
+								<li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin"></span></li>
 							</ul>
 						</li>
-						<li id="educationdetails-description" class="prev-educationdetails-description">Descripción</li>
+						<li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios"></span></li>
 					</ul>
 			</section>
 
 			<section class="prev-professionalexperience">
 				<h2 class="prev-titles">Formación profesional<hr></h2>
 					<ul class="prev-jobdetails">
-						<li class="prev-jobdetails-charge"><span id="jobdetails-charge">Cargo: </span></li>
-						<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: </li>
+						<li class="prev-jobdetails-job">Puesto de trabajo:  <span id="trabajo"></span></li>
+						<li class="prev-jobdetails-charge">Cargo:  <span id="cargo"></span></li>
+						<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa"></span></li>
 						<li class="prev-jobdetails-date">
 							<ul class="prev-jobdate">
-								<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: </li>
-								<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: </li>
+								<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes"></span>/<span id="inicio-año"></span></li>
+								<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes"></span>/<span id="fin-año"></span></li>
 							</ul>
 						</li>
-						<li id="jobdetails-description" class="prev-jobdetails-description">Descripción del cargo: </li>
+						<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo"></span></li>
 					</ul>
 			</section>
 	</section>

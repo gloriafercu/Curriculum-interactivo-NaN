@@ -20,12 +20,14 @@
 /*PREVIO CV*/
 .cv {
 	display: flex;
+	box-sizing: border-box;
 	flex-direction: column;
 	border: 1px solid #262626;
 	width: 95%;
 	max-width: 600px;
 	margin: auto;
 	font-size: 15px;
+
 }
 .prev-info-personaldates {
 	display: flex;
@@ -53,12 +55,14 @@
 
 .total-form {
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	max-width: 480px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
+	margin: 15px auto;
+
 }
 
 .input-form {
@@ -72,7 +76,7 @@
 	border-radius: 5px;
 	border-width: 2px;
 	border-style: inset;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .input-form input[type="file"]{
@@ -86,18 +90,22 @@
 	border-radius: 5px;
 	border-width: 2px;
 	border-style: inset;
-	font-size: 15px;
+	font-size: 14px;
 }
 .input-form label {
 	display: flex;
 	margin-bottom: 10px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .input-form-close {
 	display: flex;
 	justify-content: flex-end;
 }
+
+
+
+
 .input-form-close input[type="button"]{
 	position: absolute;
 	top:  10px;
@@ -106,7 +114,7 @@
 	height: 30px;
 	background-color: #fcac0c;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	border: none;
 }
 .input-form-open {
@@ -120,9 +128,9 @@
 	height: 35px;
 	background-color: #fcac0c;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	border: none;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
  fieldset {
 	 margin-top: 15px;
@@ -137,6 +145,8 @@
 	background-color: #fcf0c8;
 	padding: 63px 15px 15px;
 	position: relative;
+	border-radius: 5px;
+
 }
 .personaldetails-section legend,
 .job-section legend,
@@ -150,7 +160,8 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	font-weight: bold;
+	border-radius: 1px;
+	/*font-weight: bold;*/
 }
 
 .boxfieldsetdetails,
@@ -164,9 +175,58 @@
 }
 
 /*EXPERIENCIA LABORAL*/
-
-
 /*EDUCACIÓN*/
+
+.date {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+.initialmonth,
+.finalmonth {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+
+}
+.month,
+.years,
+.type-studies {
+	width: 60%;
+	font-size: 16px;
+}
+
+
+.initialyear,
+.finalyear {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+
+
+ /*BOTON FOTO
+.photo input[type="file"]{
+	border: O;
+	opacity: 0;
+	op
+	position: relative;
+	background-image: url(../images/drag2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.photo {
+	position: relative;
+	background-image: url(../images/drag2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+
+
+
+
 
 
 /*FOOTER*/
@@ -204,6 +264,7 @@
 		align-items: flex-start;
 		flex-wrap: wrap;
 		height: 100%;
+
 	}
 	.prev-info-personaldates {
 		display: flex;
@@ -247,8 +308,9 @@
 }
 .cv{
 	width: 55%;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-bottom: 20px;
+
 }
 .footer {
 	width: 100%;
