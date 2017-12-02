@@ -15,20 +15,22 @@
 	}
 
 .logo-cabecera {
-	width: 15%;
-	height: auto;
+	width: auto;
+	height: 35px;
 	padding-top: 2px;
 }
+
 
 .menu-rayas ul{
 list-style-type: none;
 background-color: #911F27;
-/*isplay: none;*/
+padding: 20px;
 }
 .menu-rayas li {
 display: inline-block;
 margin-right: 0 8px 0 0;
 background-color: #911F27;
+padding: 10px;
 }
 .menu-rayas li a {
 color:#FCF0F8;
@@ -45,19 +47,15 @@ background-color: #911F27;
 .menu-rayas li ul li{
 display: block;
 background-color: #911F27;
-padding: 4px;
+padding: 10px;
 }
 
 }
 .menu-rayas {
-
 	position: relative;
 	left:0;
 }
-ul.rayas {
-	margin-top: 17px;
-	padding-left: 12px;
-}
+
 
 .about-us {
 	padding-left: 20px;

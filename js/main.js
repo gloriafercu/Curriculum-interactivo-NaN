@@ -1,31 +1,29 @@
-"use strict"
+"use strict";
 
 //PLEGAR Y DESPLEGAR
-function ocultar(item){
-	document.querySelector("#" + item).style.display = 'none';
+function ocultar(item) {
+	document.querySelector('#' + item).style.display = 'none';
 }
-function mostrar(item){
-document.querySelector("#" + item).style.display = 'block';
+
+function mostrar(item) {
+	document.querySelector('#' + item).style.display = 'block';
 }
+
 
 //RELLENO DE CAMPOS CON PROMPT
 function seleccionar(item, pregunta) {
-	var rellenar = document.querySelector("#" + item);
+	var rellenar = document.querySelector('#' + item);
 	rellenar.innerHTML= prompt(pregunta);
 }
 
 //DESPLEGABLE CABECERA
 
-function mostrarcapa()
-{
-document.getElementById("menudespleg").style.visibility = 'visible';
-
+function mostrarcapa() {
+	document.getElementById('menudespleg').style.visibility = 'visible';
 }
 
-function ocultarcapa()
-{
-document.getElementById("menudespleg").style.visibility = 'hidden';
-
+function ocultarcapa() {
+	document.getElementById('menudespleg').style.visibility = 'hidden';
 }
 
 /*Funcion para añadir numeros a los select*/
@@ -43,22 +41,24 @@ function list(firstyear, totalyears) {
 	for (var i = 0; i < select.length; i++){
 		select[i].innerHTML=list(1950, 100);
 	}
-//Añadir meses a los select
-	var select = document.querySelectorAll('.month');
+
+//Añadir meses a los selct
+var select = document.querySelectorAll('.month');
+
 for (var i = 0; i < select.length; i++){
 	select[i].innerHTML=list(1, 12);
 }
 
 
 //Seleccionar estudios
-	var studyOptions = ''
-		studyOptions = studyOptions + '<option value="Seleccionar">Selecciona estudios</option>';
-		studyOptions = studyOptions + '<option value="Sin estudios">Sin estudios obligatorios</option>';
-		studyOptions = studyOptions + '<option value="Eso">ESO</option>';
-		studyOptions = studyOptions + '<option value="FPBasica">FP Básica</option>';
-		studyOptions = studyOptions + '<option value="FPMedia">FP Media</option>';
-		studyOptions = studyOptions + '<option value="FPSuperior">FP Superior</option>';
-		studyOptions = studyOptions + '<option value="Uni">Estudios universitarios</option>';
-		studyOptions = studyOptions + '<option value="Postgrado">Postgrado</option>';
-		studyOptions = studyOptions + '<option value="Estudios sin convalidar">Estudios sin convalidar</option>';
-		document.querySelector('.type-studies').innerHTML = studyOptions;
+var studyOptions = ''
+studyOptions = studyOptions + '<option value="Seleccionar">Seleciona estudios</option>';
+studyOptions = studyOptions + '<option value="Sin estudios">Sin estudios obligados</option>';
+studyOptions = studyOptions + '<option value="Eso">ESO</option>';
+studyOptions = studyOptions + '<option value="FPBasica">FP Básica</option>';
+studyOptions = studyOptions + '<option value="FPMedia">FP Media</option>';
+studyOptions = studyOptions + '<option value="FPSuperior">FP Superior</option>';
+studyOptions = studyOptions + '<option value="Uni">Estudios universitarios</option>';
+studyOptions = studyOptions + '<option value="Postgrado">Postgrado</option>';
+studyOptions = studyOptions + '<option value="Estudios sin convalidar">Estudios sin convalidar</option>';
+document.querySelector('.type-studies').innerHTML = studyOptions;
