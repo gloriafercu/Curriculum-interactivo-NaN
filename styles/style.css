@@ -4,11 +4,16 @@
 
 }
 /*HEADER*/
-/*	display: flex;
+.header {
+	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-}*/
-
+}
+.compartir,
+.preview,
+.print {
+	width: 20px;
+}
 .text-principal {
 	display: flex;
 	justify-content: center;
