@@ -1,0 +1,48 @@
+
+.principal-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	height: 100vh;
+	margin: auto;
+}
+.important {
+	font-weight:bold;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+.title {
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 20px 0px;
+}
+.subtitle {
+	font-weight: bold;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	padding: 20px 0px;
+}
+.paragraph {
+	padding: 10px 0px;
+}
+.contact-form {
+	margin: 10px auto;
+}
+.label {
+	padding: 5px 0px;
+}
+.cell {
+	border-radius: 5px;
+}
+.button {
+	margin: 10px auto;
+	height: 30px;
+	width: 30%;
+	border-radius: 5px;
+	font-weight: bold;
+}
