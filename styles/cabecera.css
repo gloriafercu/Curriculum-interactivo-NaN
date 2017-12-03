@@ -1,8 +1,5 @@
 /*CABECERA*/
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -20,57 +17,21 @@
 	padding-top: 2px;
 }
 
-
-.menu-rayas ul{
-list-style-type: none;
-background-color: #911F27;
-padding: 20px;
-}
-.menu-rayas li {
-display: inline-block;
-margin-right: 0 8px 0 0;
-background-color: #911F27;
-padding: 10px;
-}
-.menu-rayas li a {
-color:#FCF0F8;
-text-decoration: none;
-display: block;
-background-color: #911F27;
-}
-.menu-rayas li ul {
-position: absolute;
-padding: 1%;
-background-color: #911F27;
+.rayas {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	list-style-type: none;
+	background-color: #911F27;
 }
 
-.menu-rayas li ul li{
-display: block;
-background-color: #911F27;
-padding: 10px;
-}
-
-}
-.menu-rayas {
-	position: relative;
-	left:0;
+.persoalizatucv {
+	
 }
 
 
-.about-us {
-	padding-left: 20px;
-}
 
 @media all and (max-width:420px) {
-	.menu-rayas {
+	.rayas {
 		display: inline-block;
-	}
-	.minirayas {
-		display: inline-block;
-		left:10px;
-		top:22px;
-	}
-	.primera-lista {
-		display: none;
-	}
-}
