@@ -15,6 +15,23 @@
 	align-items: center;
 	text-align: center;
 }
+/*Pagina principal*/
+.background {
+	height: 100vh;
+	background-image: url(../images/photo-1434626881859-194d67b2b86f.png);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: cover;
+}
+.buttonintro {
+	width: 50px;
+	height: 100px;
+	padding-top: 40px;
+	padding-left: 75%;
+	color: #555555;
+	font-size: 30px;
+}
+
 
 /*PREVIO CV*/
 .cv {

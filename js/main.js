@@ -51,7 +51,6 @@ for (var i = 0; i < select.length; i++){
 
 
 //Seleccionar estudios
-<<<<<<< HEAD
 var studyOptions = ''
 studyOptions = studyOptions + '<option value="Seleccionar">Seleciona estudios</option>';
 studyOptions = studyOptions + '<option value="Sin estudios">Sin estudios obligados</option>';
