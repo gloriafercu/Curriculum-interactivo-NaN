@@ -1,37 +1,35 @@
 /*CABECERA*/
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10000;
-	width: 100%;
-	background-color: #911F27;
-	font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-	color: #ffffff;
-	}
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    background-color: #911F27;
+    font-family: 'Raleway', sans-serif;
+  	font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    }
 .logo-cabecera {
-	width: auto;
-	height: 35px;
-	padding-top: 2px;
+    display: flex;
+    justify-content: flex-start;
+    width: 35px;
+    height: 35px;
+    padding-top: 2px;
 }
-
-.rayas {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 20px;
-	list-style-type: none;
-	background-color: #911F27;
+.menu {
+    display: flex;
+  justify-content: space-around;
+    padding: 20px;
+    list-style-type: none;
+    background-color: #911F27;
 }
-
 .persoalizatucv {
-	
 }
-
-
-
 @media all and (max-width:420px) {
-	.rayas {
-		display: inline-block;
+    .rayas {
+        display: inline-block;
