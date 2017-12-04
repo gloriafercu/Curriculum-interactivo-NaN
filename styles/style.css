@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Rubik', sans-serif;
 
 }
 /*HEADER*/
@@ -71,7 +71,7 @@
 /*FORMULARIO*/
 
 .total-form {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 16px;
 	max-width: 480px;
 	width: 100%;
@@ -79,13 +79,10 @@
 	flex-direction: column;
 	padding: 15px;
 	margin-top: 78px;
-
-
-
 }
 
 .input-form {
-	padding: 5px 0;
+	padding: 10px 15px;
 }
 
 .input-form input {
@@ -117,61 +114,75 @@
 	/*font-weight: bold;*/
 }
 
-.input-form-close {
-	display: flex;
-	justify-content: flex-end;
-}
 
 
 
+/*BOTONES FORMULARIO*/
 
-.input-form-close input[type="button"]{
-	position: absolute;
-	top:  10px;
-	right:  12px;
-	width: 30px;
-	height: 30px;
-	background-color: #fcac0c;
-	color: #fff;
-	font-size: 16px;
+.btnSection {
+	position:absolute;
+	top: 6px;
+	right: 15px;
+	width: 35px;
+	height: 35px;
+	background-position: center center;
+	background-size: cover;
+	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
-.input-form-open {
+.btnSection:focus{
+	outline: 0;
+}
+.btnPersonalData {
+	background-image: url('../images/user.png');
+}
+.btnJob {
+	background-image: url('../images/suitcase.png');
+}
+.btnEducation {
+	background-image: url('../images/education.png');
+}
+.btnSkills {
+	background-image: url('../images/skills.png');
+}
+.btnOtherDetails {
+	background-image: url('../images/id-card.png');
+}
+
+.input-form-buttoms {
 	position: relative;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	padding: 15px;
 
 }
-.input-form-open input[type="button"]{
-	width: 170px;
+.input-form-buttoms input[type="button"]{
+	width: 100px;
 	height: 35px;
 	background-color: #fcac0c;
 	color: #fff;
 	font-size: 16px;
 	border: none;
-	/*font-weight: bold;*/
+	margin: 0 8px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #888888;
 }
  fieldset {
 	 margin-top: 15px;
  }
+
+
 /*DATOS PERSONALES*/
 
-.personaldetails-section,
-.job-section,
-.education-section,
-.skills-section,
-.details-section {
+.section {
 	background-color: #fcf0c8;
-	padding: 63px 15px 15px;
+	padding: 46px 0 0;
 	position: relative;
-	border-radius: 5px;
-
+	border-radius: 15px;
+	box-shadow: 4px 4px 1px #888888;
 }
-.personaldetails-section legend,
-.job-section legend,
-.education-section legend,
-.skills-section legend,
-.details-section legend {
+.section legend {
 	background-color: #911f27;
 	padding: 15px;
 	color: #fff;
@@ -179,18 +190,19 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	border-radius: 1px;
+	border-radius: 15px;
+
 	/*font-weight: bold;*/
 }
 
-.boxfieldsetdetails,
-.boxfieldsetjob,
-.boxfieldseteducation,
-.boxfieldsetskills,
-.boxfieldsetother {
+.boxfield {
 	display: flex;
 	flex-direction: column;
 	display: none;
+}
+
+.boxfield.active {
+	display: block;
 }
 
 /*EXPERIENCIA LABORAL*/
@@ -218,9 +230,10 @@
 
 .initialyear,
 .finalyear {
+
 	display: flex;
 	flex-direction: column;
-	width: 35%;
+	width: 45%;
 }
 
 

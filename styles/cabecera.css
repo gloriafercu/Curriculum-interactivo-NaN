@@ -42,6 +42,7 @@ background-color: #911F27;
 position: absolute;
 padding: 1%;
 background-color: #911F27;
+display: none;
 }
 
 .menu-rayas li ul li{

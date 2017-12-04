@@ -5,8 +5,7 @@
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/cabecera.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crea tu CV online</title>
 </head>
@@ -38,12 +37,11 @@
 		<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
 
 			<!-- Datos personales -->
-			<fieldset id="perdetfiel" class="personaldetails-section">
-				<legend>Datos personales</legend>
-					<div id="personal-data" class="boxfieldsetdetails">
-						<div class="input-form-close">
-							<input type="button" name="hide" value="X" onclick="ocultar('personal-data')" >
-						</div>
+			<fieldset id="perdetfiel" class="section">
+				<legend>Datos personales
+					<input type="button" name="btnPersonalData" class="btnSection btnPersonalData" onclick="mostrarOcultar('personal-data')">
+				</legend>
+					<div id="personal-data" class="boxfield">
 						<div class="input-form photo">
 							<label for="photo">Introduce tu foto</label>
 							<input id="photo" type="file" name="photo" accept="image/*" onclick="seleccionar('foto', Sube tu foto)">
@@ -54,7 +52,7 @@
 						</div>
 						<div class="input-form">
 							<label for="surnames" required>Apellidos*</label>
-							<input id="surnames" type="text" name="surnames" required onclick="seleccionar('apellidos' , 'Introduce tus apellidos')">
+							<input id="surnames" type="text" name="surnames" required onclick="seleccionar('apellidos', 'Introduce tus apellidos')">
 						</div>
 						<div class="input-form">
 							<label for="email">Email*</label>
@@ -66,7 +64,7 @@
 						</div>
 						<div class="input-form">
 							<label for="socialmedia">Redes Sociales</label>
-							<input id="socialmedia" type="text" name="socialmedia" onclick="seleccionar('rrss', 'Introduce los enlaces a tus redes sociales' )">
+							<input id="socialmedia" type="text" name="socialmedia" onclick="seleccionar('rrss', 'Introduce los enlaces a tus redes sociales')">
 						</div>
 						<div class="input-form">
 							<label for="address">Dirección</label>
@@ -80,19 +78,19 @@
 							<label for="summary">Extracto</label>
 							<textarea id="summary" name="comments"    rows="6"    cols="40" onclick="seleccionar('resumen', 'Escribe tu presentación')"></textarea>
 						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="edit" value="Editar">
+							<input type="button" name="edit" value="Borrar">
+					  	<input type="button" name="edit" value="Guardar">
+						</div>
 					</div>
-					<div class="input-form-open">
-				  	<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('personal-data')">
-					</div>
+
 			</fieldset>
 
 			<!-- experiencia laboral -->
-			<fieldset id="jobfiel" class="job-section">
-				<legend>Experiencia Laboral</legend>
-					<div id="job-data" class="boxfieldsetjob">
-						<div class="input-form-close">
-							<input type="button" name="hide" value="X" onclick="ocultar('job-data')">
-						</div>
+			<fieldset id="jobfiel" class="section">
+				<legend>Experiencia Laboral <input type="button" name="btnJob" class="btnSection btnJob" onclick="mostrarOcultar('job-data')"></legend>
+					<div id="job-data" class="boxfield">
 						<div class="input-form">
 							<label for="job">Puesto de trabajo</label>
 							<input id="job" type="text" name="job" onclick= "seleccionar('trabajo', 'Indica tu puesto de trabajo')">
@@ -130,21 +128,20 @@
 							<label for="messjob-extract">Descripción del cargo</label>
 							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40" onclick="seleccionar('descripcion-trabajo', 'Describe tus funciones en el puesto')"></textarea>
 						</div>
-					</div>
-					<div class="input-form-open">
-					 	<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('job-data')">
+						<div class="input-form-buttoms">
+							<input type="button" name="edit" value="Editar">
+							<input type="button" name="edit" value="Borrar">
+					  	<input type="button" name="edit" value="Guardar">
+						</div>
+
 					</div>
 
 			</fieldset>
 
 			<!-- experiencia educativa -->
-
-			<fieldset id="edufiel" class="education-section">
-				<legend>Educación</legend>
-					<div id="education-data" class="boxfieldseteducation">
-						<div class="input-form-close">
-							<input type="button" name="hide" value="X" onclick="ocultar('education-data')">
-						</div>
+			<fieldset id="edufiel" class="section">
+				<legend>Educación <input type="button" name="btnEducation" class="btnSection btnEducation" onclick="mostrarOcultar('education-data')"> </legend>
+					<div id="education-data" class="boxfield">
 					 	<div class="input-form">
 							<label for="education-studies">Titulación</label>
 							<input type="text" id="education-studies" name="education-studies" onclick=" seleccionar('titulacion', 'Indica tus estudios')" required>
@@ -171,21 +168,20 @@
 							<label for="education-extract">Descripción</label>
 							<textarea class="" id="education-extract" name="education-extract" rows="6" cols="40" onclick=" seleccionar('descripcion-estudios', 'Escribe una breve descripción de tus estudios')"></textarea>
 						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="edit" value="Editar">
+							<input type="button" name="edit" value="Borrar">
+					  	<input type="button" name="edit" value="Guardar">
+						</div>
 				</div>
-				<div class="input-form-open">
-					<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('education-data')">
-				</div>
+
 
 			</fieldset>
 
 			<!-- habilidades -->
-
-			<fieldset id="skillsfiel" class="skills-section">
-				<legend>Habilidades</legend>
-					<div id="skills-data" class="boxfieldsetskills">
-						<div class="input-form-close">
-							<input type="button" name="hide" value="X" onclick="ocultar('skills-data')">
-						</div>
+			<fieldset id="skillsfiel" class="section">
+				<legend>Habilidades <input type="button" name="btnSkills" class="btnSection btnSkills" onclick="mostrarOcultar('skills-data')"> </legend>
+					<div id="skills-data" class="boxfield">
 						<div class="input-form-skills">
 							<label for="skillstext">Habilidades</label>
 							<input id="skillstext" type="text" name="skillstext" class="skillstext">
@@ -202,20 +198,20 @@
 							<label for="nivel3">Experto</label>
 							<input id="nivel3" type="radio" name="nivel" class="nivel">
 						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="edit" value="Editar">
+							<input type="button" name="edit" value="Borrar">
+					  	<input type="button" name="edit" value="Guardar">
+						</div>
 					</div>
-					<div class="input-form-open">
-						<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('skills-data')">
-					</div>
+
 			</fieldset>
 
 			<!-- otros datos-->
-			<fieldset  id="otherdetfiel" class="details-section">
+			<fieldset  id="otherdetfiel" class="section">
 
-				<legend>Otros datos de interés</legend>
-					<div id="other-data" class="boxfieldsetother">
-						<div class="input-form-close">
-							<input type="button" name="hide" value="X" onclick="ocultar('other-data')" >
-						</div>
+				<legend>Otros datos de interés <input type="button" name="btnOtherDetails" class="btnSection btnOtherDetails" onclick="mostrarOcultar('other-data')"></legend>
+					<div id="other-data" class="boxfield">
 						<div class="input-form">
 							<label for="details">Datos de interés</label>
 							<input id="details" type="text" name="details" class="details">
@@ -223,17 +219,20 @@
 						<div class="input-form-rellenar">
 							<input type="button" value="rellenar" onclick="rellenar">
 						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="edit" value="Editar">
+							<input type="button" name="edit" value="Borrar">
+					  	<input type="button" name="edit" value="Guardar">
+						</div>
 					</div>
-					<div class="input-form-open">
-						<input type="button" name="edit" value="Actualizar datos" onclick="mostrar('other-data')">
-					</div>
+
 			</fieldset>
 		</form>
 	</section>
 
 	<main class="cv">
 		<section class="prev-info-personaldates prev-contact">
-			<!--<h1 class="prev-titles">Datos de contacto</h1>-->
+			<h1 class="prev-titles">Datos de contacto</h1>
 				<div class="prev-photo">
 					<img src="http://via.placeholder.com/120x120" alt="Foto Personal" id="foto">
 				</div>
@@ -245,68 +244,65 @@
 					<li id="mail" class="prev-contactdetails-email">ejemplo@gmail.com</li>
 					<li id="telefono" class="prev-contactdetails-phone">666998811</li>
 					<li id="rrss" class="prev-contactdetails-socialmedia">RRSS</li>
-
 				</ul>
 		</section>
-
 		<section class="prev-description">
 			<h2 class="prev-titles">Extracto<hr></h2>
 				<p id="resumen">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 		</section>
 		<div class="prev-content">
-		<section class="prev-info-experience">
-			<section class="prev-education">
-				<h2 class="prev-titles">Formación académica<hr></h2>
-					<ul class="prev-educationdetails">
-						<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion"></span></li>
-						<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios"></span></li>
-						<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro"></span></li>
-						<li class="prev-educationdetails-date">
-							<ul class="prev-educationdate">
-								<li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio"></span></li>
-								<li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin"></span></li>
+			<section class="prev-info-experience">
+					<section class="prev-education">
+						<h2 class="prev-titles">Formación académica<hr></h2>
+							<ul class="prev-educationdetails">
+								<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion"></span></li>
+								<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios"></span></li>
+								<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro"></span></li>
+								<li class="prev-educationdetails-date">
+									<ul class="prev-educationdate">
+										<li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio"></span></li>
+										<li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin"></span></li>
+									</ul>
+								</li>
+								<li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios"></span></li>
 							</ul>
-						</li>
-						<li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios"></span></li>
-					</ul>
-			</section>
+					</section>
 
-			<section class="prev-professionalexperience">
-				<h2 class="prev-titles">Formación profesional<hr></h2>
-					<ul class="prev-jobdetails">
-						<li class="prev-jobdetails-job">Puesto de trabajo:  <span id="trabajo"></span></li>
-						<li class="prev-jobdetails-charge">Cargo:  <span id="cargo"></span></li>
-						<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa"></span></li>
-						<li class="prev-jobdetails-date">
-							<ul class="prev-jobdate">
-								<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes"></span>/<span id="inicio-año"></span></li>
-								<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes"></span>/<span id="fin-año"></span></li>
+					<section class="prev-professionalexperience">
+						<h2 class="prev-titles">Formación profesional<hr></h2>
+							<ul class="prev-jobdetails">
+								<li class="prev-jobdetails-job">Puesto de trabajo:  <span id="trabajo"></span></li>
+								<li class="prev-jobdetails-charge">Cargo:  <span id="cargo"></span></li>
+								<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa"></span></li>
+								<li class="prev-jobdetails-date">
+									<ul class="prev-jobdate">
+										<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes"></span>/<span id="inicio-año"></span></li>
+										<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes"></span>/<span id="fin-año"></span></li>
+									</ul>
+								</li>
+								<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo"></span></li>
 							</ul>
-						</li>
-						<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo"></span></li>
-					</ul>
+					</section>
+			  </section>
+			<section class="prev-info-extra">
+				<section class="prev-skills">
+					<h2 class="prev-titles">Habilidades<hr></h2>
+				</section>
+
+				<section class="prev-interestdetails">
+					<h2 class="prev-titles">Otros datos de interés<hr></h2>
+				</section>
 			</section>
-	</section>
+		</div>
+	</main> -->
 
-	<section class="prev-info-extra">
-		<section class="prev-skills">
-			<h2 class="prev-titles">Habilidades<hr></h2>
-		</section>
-
-		<section class="prev-interestdetails">
-			<h2 class="prev-titles">Otros datos de interés<hr></h2>
-		</section>
-</div>
-	</main>
-
-	<footer class="footer">
-
+	 <footer class="footer">
 		<p class="copy">Copyright &copy;NaN!</p>
 		<div class="up-button"><a href="#personsaldetails-content">up-button</a>
 		</div>
 	</footer>
 
 	<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/datospers.js"></script>
+	<script type="text/javascript" src="js/datospers.js"></script>
 </body>
 </html>
