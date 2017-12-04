@@ -1,14 +1,5 @@
 "use strict";
 
-//PLEGAR Y DESPLEGAR
-function ocultar(item) {
-	document.querySelector('#' + item).style.display = 'none';
-}
-
-function mostrar(item) {
-	document.querySelector('#' + item).style.display = 'block';
-}
-
 
 //RELLENO DE CAMPOS CON PROMPT
 function seleccionar(item, pregunta) {
@@ -24,6 +15,20 @@ function mostrarcapa() {
 
 function ocultarcapa() {
 	document.getElementById('menudespleg').style.visibility = 'hidden';
+}
+
+
+// DESPLEGABLES DE FORMULARIO
+function mostrarOcultar(item){
+	var element = document.getElementById(item);
+	var boxfield = document.querySelectorAll('.boxfield');
+	// Eliminamos la clase active a todos los elementos
+	for (var i = 0; i < boxfield.length; i++) {
+			boxfield[i].classList.remove('active');
+	}
+	// añado active al elemento seleccionado
+	element.classList.add('active');
+
 }
 
 /*Funcion para añadir numeros a los select*/
@@ -61,4 +66,4 @@ studyOptions = studyOptions + '<option value="FPSuperior">FP Superior</option>';
 studyOptions = studyOptions + '<option value="Uni">Estudios universitarios</option>';
 studyOptions = studyOptions + '<option value="Postgrado">Postgrado</option>';
 studyOptions = studyOptions + '<option value="Estudios sin convalidar">Estudios sin convalidar</option>';
-document.querySelector('.type-studies').innerHTML = studyOptions;
+// document.querySelector('.type-studies').innerHTML = studyOptions;

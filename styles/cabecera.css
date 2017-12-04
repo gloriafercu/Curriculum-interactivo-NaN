@@ -15,29 +15,35 @@
 	height: 100px;
 	}
 
-.logo-cabecera {
-	display: flex;
-	justify-content: flex-start;
-	width: 35px;
-	height: 35px;
+	.compartir,
+	.preview,
+	.print {
+		width: 50px;
+		padding: 10px;
+	}
+
+.logo-cabecera img {
+	width: 30%;
+	height: 30%;
 	padding-top: 2px;
+	max-height: 100px;
 }
 
 
 .menu {
 	display: flex;
   justify-content: space-around;
-	padding: 20px;
+	align-items: center;
+	padding-right: 20px;
 	list-style-type: none;
-	background-color: #911F27;
+
+
 }
 
+}
 .persoalizatucv {
 
 }
-
-
-
 @media all and (max-width:420px) {
-	.rayas {
-		display: inline-block;
+    .rayas {
+        display: inline-block;
