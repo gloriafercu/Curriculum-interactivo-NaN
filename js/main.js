@@ -62,3 +62,5 @@ studyOptions = studyOptions + '<option value="Uni">Estudios universitarios</opti
 studyOptions = studyOptions + '<option value="Postgrado">Postgrado</option>';
 studyOptions = studyOptions + '<option value="Estudios sin convalidar">Estudios sin convalidar</option>';
 document.querySelector('.type-studies').innerHTML = studyOptions;
+
+//Rellenar Barras Habilidades
