@@ -3,19 +3,18 @@
 	font-family: 'Raleway', sans-serif;
 
 }
-/*HEADER*/
-.header {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
+
+
 .compartir,
 .preview,
 .print {
 	width: 20px;
 }
-.text-principal {
+.personalizatucv {
+	width: 100%;
+	margin-top: 100px;
 	display: flex;
+	border-radius: 2px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
