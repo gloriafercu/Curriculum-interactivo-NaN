@@ -13,6 +13,13 @@
 	font-weight:bold;
 }
 
+.menu {
+	display: none;
+}
+.logo-cabecera{
+	min-width: 100px;
+}
+
 /*TEXTO*/
 .title {
 	font-family: 'Indie Flower';
@@ -20,6 +27,7 @@
 	font-size: 1.5em;
 	text-decoration: underline;
 	text-transform: uppercase;
+	text-align: center;
 	padding: 20px 0px;
 }
 .subtitle {
@@ -28,6 +36,7 @@
 	font-size: 1.3em;
 	text-decoration: underline;
 	text-transform: uppercase;
+	text-align: center;
 	padding: 20px 0px;
 }
 .paragraph {
