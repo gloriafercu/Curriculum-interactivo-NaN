@@ -9,7 +9,11 @@
 	justify-content: flex-start;
 	align-items: center;
 }
-
+.compartir,
+.preview,
+.print {
+	width: 20px;
+}
 .text-principal {
 	display: flex;
 	justify-content: center;
@@ -59,7 +63,11 @@
 .prev-photo img{
 	border-radius: 50%;
 }
-.prev-description, .prev-education, .prev-professionalexperience, .prev-skills, .prev-interestdetails {
+.prev-description,
+.prev-education,
+.prev-professionalexperience,
+.prev-skills,
+.prev-interestdetails {
 	padding: 10px;
 }
 .prev-titles {

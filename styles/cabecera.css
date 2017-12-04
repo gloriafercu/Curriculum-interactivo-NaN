@@ -1,77 +1,35 @@
 /*CABECERA*/
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10000;
-	width: 100%;
-	background-color: #911F27;
-	font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-	color: #ffffff;
-	}
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    background-color: #911F27;
+    font-family: 'Raleway', sans-serif;
+  	font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    }
 .logo-cabecera {
-	width: auto;
-	height: 35px;
-	padding-top: 2px;
+    display: flex;
+    justify-content: flex-start;
+    width: 35px;
+    height: 35px;
+    padding-top: 2px;
 }
-
-
-.menu-rayas ul{
-list-style-type: none;
-background-color: #911F27;
-padding: 20px;
+.menu {
+    display: flex;
+  justify-content: space-around;
+    padding: 20px;
+    list-style-type: none;
+    background-color: #911F27;
 }
-.menu-rayas li {
-display: inline-block;
-margin-right: 0 8px 0 0;
-background-color: #911F27;
-padding: 10px;
+.persoalizatucv {
 }
-.menu-rayas li a {
-color:#FCF0F8;
-text-decoration: none;
-display: block;
-background-color: #911F27;
-}
-.menu-rayas li ul {
-position: absolute;
-padding: 1%;
-background-color: #911F27;
-display: none;
-}
-
-.menu-rayas li ul li{
-display: block;
-background-color: #911F27;
-padding: 10px;
-}
-
-}
-.menu-rayas {
-	position: relative;
-	left:0;
-}
-
-
-.about-us {
-	padding-left: 20px;
-}
-
 @media all and (max-width:420px) {
-	.menu-rayas {
-		display: inline-block;
-	}
-	.minirayas {
-		display: inline-block;
-		left:10px;
-		top:22px;
-	}
-	.primera-lista {
-		display: none;
-	}
-}
+    .rayas {
+        display: inline-block;
