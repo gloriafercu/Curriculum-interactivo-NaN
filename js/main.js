@@ -70,3 +70,17 @@ studyOptions = studyOptions + '<option value="Estudios sin convalidar">Estudios 
 document.querySelector('.type-studies').innerHTML = studyOptions;
 
 //Rellenar Barras Habilidades
+var pb = document.querySelector('.progress-bar__item');
+
+function rellena() {
+  var percentage = prompt('Qué porcentaje ponemos?');
+  percentage = parseInt(percentage);
+  if (percentage <= 100 ) {
+    pb.style.width = percentage + '%';
+  } else {
+    pb.style.width = '100%';
+  }
+
+}
+
+document.querySelector('#set-progress').addEventListener('click', rellena);
