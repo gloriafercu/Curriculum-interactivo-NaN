@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 * {
 	box-sizing: border-box;
 	font-family: 'Rubik', sans-serif;
@@ -18,19 +20,40 @@
 /*Pagina principal*/
 .background {
 	height: 100vh;
-	background-image: url(../images/photo-1434626881859-194d67b2b86f.png);
+	background-image: url(../images/background3.jpg);
 	background-repeat: no-repeat;
-	background-position: center 10px;
+	background-position: center center;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.buttonintro {
+.title {
+	font-family: 'Indie Flower';
+	color: white;
+	font-size: 7em;
+	}
+	.title a {
+		color: white;
+		text-decoration: none;
+	}
+	.title:hover {
+		font-weight: bold;
+	}
+
+.principal-logo {
+	border-bottom: 5px solid white;
+	margin-bottom: 50px;
+}
+/*.buttonintro {
 	width: 50px;
 	height: 100px;
 	padding-top: 40px;
 	padding-left: 75%;
 	color: #555555;
 	font-size: 30px;
-}
+}*/
 
 
 /*PREVIO CV*/
