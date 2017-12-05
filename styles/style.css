@@ -234,7 +234,33 @@ body {
 }
 
 /*HABILIDADES*/
+.input-form-skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 150px;
+	height: 100px;
+}
+.progress-bar {
+  width: 300px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 15px;
+	margin: 20px;
+  overflow: hidden;
+}
+.progress-bar__item {
+  border-radius: inherit;
+  height: inherit;
+  background: red;
+  width: 0%;
+  transition: width ease 1s;
+}
 
+#set-progress {
+  margin-top: 10px;
+  line-height: 20px;
+}
 
 
 /*EXPERIENCIA LABORAL*/

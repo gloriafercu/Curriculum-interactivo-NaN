@@ -21,7 +21,7 @@
 }
 
 /*TEXTO*/
-.title {
+.title-contact {
 	font-family: 'Indie Flower';
 	font-weight: bold;
 	font-size: 1.5em;
@@ -30,7 +30,7 @@
 	text-align: center;
 	padding: 20px 0px;
 }
-.subtitle {
+.subtitle-contact {
 	font-family: 'Indie Flower';
 	font-weight: bold;
 	font-size: 1.3em;
