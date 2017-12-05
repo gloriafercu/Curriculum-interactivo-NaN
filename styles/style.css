@@ -4,7 +4,9 @@
 
 }
 
-
+body {
+	background-color: #413739;
+}
 
 .personalizatucv {
 	width: 100%;
@@ -179,14 +181,14 @@
 /*DATOS PERSONALES*/
 
 .section {
-	background-color: #fcf0c8;
+	background-color: #3AF2A8;
 	padding: 46px 0 0;
 	position: relative;
 	border-radius: 15px;
 	box-shadow: 4px 4px 1px #888888;
 }
 .section legend {
-	background-color: #911f27;
+	background-color: #3AF2A8;
 	padding: 15px;
 	color: #fff;
 	position: absolute;
