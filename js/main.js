@@ -1,4 +1,4 @@
-"use strict";
+	"use strict";
 
 
 //RELLENO DE CAMPOS CON PROMPT
@@ -78,7 +78,7 @@ function rellena() {
   if (percentage <= 100 ) {
     pb.style.width = percentage + '%';
   } else {
-    pb.style.width = '100%';
+    pb.style.width = '0%';
   }
 
 }

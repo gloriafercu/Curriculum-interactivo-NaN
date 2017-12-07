@@ -209,7 +209,7 @@
 	box-shadow: 4px 4px 1px #888888;
 }
 .section legend {
-	background-color: #911f27;
+	background-color: #006D9D;
 	padding: 15px;
 	color: #fff;
 	position: absolute;
@@ -325,10 +325,10 @@
 	align-items: center;
 	height: 70px;
 
-	background-color: #240406
+	background-color: #272727;
 }
 .copy {
-	color: #FCF0C8;
+	color: white;
 	}
 
 .up-button a {
