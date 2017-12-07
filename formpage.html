@@ -38,7 +38,6 @@
 				</ul>
 				</section>
 		<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
-
 			<!-- Datos personales -->
 			<fieldset id="perdetfiel" class="section">
 				<legend>Datos personales
@@ -193,32 +192,15 @@
 							<label for="percentage">Porcentanje</label>
 							<input id="percentage" type="text" name="porcentaje">
 						</div>
-						<div class="progress-bar">
-						  <div class="progress-bar__item"></div>
-						</div>
 							<button id="set-progress">Rellenar porcentaje</button>
 						</div>
-
-
-
-							<!-- <div class="input-form-beginner">
-							<label for="nivel1">Principiante</label>
-							<input id="nivel1" type="radio" name="nivel" class="nivel">
-						</div>
-						<div class="input-form-medio">
-							<label for="nivel2">Medio</label>
-							<input id="nivel2" type="radio" name="nivel" class="nivel">
-						</div>
-						<div class="input-form-expert">
-							<label for="nivel3">Experto</label>
-							<input id="nivel3" type="radio" name="nivel" class="nivel">
 						</div>
 						<div class="input-form-buttoms">
-							<input type="button" name="edit" value="Editar">
+							<input id="plus" type="button" name="edit" value="Añadir">
 							<input type="button" name="edit" value="Borrar">
-					  	<input type="button" name="edit" value="Guardar">
+					  	<input id="save-skills" type="button" name="edit" value="Guardar">
 						</div>
-					</div> -->
+					</div>
 
 			</fieldset>
 
@@ -302,6 +284,13 @@
 			<section class="prev-info-extra">
 				<section class="prev-skills">
 					<h2 class="prev-titles">Habilidades<hr></h2>
+					<ul class="box-skills">
+					<li class="skill1"><p class="skill-name"></p>
+						<div class="progress-bar hidden">
+							<div class="progress-bar__item"></div>
+						</div>
+					</li>
+				</ul>
 				</section>
 
 				<section class="prev-interestdetails">
@@ -319,5 +308,6 @@
 
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/datospers.js"></script>
+	<script type="text/javascript" src="js/habilidades.js"></script>
 </body>
 </html>

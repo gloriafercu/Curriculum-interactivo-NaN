@@ -261,19 +261,24 @@ body {
 	height: 100px;
 }
 .progress-bar {
-  width: 300px;
-  height: 30px;
+  width: 100px;
+  height: 10px;
   background: #ccc;
   border-radius: 15px;
 	margin: 20px;
   overflow: hidden;
 }
+
+.hidden {
+	display: none;
+}
 .progress-bar__item {
   border-radius: inherit;
   height: inherit;
-  background: red;
+  background: blue;
   width: 0%;
   transition: width ease 1s;
+
 }
 
 #set-progress {
