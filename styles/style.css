@@ -28,14 +28,23 @@ body {
 	justify-content: center;
 	}
 .personalizar {
-	max-width: 320px;
-	margin: 30px auto;
+
+	margin: 30px;
 	display: flex;
 	flex-direction: row;
 	border: 3px solid #006D9D;
 	border-radius: 15px;
 	justify-content: center;
 	align-items: center;
+
+}
+.personalizar li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	text-align: center;
+	font-weight: bold;
 }
 .personalizatucv {
 	width: 100%;
