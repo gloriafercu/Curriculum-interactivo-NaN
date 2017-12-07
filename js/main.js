@@ -7,6 +7,17 @@ function seleccionar(item, pregunta) {
 	rellenar.innerHTML= prompt(pregunta);
 }
 
+var boton = document.querySelector('.datospergloria');
+var boxfield = document.querySelector('.boxfield');
+function desplegar(){
+
+	boxfield.classList.add('active');
+
+}
+
+
+boton.addEventListener('click', desplegar);
+
 
 // DESPLEGABLES DE FORMULARIO
 /*function mostrarOcultar(item){
