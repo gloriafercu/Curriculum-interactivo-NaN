@@ -60,7 +60,7 @@ function list(firstyear, totalyears) {
 	for (var x = 0; x < totalyears; x++){
 	options = options + '<option value="">'+(firstyear + x)+'</option>';
 	}
-	return options
+	return options;
 }
 //Añadir años a los select
 	for (var i = 0; i < select.length; i++){
