@@ -24,8 +24,8 @@
 			</ul>
 		</nav>
 	</header>
-
-	<h1>Crea tu propio CV</h1>
+<main class="principal-content">
+	<h1 class="principal-title">Crea tu propio CV</h1>
 	<section class="forms">
 		<section class="personalizatucv">
 			<ul class="personalizar">
@@ -36,7 +36,6 @@
 		</section>
 
 		<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
-
 			<!-- Datos personales -->
 			<fieldset id="perdetfiel" class="section">
 			<legend class="datospergloria">Datos personales
@@ -175,27 +174,22 @@
 			<!-- habilidades -->
 
 			<fieldset id="skillsfiel" class="section">
-				<legend>Habilidades
-					<span class="btnSection btnSkills"></span>
-        	<span class="btnRemove hidden"></span>
-				</legend>
-				<div id="skills-data" class="boxfield hidden">
-					<div class="input-form-skills">
-						<label for="skillstext">Habilidad</label>
-						<input id="skillstext" type="text" name="skillstext" class="skillstext">
-						<label for="percentage">Porcentanje</label>
-						<input id="percentage" type="text" name="porcentaje">
-					</div>
-					<div class="progress-bar">
-						 <div class="progress-bar__item"></div>
-					</div>
-					<div class="input-form-buttoms">
-						<input type="button" name="add" value="Añadir">
-						<input type="button" name="delete" value="Borrar">
-						<input type="button" name="save" value="Guardar">
-					</div>
-				</div>
+				<legend>Habilidades <span class="btnSection btnSkills"></span>
+				<span class="btnRemove hidden"></span> </legend>
+					<div id="skills-data" class="boxfield hidden">
 
+						<div class="input-form-skills">
+							<label for="skillstext">Habilidad</label>
+							<input id="skillstext" type="text" name="skillstext" class="skillstext">
+							<label for="percentage">Porcentanje</label>
+							<input id="percentage" type="text" name="porcentaje">
+						</div>
+						<div class="input-form-buttoms">
+							<input id="plus" type="button" name="add" value="Añadir">
+							<input type="button" name="delete" value="Borrar">
+					  	<input id="save-skills" type="button" name="save" value="Guardar">
+						</div>
+						</div>
 			</fieldset>
 
 			<!-- otros datos-->
@@ -222,7 +216,7 @@
 		</form>
 	</section>
 
-	<main class="cv">
+	<section class="cv">
 		<section class="prev-info-personaldates prev-contact">
 			<h1 class="prev-titles">Datos de contacto</h1>
 				<div class="prev-photo">
@@ -279,6 +273,13 @@
 			<section class="prev-info-extra">
 				<section class="prev-skills">
 					<h2 class="prev-titles">Habilidades<hr></h2>
+					<ul class="box-skills">
+					<li class="skill1"><p class="skill-name"></p>
+						<div class="progress-bar hidden">
+							<div class="progress-bar__item"></div>
+						</div>
+					</li>
+				</ul>
 				</section>
 
 				<section class="prev-interestdetails">
@@ -286,8 +287,8 @@
 				</section>
 			</section>
 		</div>
-	</main>
-
+	</section>
+</main>
 	 <footer class="footer">
 		<p class="copy">Copyright &copy;NaN!</p>
 		<div class="up-button"><a href="#personsaldetails-content">up-button</a>
@@ -295,6 +296,7 @@
 	</footer>
 
 	<script type="text/javascript" src="js/main.js"></script>
-
+	<script type="text/javascript" src="js/datospers.js"></script>
+	<script type="text/javascript" src="js/habilidades.js"></script>
 </body>
 </html>
