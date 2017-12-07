@@ -52,8 +52,6 @@ body {
 	height: 125px;
 	width: 125px;
 }
-
-
 /*Pagina principal*/
 .background {
 	height: 100vh;
@@ -83,16 +81,6 @@ body {
 	border-bottom: 5px solid white;
 	margin-bottom: 50px;
 }
-/*.buttonintro {
-	width: 50px;
-	height: 100px;
-	padding-top: 40px;
-	padding-left: 75%;
-	color: #555555;
-	font-size: 30px;
-}*/
-
-
 /*PREVIO CV*/
 .cv {
 	display: flex;
@@ -128,8 +116,8 @@ body {
 .prev-titles {
 	font-size: 15px;
 	font-weight: bold;
+	margin-top: 0px;
 }
-
 
 /*FORMULARIO*/
 
@@ -176,9 +164,6 @@ body {
 	margin-bottom: 10px;
 	/*font-weight: bold;*/
 }
-
-
-
 
 /*BOTONES FORMULARIO*/
 .btnSection {
