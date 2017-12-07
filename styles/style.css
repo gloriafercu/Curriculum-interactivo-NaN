@@ -3,14 +3,6 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Rubik', sans-serif;
-
-}
-
-h1 {
-	margin-top: 150px;
-	display: flex;
-	justify-content: center;
-	font-size: 40px;
 }
 
 body {
@@ -18,39 +10,43 @@ body {
 	display: flex;
 	flex-direction: column;
 	}
+
 .principal-content {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
 	min-height: 100vh;
 	}
 .principal-title {
 	width: 100%;
 	text-align: center;
 	font-family: 'Indie Flower';
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: bold;
+	margin-top: 170px;
+	display: flex;
+	justify-content: center;
 	}
 .personalizar {
-	max-width: 420px;
-	margin-top: 100px;
+	max-width: 320px;
+	margin: 30px auto;
 	display: flex;
 	flex-direction: row;
-	border: 1px solid #262626;
+	border: 3px solid #006D9D;
 	border-radius: 15px;
-	border-color: #fcac0c;
 	justify-content: center;
 	align-items: center;
-	height: 150px;
-
 }
 .personalizatucv {
-	padding: 15px;
+	width: 100%;
+	display: flex;
+	margin: auto;
+	justify-content: center;
 }
 .personalizar img {
 	padding: 10px;
-	height: 125px;
-	width: 125px;
+	height: 90px;
+	width: 90px;
 }
 
 
@@ -66,32 +62,26 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+/*CSS PÁGINA INICIO*/
+
 .title {
 	font-family: 'Indie Flower';
 	color: white;
 	font-size: 7em;
-	}
-	.title a {
-		color: white;
-		text-decoration: none;
-	}
-	.title:hover {
-		font-weight: bold;
-	}
-
+}
+.title a {
+	color: white;
+	text-decoration: none;
+}
+.title:hover {
+	font-weight: bold;
+}
 .principal-logo {
 	border-bottom: 5px solid white;
 	margin-bottom: 50px;
 }
-/*.buttonintro {
-	width: 50px;
-	height: 100px;
-	padding-top: 40px;
-	padding-left: 75%;
-	color: #555555;
-	font-size: 30px;
-}*/
-
+/*FIN PÁGINA INICIO*/
 
 /*PREVIO CV*/
 .cv {
@@ -103,6 +93,7 @@ body {
 	max-width: 600px;
 	margin: auto;
 	font-size: 15px;
+	padding-bottom: 30px;
 
 }
 .prev-info-personaldates {
@@ -136,13 +127,14 @@ body {
 
 .total-form {
 	font-family: 'Rubik', sans-serif;
-	font-size: 16px;
 	max-width: 480px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	padding: 15px;
-	margin-top: 78px;
+	margin: auto;
+	padding-bottom: 50px;
 }
 
 .input-form {
@@ -158,11 +150,9 @@ body {
 	border-style: inset;
 	font-size: 14px;
 }
-
 .input-form input[type="file"]{
 	border: 0;
 }
-
 .input-form textarea {
 	width: 100%;
 	border: 0;
@@ -175,11 +165,7 @@ body {
 .input-form label {
 	display: flex;
 	margin-bottom: 10px;
-	/*font-weight: bold;*/
 }
-
-
-
 
 /*BOTONES FORMULARIO*/
 .btnSection {
@@ -193,19 +179,10 @@ body {
 	background-size: cover;
 	background-color: transparent;
 	border: none;
-	cursor: pointer;
-
 }
 .hidden {
 	display: none;
 }
-.active {
-	display: block;
-}
-.btnSection:focus{
-	outline: 0;
-}
-
 .btnPersonalData {
 	background-image: url('../images/user.svg');
 }
@@ -232,25 +209,18 @@ body {
 	background-size: cover;
 	background-color: transparent;
 	border: none;
-	cursor: pointer;
 }
-.btnRemove:focus{
-	outline: 0;
-}
-
 .input-form-buttoms {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	padding: 15px;
-
 }
 .input-form-buttoms input[type="button"]{
 	width: 100px;
 	height: 35px;
 	background-color: #fcac0c;
 	color: #fff;
-	font-size: 16px;
 	border: none;
 	margin: 0 8px;
 	cursor: pointer;
@@ -279,8 +249,7 @@ body {
 	left: 0;
 	width: 100%;
 	border-radius: 15px;
-
-	/*font-weight: bold;*/
+	cursor: pointer;
 }
 
 /*NETWORKS*/
@@ -300,7 +269,7 @@ body {
 .twitterNetwork,
 .linkedinNetwork {
 	display: flex;
-	width: 90%;
+	width: 85%;
 	align-self:flex-end;
 	margin-bottom: 20px;
 
@@ -388,31 +357,6 @@ body {
 	width: 45%;
 }
 
-
- /*BOTON FOTO
-.photo input[type="file"]{
-	border: O;
-	opacity: 0;
-	op
-	position: relative;
-	background-image: url(../images/drag2.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto;
-}
-.photo {
-	position: relative;
-	background-image: url(../images/drag2.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
-
-
-
-
-
-
 /*FOOTER*/
 .footer {
 	display: flex;
@@ -447,7 +391,13 @@ body {
 		align-items: flex-start;
 		flex-wrap: wrap;
 		height: 100%;
+	}
 
+	.principal-title {
+		font-size: 4em;
+	}
+	.personalizar {
+		max-width: 470px;
 	}
 	.prev-info-personaldates {
 		display: flex;
@@ -455,6 +405,10 @@ body {
 		align-items: flex-start;
 		width: 30%;
 		flex-shrink:1;
+	}
+	.personalizar img {
+		height: 125px;
+		width: 125px;
 	}
 	.prev-description {
 		width: 70%;
@@ -480,6 +434,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
+.principal-content {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 .header {
 	width: 100%;
 }
@@ -491,7 +449,7 @@ body {
 }
 .cv{
 	width: 55%;
-	margin-top: 110px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 
 }

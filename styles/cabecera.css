@@ -10,45 +10,44 @@
   font-size: 18px;
 	color: #ffffff;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 100px;
-	}
-
-	.compartir,
-	.preview,
-	.print {
+	height: 150px;
+}
+.compartir,
+.preview,
+.print {
 		width: 50px;
 		padding: 10px;
-	}
-
-	.aboutus {
-		height: 40px;
-
-	}
-
-.logo-cabecera img {
-	width: 30%;
-	height: 30%;
-	padding-top: 2px;
-	max-height: 100px;
 }
-
-
+.aboutus {
+		height: 40px;
+}
+.logo-cabecera img {
+	width: 170px;
+}
 .menu {
 	display: flex;
   justify-content: space-around;
 	align-items: center;
 	padding-right: 20px;
 	list-style-type: none;
-
-
 }
 
+@media all and (min-width: 700px) {
+	.logo-cabecera img {
+		width: 100%;
+		max-width: 235px;
+	}
 }
-.persoalizatucv {
 
+@media all and (min-width: 500px) {
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 100px;
+	}
 }
-@media all and (max-width:420px) {
-    .rayas {
-        display: inline-block;

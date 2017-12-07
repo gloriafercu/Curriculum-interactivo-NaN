@@ -1,16 +1,8 @@
 	"use strict";
 
-
-//RELLENO DE CAMPOS CON PROMPT
-function seleccionar(item, pregunta) {
-	var rellenar = document.querySelector('#' + item);
-	rellenar.innerHTML= prompt(pregunta);
-}
-
-
 //MENU DESPLEGABLE
 
-var boton = document.querySelector('.datospergloria');
+var boton = document.querySelector('.openMenu');
 var sectionForm = document.querySelector('.boxfield');
 var closeButton = document.querySelector('.btnRemove');
 var openButton = document.querySelector('.btnSection');
@@ -22,6 +14,8 @@ function desplegarPlegar () {
 	openButton.classList.toggle('hidden');
 }
 boton.addEventListener('click', desplegarPlegar);
+
+//FIN MENÚ DESPLEGABLE
 
 
 var select = document.querySelectorAll('.years');
