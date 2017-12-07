@@ -65,10 +65,6 @@
 						<input id="tel" type="tel" name="phone">
 					</div>
 					<div class="input-form">
-						<label for="socialmedia">Redes Sociales</label>
-						<input id="socialmedia" type="text" name="socialmedia">
-					</div>
-					<div class="input-form">
 						<label for="address">Dirección</label>
 						<input id="address" type="text" name="address">
 					</div>
@@ -76,9 +72,22 @@
 						<label for="profession">Profesión*</label>
 						<input id="profession" type="text" name="profession" required>
 					</div>
+					<div class="input-form networks">
+						<p class="socialNetworks">Redes sociales</p>
+						<div class="twitterNetwork">
+							<span class="twitterLogo" src="images/twitter.svg" alt="twitter"></span>
+							<label for="twitter">Twitter</label>
+							<input id="twitter" type="text" name="twitter" placeholder="Twitter">
+						</div>
+						<div class="linkedinNetwork">
+							<span class="linkedinLogo" src="images/linkedin.svg" alt="linkedin"></span>
+							<label for="linkedin">LinkedIn</label>
+							<input class="linkedin" id="linkedin" type="url" name="linkedin" placeholder="LinkedIn">
+						</div>
+					</div>
 					<div class="input-form">
 						<label for="summary">Extracto</label>
-						<textarea id="summary" name="comments"    rows="6"    cols="40"></textarea>
+						<textarea id="summary" name="comments" rows="6"    cols="40"></textarea>
 						</div>
 						<div class="input-form-buttoms">
 							<input type="button" name="delete" value="Borrar">
