@@ -260,11 +260,11 @@ body {
 /*DATOS PERSONALES*/
 
 .section {
-	background-color: #3AF2A8;
+	background-color: #FFFFE3;
 	padding: 46px 0 0;
 	position: relative;
 	border-radius: 15px;
-	box-shadow: 4px 4px 1px #888888;
+	box-shadow: 4px 4px 1px #B4B6B2;
 }
 .section legend {
 	background-color: #006D9D;
@@ -277,6 +277,43 @@ body {
 	border-radius: 15px;
 
 	/*font-weight: bold;*/
+}
+
+/*NETWORKS*/
+.networks label {
+	display: none;
+	margin-bottom: 10px;
+}
+.socialNetworks {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.networks {
+	display: flex;
+	flex-direction: column;
+}
+.twitterNetwork,
+.linkedinNetwork {
+	display: flex;
+	width: 90%;
+	align-self:flex-end;
+	margin-bottom: 20px;
+
+}
+.twitterLogo {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 15px;
+	background-image: url('../images/twitter.svg');
+}
+.linkedinLogo {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 15px;
+	background-image: url('../images/linkedin.svg');
 }
 
 
@@ -385,13 +422,17 @@ body {
 	}
 
 .up-button a {
-	background-image: url(../images/up-button.png);
+	background-image: url(../images/up-button.svg);
 	overflow: hidden;
 	display: block;
 	background-size: 40px 40px;
 	padding-top: 40px;
 	height: 0;
 	width: 40px;
+}
+
+.up-button a:hover {
+    background-image: url(../images/up-button-solid.svg);
 }
 
 /*MEDIAQUERIES*/
