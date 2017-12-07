@@ -5,18 +5,39 @@
 	font-family: 'Rubik', sans-serif;
 
 }
+.personalizatucv h1 {
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+}
 
-
-
-.personalizatucv {
-	width: 100%;
+body {
+	background-color: white;
+}
+.personalizar {
+	max-width: 420px;
 	margin-top: 100px;
 	display: flex;
-	border-radius: 2px;
+	flex-direction: row;
+	border: 1px solid #262626;
+	border-radius: 15px;
+	border-color: #fcac0c;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	height: 150px;
+
 }
+.personalizatucv {
+	padding: 15px;
+}
+.personalizar img {
+	padding: 10px;
+	height: 125px;
+	width: 125px;
+}
+
+
 /*Pagina principal*/
 .background {
 	height: 100vh;
@@ -202,7 +223,7 @@
 /*DATOS PERSONALES*/
 
 .section {
-	background-color: #fcf0c8;
+	background-color: #3AF2A8;
 	padding: 46px 0 0;
 	position: relative;
 	border-radius: 15px;
@@ -324,7 +345,6 @@
 	justify-content: space-around;
 	align-items: center;
 	height: 70px;
-
 	background-color: #272727;
 }
 .copy {
