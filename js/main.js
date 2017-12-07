@@ -7,19 +7,9 @@ function seleccionar(item, pregunta) {
 	rellenar.innerHTML= prompt(pregunta);
 }
 
-//DESPLEGABLE CABECERA
-
-function mostrarcapa() {
-	document.getElementById('menudespleg').style.visibility = 'visible';
-}
-
-function ocultarcapa() {
-	document.getElementById('menudespleg').style.visibility = 'hidden';
-}
-
 
 // DESPLEGABLES DE FORMULARIO
-function mostrarOcultar(item){
+/*function mostrarOcultar(item){
 	var element = document.getElementById(item);
 	var boxfield = document.querySelectorAll('.boxfield');
 	// Eliminamos la clase active a todos los elementos
@@ -28,8 +18,8 @@ function mostrarOcultar(item){
 	}
 	// añado active al elemento seleccionado
 	element.classList.add('active');
-
-}
+	boxfield.addEventListener('click', mostrarOcultar);
+}*/
 
 /*Funcion para añadir numeros a los select*/
 
