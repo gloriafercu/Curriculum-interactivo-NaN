@@ -5,7 +5,8 @@
 	font-family: 'Rubik', sans-serif;
 
 }
-.personalizatucv h1 {
+
+h1 {
 	margin-top: 150px;
 	display: flex;
 	justify-content: center;
@@ -14,7 +15,22 @@
 
 body {
 	background-color: white;
-}
+	display: flex;
+	flex-direction: column;
+	}
+.principal-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	}
+.principal-title {
+	width: 100%;
+	text-align: center;
+	font-family: 'Indie Flower';
+	font-size: 4em;
+	font-weight: bold;
+	}
 .personalizar {
 	max-width: 420px;
 	margin-top: 100px;
@@ -165,10 +181,46 @@ body {
 
 
 /*BOTONES FORMULARIO*/
-
 .btnSection {
 	position:absolute;
-	top: 6px;
+	width: 75%;
+	top: 5px;
+	right: 15px;
+	width: 35px;
+	height: 35px;
+	background-position: center center;
+	background-size: cover;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+}
+.hidden {
+	display: none;
+}
+.btnSection:focus{
+	outline: 0;
+}
+
+.btnPersonalData {
+	background-image: url('../images/user.svg');
+}
+.btnJob {
+	background-image: url('../images/suitcase.svg');
+}
+.btnEducation {
+	background-image: url('../images/education.svg');
+}
+.btnSkills {
+	background-image: url('../images/skills.svg');
+}
+.btnOtherDetails {
+	background-image: url('../images/id-card.svg');
+}
+.btnRemove {
+	background-image: url('../images/remove.svg');
+	position:absolute;
+	top: 5px;
 	right: 15px;
 	width: 35px;
 	height: 35px;
@@ -178,23 +230,8 @@ body {
 	border: none;
 	cursor: pointer;
 }
-.btnSection:focus{
+.btnRemove:focus{
 	outline: 0;
-}
-.btnPersonalData {
-	background-image: url('../images/user.png');
-}
-.btnJob {
-	background-image: url('../images/suitcase.png');
-}
-.btnEducation {
-	background-image: url('../images/education.png');
-}
-.btnSkills {
-	background-image: url('../images/skills.png');
-}
-.btnOtherDetails {
-	background-image: url('../images/id-card.png');
 }
 
 .input-form-buttoms {
@@ -223,11 +260,11 @@ body {
 /*DATOS PERSONALES*/
 
 .section {
-	background-color: #3AF2A8;
+	background-color: #FFFFE3;
 	padding: 46px 0 0;
 	position: relative;
 	border-radius: 15px;
-	box-shadow: 4px 4px 1px #888888;
+	box-shadow: 4px 4px 1px #B4B6B2;
 }
 .section legend {
 	background-color: #006D9D;
@@ -242,15 +279,43 @@ body {
 	/*font-weight: bold;*/
 }
 
-.boxfield {
+/*NETWORKS*/
+.networks label {
+	display: none;
+	margin-bottom: 10px;
+}
+.socialNetworks {
 	display: flex;
 	flex-direction: column;
-	display: none;
+	margin-bottom: 10px;
+}
+.networks {
+	display: flex;
+	flex-direction: column;
+}
+.twitterNetwork,
+.linkedinNetwork {
+	display: flex;
+	width: 90%;
+	align-self:flex-end;
+	margin-bottom: 20px;
+
+}
+.twitterLogo {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 15px;
+	background-image: url('../images/twitter.svg');
+}
+.linkedinLogo {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 15px;
+	background-image: url('../images/linkedin.svg');
 }
 
-.boxfield.active {
-	display: block;
-}
 
 /*HABILIDADES*/
 .input-form-skills {
@@ -261,19 +326,24 @@ body {
 	height: 100px;
 }
 .progress-bar {
-  width: 300px;
-  height: 30px;
+  width: 100px;
+  height: 10px;
   background: #ccc;
   border-radius: 15px;
 	margin: 20px;
   overflow: hidden;
 }
+
+.hidden {
+	display: none;
+}
 .progress-bar__item {
   border-radius: inherit;
   height: inherit;
-  background: red;
+  background: blue;
   width: 0%;
   transition: width ease 1s;
+
 }
 
 #set-progress {
@@ -352,7 +422,7 @@ body {
 	}
 
 .up-button a {
-	background-image: url(../images/up-button.png);
+	background-image: url(../images/up-button.svg);
 	overflow: hidden;
 	display: block;
 	background-size: 40px 40px;
@@ -361,8 +431,8 @@ body {
 	width: 40px;
 }
 
-.boxfieldsetjob {
-	display: none;
+.up-button a:hover {
+    background-image: url(../images/up-button-solid.svg);
 }
 
 /*MEDIAQUERIES*/

@@ -7,19 +7,39 @@ function seleccionar(item, pregunta) {
 	rellenar.innerHTML= prompt(pregunta);
 }
 
-//DESPLEGABLE CABECERA
+/*document.querySelector('.btnRemove').style.visibility='hidden';
+var boton = document.querySelector('.datospergloria');
+var boxfield = document.querySelector('.boxfield');
+function desplegar(){
 
-function mostrarcapa() {
-	document.getElementById('menudespleg').style.visibility = 'visible';
+	boxfield.classList.add('active');
+	document.querySelector('.btnRemove').style.visibility='visible';
+	document.querySelector('.btnSection').style.visibility='hidden';
+	boton.addEventListener('click', plegar);
+	function plegar() {
+		boxfield.classList.remove('active');
+		document.querySelector('.btnRemove').style.visibility='hidden';
+		document.querySelector('.btnSection').style.visibility='visible';
+	};
+}*/
+/*var boton = document.querySelector('.datospergloria');
+var boxfield = document.querySelector('.boxfield');
+function plegarDesplegar () {
+	if (document.querySelector('.btnRemove').style.visibility='hidden'){
+	boton.classList.remove('hidden');
+	boxfield.classList.remove('active');
+	}
+	else {
+		boton.classList.remove('active');
+		boxfield.classList.remove('hidden');
+	}
 }
 
-function ocultarcapa() {
-	document.getElementById('menudespleg').style.visibility = 'hidden';
-}
+boton.addEventListener('click', plegarDesplegar);
 
 
 // DESPLEGABLES DE FORMULARIO
-function mostrarOcultar(item){
+/*function mostrarOcultar(item){
 	var element = document.getElementById(item);
 	var boxfield = document.querySelectorAll('.boxfield');
 	// Eliminamos la clase active a todos los elementos
@@ -28,8 +48,8 @@ function mostrarOcultar(item){
 	}
 	// añado active al elemento seleccionado
 	element.classList.add('active');
-
-}
+	boxfield.addEventListener('click', mostrarOcultar);
+}*/
 
 /*Funcion para añadir numeros a los select*/
 
