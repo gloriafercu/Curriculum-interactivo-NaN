@@ -7,16 +7,35 @@ function seleccionar(item, pregunta) {
 	rellenar.innerHTML= prompt(pregunta);
 }
 
+/*document.querySelector('.btnRemove').style.visibility='hidden';
 var boton = document.querySelector('.datospergloria');
 var boxfield = document.querySelector('.boxfield');
 function desplegar(){
 
 	boxfield.classList.add('active');
-
+	document.querySelector('.btnRemove').style.visibility='visible';
+	document.querySelector('.btnSection').style.visibility='hidden';
+	boton.addEventListener('click', plegar);
+	function plegar() {
+		boxfield.classList.remove('active');
+		document.querySelector('.btnRemove').style.visibility='hidden';
+		document.querySelector('.btnSection').style.visibility='visible';
+	};
+}*/
+/*var boton = document.querySelector('.datospergloria');
+var boxfield = document.querySelector('.boxfield');
+function plegarDesplegar () {
+	if (document.querySelector('.btnRemove').style.visibility='hidden'){
+	boton.classList.remove('hidden');
+	boxfield.classList.remove('active');
+	}
+	else {
+		boton.classList.remove('active');
+		boxfield.classList.remove('hidden');
+	}
 }
 
-
-boton.addEventListener('click', desplegar);
+boton.addEventListener('click', plegarDesplegar);
 
 
 // DESPLEGABLES DE FORMULARIO

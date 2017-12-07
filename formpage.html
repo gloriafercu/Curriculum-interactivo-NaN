@@ -15,232 +15,200 @@
 		<div class="logo-cabecera">
 			<img src="images/logo.png" alt="logo-equipo">
 		</div>
-			<nav>
-				<ul class="menu">
-						<li><img class="compartir" src="images/compartir2.png" alt="compartir"></li>
-						<li><img class="preview" src="images/preview1.svg" alt="vista previa"></li>
-						<li><img class="print" src="images/print.svg" alt="icono imprimir"></li>
-						<li><a href="about-us.html"><img class="aboutus" src="images/aboutus.svg" alt="about us"></a></li>
-				</ul>
+		<nav>
+			<ul class="menu">
+				<li><img class="compartir" src="images/compartir2.png" alt="compartir"></li>
+				<li><img class="preview" src="images/preview1.svg" alt="vista previa"></li>
+				<li><img class="print" src="images/print.svg" alt="icono imprimir"></li>
+				<li><a href="about-us.html"><img class="aboutus" src="images/aboutus.svg" alt="about us"></a></li>
+			</ul>
+		</nav>
+	</header>
 
-			</nav>
-
-		</header>
-
-
+	<h1>Crea tu propio CV</h1>
 	<section class="forms">
 		<section class="personalizatucv">
-	<h1>Crea tu propio CV</h1>
-				<ul class="personalizar">
-					<li class="perscolor"><img src="images/paleta.png"></li>
-					<li class="persfuente"><img src="images/fuente.png"</li>
-					<li class="persestilo"><img src="images/escribe.svg"></li>
-				</ul>
-				</section>
+			<ul class="personalizar">
+				<li class="perscolor"><img src="images/paleta.png"></li>
+				<li class="persfuente"><img src="images/fuente.png"</li>
+				<li class="persestilo"><img src="images/escribe.svg"></li>
+			</ul>
+		</section>
+
 		<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
 
 			<!-- Datos personales -->
 			<fieldset id="perdetfiel" class="section">
-				<legend class="datospergloria">Datos personales
-					<input type="button" name="btnPersonalData" class="btnSection btnPersonalData">
-				</legend>
-					<div id="personal-data" class="boxfield">
-						<div class="input-form photo">
-							<label for="photo">Introduce tu foto</label>
-							<input id="photo" type="file" name="photo" accept="image/*" onclick="seleccionar('foto', Sube tu foto)">
-						</div>
-						<div class="input-form">
-							<label for="name">Nombre*</label>
-							<input id="name" type="text" name="name" required onclick="seleccionar('nombre', 'Introduce tu nombre')">
-						</div>
-						<div class="input-form">
-							<label for="surnames" required>Apellidos*</label>
-							<input id="surnames" type="text" name="surnames" required onclick="seleccionar('apellidos', 'Introduce tus apellidos')">
-						</div>
-						<div class="input-form">
-							<label for="email">Email*</label>
-							<input id="email" type="email" name="email" required onclick="seleccionar('mail', 'Introduce tu email')">
-						</div>
-						<div class="input-form">
-							<label for="phone">Teléfono</label>
-							<input id="tel" type="tel" name="phone" onclick="seleccionar('telefono', 'Introduce tu número de teléfono')">
-						</div>
-						<div class="input-form">
-							<label for="socialmedia">Redes Sociales</label>
-							<input id="socialmedia" type="text" name="socialmedia" onclick="seleccionar('rrss', 'Introduce los enlaces a tus redes sociales')">
-						</div>
-						<div class="input-form">
-							<label for="address">Dirección</label>
-							<input id="address" type="text" name="address" onclick="seleccionar('direccion', 'Introduce tu dirección')">
-						</div>
-						<div class="input-form">
-							<label for="profession">Profesión*</label>
-							<input id="profession" type="text" name="profession" required onclick="seleccionar('profesion', 'Introduce tu profesion')">
-						</div>
-						<div class="input-form">
-							<label for="summary">Extracto</label>
-							<textarea id="summary" name="comments"    rows="6"    cols="40" onclick="seleccionar('resumen', 'Escribe tu presentación')"></textarea>
+			<legend class="datospergloria">Datos personales
+				<span class="btnSection btnPersonalData"></span>
+        <span class="btnRemove hidden"></span>
+			</legend>
+				<div id="personal-data" class="boxfield hidden">
+					<div class="input-form photo">
+						<label for="photo">Introduce tu foto</label>
+						<input id="photo" type="file" name="photo" accept="image/*">
+					</div>
+					<div class="input-form">
+						<label for="name">Nombre*</label>
+						<input id="name" type="text" name="name" required>
+					</div>
+					<div class="input-form">
+						<label for="surnames" required>Apellidos*</label>
+						<input id="surnames" type="text" name="surnames" required>
+					</div>
+					<div class="input-form">
+						<label for="email">Email*</label>
+						<input id="email" type="email" name="email" required>
+					</div>
+					<div class="input-form">
+						<label for="phone">Teléfono</label>
+						<input id="tel" type="tel" name="phone">
+					</div>
+					<div class="input-form">
+						<label for="socialmedia">Redes Sociales</label>
+						<input id="socialmedia" type="text" name="socialmedia">
+					</div>
+					<div class="input-form">
+						<label for="address">Dirección</label>
+						<input id="address" type="text" name="address">
+					</div>
+					<div class="input-form">
+						<label for="profession">Profesión*</label>
+						<input id="profession" type="text" name="profession" required>
+					</div>
+					<div class="input-form">
+						<label for="summary">Extracto</label>
+						<textarea id="summary" name="comments"    rows="6"    cols="40"></textarea>
 						</div>
 						<div class="input-form-buttoms">
-							<input type="button" name="edit" value="Editar">
-							<input type="button" name="edit" value="Borrar">
-					  	<input type="button" name="edit" value="Guardar">
+							<input type="button" name="delete" value="Borrar">
+					  	<input type="button" name="save" value="Guardar">
 						</div>
 					</div>
-
 			</fieldset>
 
 			<!-- experiencia laboral -->
 			<fieldset id="jobfiel" class="section">
-				<legend>Experiencia Laboral <input type="button" name="btnJob" class="btnSection btnJob" onclick="mostrarOcultar('job-data')"></legend>
-					<div id="job-data" class="boxfield">
-						<div class="input-form">
-							<label for="job">Puesto de trabajo</label>
-							<input id="job" type="text" name="job" onclick= "seleccionar('trabajo', 'Indica tu puesto de trabajo')">
-						</div>
-						<div class="input-form">
-							<label for="job-charge">Cargo:</label>
-							<input id="job-charge" type="text" name="job-charge" onclick="seleccionar('cargo', 'Dime tu cargo')">
-						</div>
-						<div class="input-form">
-							<label for="job-bussines">Empresa:</label>
-							<input id="job-bussines" type="text" name="job-bussines" onclick="seleccionar('empresa', 'Dime tu empresa')">
-						</div>
-						<div class="input-form date">
-							<div class="input-form initialmonth">
-								<label for="job-month-start">Mes de inicio</label>
-								<select id="job-month-start" name="job-month-start" class="month" onclick="seleccionar('inicio-mes', 'Mes de inicio')"></select>
-							</div>
-							<div class="input-form initialyear">
-								<label for="job-year-start">Año de inicio</label>
-								<select id="job-year-start" name="job-year-start" class="years" onclick="seleccionar('inicio-año', 'Año de inicio')"></select>
-							</div>
-						</div>
-						<div class="input-form date">
-							<div class="input-form finalmonth">
-								<label for="job-month-end">Mes de final</label>
-								<select id="job-month-end" name="job-month-end" class="month" onclick="seleccionar('fin-mes', 'Mes de final')"></select>
-							</div>
-							<div class="input-form finalyear">
-								<label for="job-year-end">Año de final</label>
-								<select id="job-year-end" name="job-year-end" class="years" onclick="seleccionar('fin-año', 'Año de final')"></select>
-							</div>
-						</div>
+				<legend class="datospergloria">Experiencia Laboral
+					<span class="btnSection btnJob"></span>
+        	<span class="btnRemove hidden"></span> </legend>
 
-						<div class="input-form">
-							<label for="messjob-extract">Descripción del cargo</label>
-							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40" onclick="seleccionar('descripcion-trabajo', 'Describe tus funciones en el puesto')"></textarea>
-						</div>
-						<div class="input-form-buttoms">
-							<input type="button" name="edit" value="Editar">
-							<input type="button" name="edit" value="Borrar">
-					  	<input type="button" name="edit" value="Guardar">
-						</div>
-
+				<div id="job-data" class="boxfield hidden">
+					<div class="input-form">
+						<label for="job">Puesto de trabajo</label>
+						<input id="job" type="text" name="job">
 					</div>
-
+					<div class="input-form">
+						<label for="job-charge">Cargo:</label>
+						<input id="job-charge" type="text" name="job-charge">
+					</div>
+					<div class="input-form">
+						<label for="job-bussines">Empresa:</label>
+						<input id="job-bussines" type="text" name="job-bussines">
+					</div>
+					<div class="input-form date">
+						<div class="input-form initialmonth">
+							<label for="job-month-start">Mes de inicio</label>
+							<select id="job-month-start" name="job-month-start" class="month"></select>
+						</div>
+						<div class="input-form initialyear">
+							<label for="job-year-start">Año de inicio</label>
+							<select id="job-year-start" name="job-year-start" class="years"></select>
+						</div>
+					</div>
+					<div class="input-form date">
+						<div class="input-form finalmonth">
+							<label for="job-month-end">Mes de final</label>
+							<select id="job-month-end" name="job-month-end" class="month"></select>
+						</div>
+						<div class="input-form finalyear">
+							<label for="job-year-end">Año de final</label>
+							<select id="job-year-end" name="job-year-end" class="years"></select>
+						</div>
+					</div>
+					<div class="input-form">
+						<label for="messjob-extract">Descripción del cargo</label>
+						<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40"></textarea>
+					</div>
+					<div class="input-form-buttoms">
+						<input type="button" name="add" value="Añadir">
+						<input type="button" name="delete" value="Borrar">
+					  <input type="button" name="save" value="Guardar">
+					</div>
+				</div>
 			</fieldset>
-
 			<!-- experiencia educativa -->
 			<fieldset id="edufiel" class="section">
-				<legend>Educación <input type="button" name="btnEducation" class="btnSection btnEducation" onclick="mostrarOcultar('education-data')"> </legend>
-					<div id="education-data" class="boxfield">
-					 	<div class="input-form">
-							<label for="education-studies">Titulación</label>
-							<input type="text" id="education-studies" name="education-studies" onclick=" seleccionar('titulacion', 'Indica tus estudios')" required>
+				<legend class="">Educación
+					<span class="btnSection btnEducation"></span>
+        	<span class="btnRemove hidden"></span>
+				</legend>
+				<div id="education-data" class="boxfield hidden">
+					<div class="input-form">
+						<label for="education-studies">Titulación</label>
+						<div class="input-form finalyear">
+							<label for="education-year-end">Año de finalización</label>
+							<select id="education-year-end" name="education-year-end" class="years"></select>
 						</div>
-						<div class="input-form">
-							<label for="education-type-studies">Tipo de estudios</label>
-							<select id="education-type-studies" name="education-type-studies" class="type-studies" onclick=" seleccionar('tipo-estudios', 'Selecciona tu nivel de estudios')" required></select>
-						</div>
-						<div class="input-form">
-							<label for="education-institution">Centro de estudios</label>
-							<input class="" type="text" id="education-institution" name="education-institution" onclick=" seleccionar('centro', 'Indica tu centro de estudios')" required>
-						</div>
-						<div class="input-form date">
-							<div class="input-form initialyear">
-								<label for="education-year-start">Año de inicio</label>
-								<select id="education-year-start" name="education-year-start" class="years" onclick=" seleccionar('año-inicio', 'Año de inicio')"></select>
-							</div>
-							<div class="input-form finalyear">
-								<label for="education-year-end">Año de finalización</label>
-								<select id="education-year-end" name="education-year-end" class="years" onclick=" seleccionar('año-fin', 'Año de finalización')"></select>
-							</div>
-						</div>
-						<div class="input-form">
-							<label for="education-extract">Descripción</label>
-							<textarea class="" id="education-extract" name="education-extract" rows="6" cols="40" onclick=" seleccionar('descripcion-estudios', 'Escribe una breve descripción de tus estudios')"></textarea>
-						</div>
-						<div class="input-form-buttoms">
-							<input type="button" name="edit" value="Editar">
-							<input type="button" name="edit" value="Borrar">
-					  	<input type="button" name="edit" value="Guardar">
-						</div>
+					</div>
+					<div class="input-form">
+						<label for="education-extract">Descripción</label>
+						<textarea id="education-extract" name="education-extract" rows="6" cols="40"></textarea>
+					</div>
+					<div class="input-form-buttoms">
+						<input type="button" name="add" value="Añadir">
+						<input type="button" name="delete" value="Borrar">
+					  <input type="button" name="save" value="Guardar">
+					</div>
 				</div>
-
-
 			</fieldset>
 
 			<!-- habilidades -->
 
 			<fieldset id="skillsfiel" class="section">
-				<legend>Habilidades <input type="button" name="btnSkills" class="btnSection btnSkills" onclick="mostrarOcultar('skills-data')"> </legend>
-					<div id="skills-data" class="boxfield">
-
-						<div class="input-form-skills">
-							<label for="skillstext">Habilidad</label>
-							<input id="skillstext" type="text" name="skillstext" class="skillstext">
-							<label for="percentage">Porcentanje</label>
-							<input id="percentage" type="text" name="porcentaje">
-						</div>
-						<div class="progress-bar">
-						  <div class="progress-bar__item"></div>
-						</div>
-							<button id="set-progress">Rellenar porcentaje</button>
-						</div>
-
-
-
-							<!-- <div class="input-form-beginner">
-							<label for="nivel1">Principiante</label>
-							<input id="nivel1" type="radio" name="nivel" class="nivel">
-						</div>
-						<div class="input-form-medio">
-							<label for="nivel2">Medio</label>
-							<input id="nivel2" type="radio" name="nivel" class="nivel">
-						</div>
-						<div class="input-form-expert">
-							<label for="nivel3">Experto</label>
-							<input id="nivel3" type="radio" name="nivel" class="nivel">
-						</div>
-						<div class="input-form-buttoms">
-							<input type="button" name="edit" value="Editar">
-							<input type="button" name="edit" value="Borrar">
-					  	<input type="button" name="edit" value="Guardar">
-						</div>
-					</div> -->
+				<legend>Habilidades
+					<span class="btnSection btnSkills"></span>
+        	<span class="btnRemove hidden"></span>
+				</legend>
+				<div id="skills-data" class="boxfield hidden">
+					<div class="input-form-skills">
+						<label for="skillstext">Habilidad</label>
+						<input id="skillstext" type="text" name="skillstext" class="skillstext">
+						<label for="percentage">Porcentanje</label>
+						<input id="percentage" type="text" name="porcentaje">
+					</div>
+					<div class="progress-bar">
+						 <div class="progress-bar__item"></div>
+					</div>
+					<div class="input-form-buttoms">
+						<input type="button" name="add" value="Añadir">
+						<input type="button" name="delete" value="Borrar">
+						<input type="button" name="save" value="Guardar">
+					</div>
+				</div>
 
 			</fieldset>
 
 			<!-- otros datos-->
 			<fieldset  id="otherdetfiel" class="section">
-
-				<legend>Otros datos de interés <input type="button" name="btnOtherDetails" class="btnSection btnOtherDetails" onclick="mostrarOcultar('other-data')"></legend>
-					<div id="other-data" class="boxfield">
-						<div class="input-form">
-							<label for="details">Datos de interés</label>
-							<input id="details" type="text" name="details" class="details">
-						</div>
-						<div class="input-form-rellenar">
-							<input type="button" value="rellenar" onclick="rellenar">
-						</div>
-						<div class="input-form-buttoms">
-							<input type="button" name="edit" value="Editar">
-							<input type="button" name="edit" value="Borrar">
-					  	<input type="button" name="edit" value="Guardar">
-						</div>
+				<legend>Otros datos de interés
+					<span class="btnSection btnOtherDetails"></span>
+        	<span class="btnRemove hidden"></span>
+				</legend>
+				<div id="other-data" class="boxfield hidden">
+					<div class="input-form">
+						<label for="details">Datos de interés</label>
+						<input id="details" type="text" name="details" class="details">
 					</div>
-
+					<div class="input-form-rellenar">
+						<input type="button" value="rellenar">
+					</div>
+					<div class="input-form-buttoms">
+						<input type="button" name="add" value="Añadir">
+						<input type="button" name="delete" value="Borrar">
+					  <input type="button" name="save" value="Guardar">
+					</div>
+				</div>
 			</fieldset>
 		</form>
 	</section>
