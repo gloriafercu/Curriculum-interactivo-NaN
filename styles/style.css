@@ -258,11 +258,11 @@ body {
 /*DATOS PERSONALES*/
 
 .section {
-	background-color: #3AF2A8;
+	background-color: #FFFFE3;
 	padding: 46px 0 0;
 	position: relative;
 	border-radius: 15px;
-	box-shadow: 4px 4px 1px #888888;
+	box-shadow: 4px 4px 1px #B4B6B2;
 }
 .section legend {
 	background-color: #006D9D;
