@@ -8,6 +8,7 @@
 	width: 95%;
 	min-height: 100vh;
 	margin: 100px auto;
+	line-height: 1.5;
 }
 .important {
 	font-weight:bold;

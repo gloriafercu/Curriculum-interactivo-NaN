@@ -20,9 +20,19 @@
 .print {
 		width: 50px;
 		padding: 10px;
+		cursor: pointer;
+
 }
 .aboutus {
-		height: 40px;
+	width: 60px;
+	padding: 10px;
+}
+
+.link-aboutus {
+	position:relative;
+	display: block;
+	width: 60px;
+	cursor: pointer;
 }
 .logo-cabecera img {
 	width: 170px;

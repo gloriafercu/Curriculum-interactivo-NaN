@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles/reset.css">
@@ -9,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crea tu CV online</title>
 </head>
+
 <body class="body">
 
 	<header id="header" class="header">
@@ -21,224 +23,248 @@
 					<img class="compartir" src="images/compartir2.png" alt="compartir">
 				</li>
 
-				<li><img class="preview" src="images/preview1.svg" alt="vista previa"></li>
-				<li><img class="print" src="images/print.svg" alt="icono imprimir"></li>
-				<li><a href="about-us.html"><img class="aboutus" src="images/aboutus.svg" alt="about us"></a></li>
+				<li>
+					<img class="preview" src="images/preview1.svg" alt="vista previa">
+				</li>
+				<li>
+					<img class="print" src="images/print.svg" alt="icono imprimir">
+				</li>
+				<li>
+					<a class="link-aboutus"href="about-us.html">
+						<img class="aboutus" src="images/aboutus.svg" alt="about us">
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-<main id="principal-content" class="principal-content">
-	<h1 class="principal-title">Crea tu propio CV</h1>
-	<section class="personalizatucv">
-		<ul class="personalizar">
-			<li class="perscolor">
-				<div>
-					<img src="images/paleta.png">
-				</div>
-				<div><p>Paso1: Elige el color</p>
-				</div>
-			</li>
-			<li class="persfuente">
-				<div>
-					<img src="images/fuente.png">
-				</div>
-				<div>
-					<p>Paso 2: Elige la fuente</p>
-				</div>
-			</li>
-			<li class="persestilo">
-				<div>
-					<img src="images/escribe.svg" class="lapiz">
-				</div>
-				<div><p>Paso 3: Rellena tus datos</p>
-				</div>
-			</li>
-		</ul>
-	</section>
-	<section class="forms">
-		<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
-			<!--Selección de Colores  -->
-			<fieldset id="perdetfiel" class="section">
-			<legend class="datospergloria">Elige estilos
-				<span class="btnSection btnPersonalData"></span>
-        <span class="btnRemove hidden"></span>
-			</legend>
-			<section>
-				<h2>Selecciona tus colores</h2>
-				<ul class="colors">
-					<li data-theme-class="style-1" class="color_option">
-						<div class="lateral-1"></div>
-						<div class="principal-1"></div>
-					</li>
-					<li data-theme-class="style-2" class="color_option">
-						<div class="lateral-2"></div>
-						<div class="principal-2"></div>
-					</li>
-					<li data-theme-class="style-3" class="color_option">
-						<div class="lateral-3"></div>
-						<div class="principal-3"></div>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Selecciona tu fuente</h2>
-				<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				</ul>
-			</section>
-				<div id="select-styles" class="boxfield">
-						<div class="input-form-buttoms">
-							<input type="button" name="delete" value="Borrar">
-					  	<input type="button" name="save" value="Guardar">
+	<main id="principal-content" class="principal-content">
+		<h1 class="principal-title">Crea tu propio CV</h1>
+		<section class="personalizatucv">
+			<ul class="personalizar">
+				<li class="perscolor">
+					<div>
+						<img src="images/paleta.png">
+					</div>
+					<div>
+						<p>Paso1: Elige el color</p>
+					</div>
+				</li>
+				<li class="persfuente">
+					<div>
+						<img src="images/fuente.png">
+					</div>
+					<div>
+						<p>Paso 2: Elige la fuente</p>
+					</div>
+				</li>
+				<li class="persestilo">
+					<div>
+						<img src="images/escribe.svg" class="lapiz">
+					</div>
+					<div>
+						<p>Paso 3: Rellena tus datos</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="forms">
+			<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
+				<!--Selección de Colores  -->
+				<fieldset id="perdetfiel" class="section">
+					<legend class="openMenu">Elige estilos
+						<span class="btnSection btnStyles"></span>
+					</legend>
+					<div id="select-styles" class="boxfield hidden">
+						<div>
+							<h2>Selecciona tus colores</h2>
+							<ul class="colors">
+								<li data-theme-class="style-1" class="color_option">
+									<div class="lateral-1"></div>
+									<div class="principal-1"></div>
+								</li>
+								<li data-theme-class="style-2" class="color_option">
+									<div class="lateral-2"></div>
+									<div class="principal-2"></div>
+								</li>
+								<li data-theme-class="style-3" class="color_option">
+									<div class="lateral-3"></div>
+									<div class="principal-3"></div>
+								</li>
+							</ul>
 						</div>
-					</div>
-			</fieldset>
-			<!-- Datos personales -->
-			<fieldset id="perdetfiel" class="section">
-			<legend class="openMenu">Datos personales
-				<span class="btnSection btnPersonalData"></span>
-        <span class="btnRemove hidden"></span>
-			</legend>
-				<div id="personal-data" class="boxfield hidden">
-					<div class="input-form photo">
-						<label for="photo">Introduce tu foto</label>
-						<input id="photo" type="file" name="photo" accept="image/*">
-					</div>
-					<div class="input-form">
-						<label for="name">Nombre*</label>
-						<input id="name" type="text" name="name" required>
-					</div>
-					<div class="input-form">
-						<label for="surnames" required>Apellidos*</label>
-						<input id="surnames" type="text" name="surnames" required>
-					</div>
-					<div class="input-form">
-						<label for="email">Email*</label>
-						<input id="email" type="email" name="email" required>
-					</div>
-					<div class="input-form">
-						<label for="phone">Teléfono</label>
-						<input id="tel" type="tel" name="phone">
-					</div>
-					<div class="input-form">
-						<label for="address">Dirección</label>
-						<input id="address" type="text" name="address">
-					</div>
-					<div class="input-form">
-						<label for="profession">Profesión*</label>
-						<input id="profession" type="text" name="profession" required>
-					</div>
-					<div class="input-form networks">
-						<p class="socialNetworks">Redes sociales</p>
-						<div class="twitterNetwork">
-							<span class="twitterLogo" src="images/twitter.svg" alt="twitter"></span>
-							<label for="twitter">Twitter</label>
-							<input id="twitter" type="text" name="twitter" placeholder="Twitter">
-						</div>
-						<div class="linkedinNetwork">
-							<span class="linkedinLogo" src="images/linkedin.svg" alt="linkedin"></span>
-							<label for="linkedin">LinkedIn</label>
-							<input class="linkedin" id="linkedin" type="url" name="linkedin" placeholder="LinkedIn">
-						</div>
-					</div>
-					<div class="input-form">
-						<label for="summary">Extracto</label>
-						<textarea id="summary" name="comments" rows="6"    cols="40"></textarea>
+						<div>
+							<h2>Selecciona tu fuente</h2>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
 						</div>
 						<div class="input-form-buttoms">
 							<input type="button" name="delete" value="Borrar">
-					  	<input type="button" name="save" value="Guardar">
+							<input type="button" name="save" value="Guardar">
 						</div>
 					</div>
-			</fieldset>
+				</fieldset>
+				<!-- Datos personales -->
+				<fieldset id="perdetfiel" class="section">
+					<legend class="openMenu">Datos personales
+						<span class="btnSection btnPersonalData"></span>
+					</legend>
+					<div id="personal-data" class="boxfield hidden">
+						<div class="input-form photo">
+							<label for="photo">Introduce tu foto</label>
+							<input id="photo" type="file" name="photo" accept="image/*">
+						</div>
+						<div class="input-form">
+							<label for="name">Nombre*</label>
+							<input id="name" type="text" name="name" required>
+						</div>
+						<div class="input-form">
+							<label for="surnames" required>Apellidos*</label>
+							<input id="surnames" type="text" name="surnames" required>
+						</div>
+						<div class="input-form">
+							<label for="email">Email*</label>
+							<input id="email" type="email" name="email" required>
+						</div>
+						<div class="input-form">
+							<label for="phone">Teléfono</label>
+							<input id="tel" type="tel" name="phone">
+						</div>
+						<div class="input-form">
+							<label for="address">Dirección</label>
+							<input id="address" type="text" name="address">
+						</div>
+						<div class="input-form">
+							<label for="profession">Profesión*</label>
+							<input id="profession" type="text" name="profession" required>
+						</div>
+						<div class="input-form networks">
+							<p class="socialNetworks">Redes sociales</p>
+							<div class="twitterNetwork">
+								<span class="twitterLogo" src="images/twitter.svg" alt="twitter"></span>
+								<label for="twitter">Twitter</label>
+								<input id="twitter" type="text" name="twitter" placeholder="Twitter">
+							</div>
+							<div class="linkedinNetwork">
+								<span class="linkedinLogo" src="images/linkedin.svg" alt="linkedin"></span>
+								<label for="linkedin">LinkedIn</label>
+								<input class="linkedin" id="linkedin" type="url" name="linkedin" placeholder="LinkedIn">
+							</div>
+						</div>
+						<div class="input-form">
+							<label for="summary">Extracto</label>
+							<textarea id="summary" name="comments" rows="6" cols="40"></textarea>
+						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="delete" value="Borrar">
+							<input type="button" name="save" value="Guardar">
+						</div>
+					</div>
+				</fieldset>
 
-			<!-- experiencia laboral -->
-			<fieldset id="jobfiel" class="section">
-				<legend class="openMenu">Experiencia Laboral
-					<span class="btnSection btnJob"></span>
-        	<span class="btnRemove hidden"></span>
-				</legend>
+				<!-- experiencia laboral -->
+				<fieldset id="jobfiel" class="section">
+					<legend class="openMenu">Experiencia Laboral
+						<span class="btnSection btnJob"></span>
+					</legend>
 
-				<div id="job-data" class="boxfield hidden">
-					<div class="input-form">
-						<label for="job">Puesto de trabajo</label>
-						<input id="job" type="text" name="job">
-					</div>
-					<div class="input-form">
-						<label for="job-charge">Cargo:</label>
-						<input id="job-charge" type="text" name="job-charge">
-					</div>
-					<div class="input-form">
-						<label for="job-bussines">Empresa:</label>
-						<input id="job-bussines" type="text" name="job-bussines">
-					</div>
-					<div class="input-form date">
-						<div class="input-form initialmonth">
-							<label for="job-month-start">Mes de inicio</label>
-							<select id="job-month-start" name="job-month-start" class="month"></select>
+					<div id="job-data" class="boxfield hidden">
+						<div class="input-form">
+							<label for="job">Puesto de trabajo</label>
+							<input id="job" type="text" name="job">
 						</div>
-						<div class="input-form initialyear">
-							<label for="job-year-start">Año de inicio</label>
-							<select id="job-year-start" name="job-year-start" class="years"></select>
+						<div class="input-form">
+							<label for="job-charge">Cargo:</label>
+							<input id="job-charge" type="text" name="job-charge">
 						</div>
-					</div>
-					<div class="input-form date">
-						<div class="input-form finalmonth">
-							<label for="job-month-end">Mes de final</label>
-							<select id="job-month-end" name="job-month-end" class="month"></select>
+						<div class="input-form">
+							<label for="job-bussines">Empresa:</label>
+							<input id="job-bussines" type="text" name="job-bussines">
 						</div>
-						<div class="input-form finalyear">
-							<label for="job-year-end">Año de final</label>
-							<select id="job-year-end" name="job-year-end" class="years"></select>
+						<div class="input-form date">
+							<div class="input-form initialmonth">
+								<label for="job-month-start">Mes de inicio</label>
+								<select id="job-month-start" name="job-month-start" class="month"></select>
+							</div>
+							<div class="input-form initialyear">
+								<label for="job-year-start">Año de inicio</label>
+								<select id="job-year-start" name="job-year-start" class="years"></select>
+							</div>
 						</div>
-					</div>
-					<div class="input-form">
-						<label for="messjob-extract">Descripción del cargo</label>
-						<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40"></textarea>
-					</div>
-					<div class="input-form-buttoms">
-						<input type="button" name="add" value="Añadir">
-						<input type="button" name="delete" value="Borrar">
-					  <input type="button" name="save" value="Guardar">
-					</div>
-				</div>
-			</fieldset>
-			<!-- experiencia educativa -->
-			<fieldset id="edufiel" class="section">
-				<legend class="openMenu">Educación
-					<span class="btnSection btnEducation"></span>
-        	<span class="btnRemove hidden"></span>
-				</legend>
-				<div id="education-data" class="boxfield hidden">
-					<div class="input-form">
-						<label for="education-studies">Titulación</label>
-						<div class="input-form finalyear">
-							<label for="education-year-end">Año de finalización</label>
-							<select id="education-year-end" name="education-year-end" class="years"></select>
+						<div class="input-form date">
+							<div class="input-form finalmonth">
+								<label for="job-month-end">Mes de final</label>
+								<select id="job-month-end" name="job-month-end" class="month"></select>
+							</div>
+							<div class="input-form finalyear">
+								<label for="job-year-end">Año de final</label>
+								<select id="job-year-end" name="job-year-end" class="years"></select>
+							</div>
+						</div>
+						<div class="input-form">
+							<label for="messjob-extract">Descripción del cargo</label>
+							<textarea class="" id="job-extract" name="job-extract" rows="6" cols="40"></textarea>
+						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="add" value="Añadir">
+							<input type="button" name="delete" value="Borrar">
+							<input type="button" name="save" value="Guardar">
 						</div>
 					</div>
-					<div class="input-form">
-						<label for="education-extract">Descripción</label>
-						<textarea id="education-extract" name="education-extract" rows="6" cols="40"></textarea>
+				</fieldset>
+				<!-- experiencia educativa -->
+				<fieldset id="edufiel" class="section">
+					<legend class="openMenu">Educación
+						<span class="btnSection btnEducation"></span>
+					</legend>
+					<div id="education-data" class="boxfield hidden">
+						<div class="input-form">
+							<label for="education-studies">Titulación</label>
+							<input type="text" id="education-studies" name="education-studies" required>
+						</div>
+						<div class="input-form">
+							<label for="education-type-studies">Tipo de estudios</label>
+							<select id="education-type-studies" name="education-type-studies" class="type-studies" required>
+								
+							</select>
+						</div>
+						<div class="input-form">
+							<label for="education-institution">Centro de estudios</label>
+							<input class="" type="text" id="education-institution" name="education-institution" required>
+						</div>
+						<div class="input-form date">
+							<div class="input-form initialyear">
+								<label for="education-year-start">Año de inicio</label>
+								<select id="education-year-start" name="education-year-start" class="years")">
+								</select>
+							</div>
+							<div class="input-form finalyear">
+								<label for="education-year-end">Año de finalización</label>
+								<select id="education-year-end" name="education-year-end" class="years"></select>
+							</div>
+						</div>
+						<div class="input-form">
+							<label for="education-extract">Descripción</label>
+							<textarea id="education-extract" name="education-extract" rows="6" cols="40"></textarea>
+						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="add" value="Añadir">
+							<input type="button" name="delete" value="Borrar">
+							<input type="button" name="save" value="Guardar">
+						</div>
 					</div>
-					<div class="input-form-buttoms">
-						<input type="button" name="add" value="Añadir">
-						<input type="button" name="delete" value="Borrar">
-					  <input type="button" name="save" value="Guardar">
-					</div>
-				</div>
-			</fieldset>
+				</fieldset>
 
-			<!-- habilidades -->
+				<!-- habilidades -->
 
-			<fieldset id="skillsfiel" class="section">
-				<legend class="openMenu">Habilidades <span class="btnSection btnSkills"></span>
-				<span class="btnRemove hidden"></span> </legend>
+				<fieldset id="skillsfiel" class="section">
+					<legend class="openMenu">Habilidades <span class="btnSection btnSkills"></span>
+						</legend>
 					<div id="skills-data" class="boxfield hidden">
 
-						<div class="input-form-skills">
+						<div class="input-form skills">
 							<label for="skillstext">Habilidad</label>
 							<input id="skillstext" type="text" name="skillstext" class="skillstext">
 							<label for="percentage">Porcentanje</label>
@@ -247,38 +273,37 @@
 						<div class="input-form-buttoms">
 							<input id="plus" type="button" name="add" value="Añadir">
 							<input type="button" name="delete" value="Borrar">
-					  	<input id="save-skills" type="button" name="save" value="Guardar">
+							<input id="save-skills" type="button" name="save" value="Guardar">
 						</div>
+					</div>
+				</fieldset>
+
+				<!-- otros datos-->
+				<fieldset id="otherdetfiel" class="section">
+					<legend class="openMenu">Otros datos de interés
+						<span class="btnSection btnOtherDetails"></span>
+					</legend>
+					<div id="other-data" class="boxfield hidden">
+						<div class="input-form">
+							<label for="details">Datos de interés</label>
+							<input id="details" type="text" name="details" class="details">
 						</div>
-			</fieldset>
+						<div class="input-form-rellenar">
+							<input type="button" value="rellenar">
+						</div>
+						<div class="input-form-buttoms">
+							<input type="button" name="add" value="Añadir">
+							<input type="button" name="delete" value="Borrar">
+							<input type="button" name="save" value="Guardar">
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</section>
 
-			<!-- otros datos-->
-			<fieldset  id="otherdetfiel" class="section">
-				<legend class="openMenu">Otros datos de interés
-					<span class="btnSection btnOtherDetails"></span>
-        	<span class="btnRemove hidden"></span>
-				</legend>
-				<div id="other-data" class="boxfield hidden">
-					<div class="input-form">
-						<label for="details">Datos de interés</label>
-						<input id="details" type="text" name="details" class="details">
-					</div>
-					<div class="input-form-rellenar">
-						<input type="button" value="rellenar">
-					</div>
-					<div class="input-form-buttoms">
-						<input type="button" name="add" value="Añadir">
-						<input type="button" name="delete" value="Borrar">
-					  <input type="button" name="save" value="Guardar">
-					</div>
-				</div>
-			</fieldset>
-		</form>
-	</section>
-
-	<section class="cv">
-		<section class="prev-info-personaldates prev-contact color-lateral">
-			<h1 class="prev-titles">Datos de contacto</h1>
+		<section class="cv">
+			<section class="prev-info-personaldates prev-contact color-lateral">
+				<h1 class="prev-titles">Datos de contacto</h1>
 				<div class="prev-photo">
 					<img src="http://via.placeholder.com/120x120" alt="Foto Personal" id="foto">
 				</div>
@@ -291,73 +316,76 @@
 					<li id="telefono" class="prev-contactdetails-phone">666998811</li>
 					<li id="rrss" class="prev-contactdetails-socialmedia">RRSS</li>
 				</ul>
-		</section>
-		<section class="prev-description">
-			<h2 class="prev-titles">Extracto<hr></h2>
-				<p id="resumen">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-		</section>
-		<div class="prev-content">
-			<section class="prev-info-experience">
+			</section>
+			<section class="prev-description">
+				<h2 class="prev-titles">Extracto<hr></h2>
+				<p id="resumen">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+					ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+					augue duis dolore te feugait nulla facilisi.</p>
+			</section>
+			<div class="prev-content">
+				<section class="prev-info-experience">
 					<section class="prev-education">
 						<h2 class="prev-titles">Formación académica<hr></h2>
-							<ul class="prev-educationdetails">
-								<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion"></span></li>
-								<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios"></span></li>
-								<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro"></span></li>
-								<li class="prev-educationdetails-date">
-									<ul class="prev-educationdate">
-										<li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio"></span></li>
-										<li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin"></span></li>
-									</ul>
-								</li>
-								<li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios"></span></li>
-							</ul>
+						<ul class="prev-educationdetails">
+							<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion"></span></li>
+							<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios"></span></li>
+							<li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro"></span></li>
+							<li class="prev-educationdetails-date">
+								<ul class="prev-educationdate">
+									<li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio"></span></li>
+									<li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin"></span></li>
+								</ul>
+							</li>
+							<li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios"></span></li>
+						</ul>
 					</section>
 
 					<section class="prev-professionalexperience">
 						<h2 class="prev-titles">Formación profesional<hr></h2>
-							<ul class="prev-jobdetails">
-								<li class="prev-jobdetails-job">Puesto de trabajo:  <span id="trabajo"></span></li>
-								<li class="prev-jobdetails-charge">Cargo:  <span id="cargo"></span></li>
-								<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa"></span></li>
-								<li class="prev-jobdetails-date">
-									<ul class="prev-jobdate">
-										<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes"></span>/<span id="inicio-año"></span></li>
-										<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes"></span>/<span id="fin-año"></span></li>
-									</ul>
-								</li>
-								<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo"></span></li>
-							</ul>
+						<ul class="prev-jobdetails">
+							<li class="prev-jobdetails-job">Puesto de trabajo: <span id="trabajo"></span></li>
+							<li class="prev-jobdetails-charge">Cargo: <span id="cargo"></span></li>
+							<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa"></span></li>
+							<li class="prev-jobdetails-date">
+								<ul class="prev-jobdate">
+									<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes"></span>/<span id="inicio-año"></span></li>
+									<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes"></span>/<span id="fin-año"></span></li>
+								</ul>
+							</li>
+							<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo"></span></li>
+						</ul>
 					</section>
-			  </section>
-			<section class="prev-info-extra">
-				<section class="prev-skills color-lateral">
-					<h2 class="prev-titles">Habilidades<hr></h2>
-					<ul class="box-skills">
-					<li class="skill1"><p class="skill-name"></p>
-						<div class="progress-bar hidden">
-							<div class="progress-bar__item"></div>
-						</div>
-					</li>
-				</ul>
 				</section>
+				<section class="prev-info-extra">
+					<section class="prev-skills color-lateral">
+						<h2 class="prev-titles">Habilidades<hr></h2>
+						<ul class="box-skills">
+							<li class="skill1">
+								<p class="skill-name"></p>
+								<div class="progress-bar hidden">
+									<div class="progress-bar__item"></div>
+								</div>
+							</li>
+						</ul>
+					</section>
 
-				<section class="prev-interestdetails">
-					<h2 class="prev-titles">Otros datos de interés<hr></h2>
+					<section class="prev-interestdetails">
+						<h2 class="prev-titles">Otros datos de interés<hr></h2>
+					</section>
 				</section>
-			</section>
-		</div>
-	</section>
-</main>
-	 <footer class="footer">
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
 		<p class="copy">Copyright &copy;NaN!</p>
 		<div class="up-button"><a href="#principal-content">up-button</a>
 		</div>
 	</footer>
 
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/datospers.js"></script>
 	<script type="text/javascript" src="js/habilidades.js"></script>
 	<script type="text/javascript" src="js/colors.js"></script>
 </body>
+
 </html>

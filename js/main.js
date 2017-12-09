@@ -2,20 +2,37 @@
 
 //MENU DESPLEGABLE
 
-var boton = document.querySelector('.openMenu');
-var sectionForm = document.querySelector('.boxfield');
-var closeButton = document.querySelector('.btnRemove');
-var openButton = document.querySelector('.btnSection');
+var buttonLegend = document.querySelectorAll('.openMenu');//creo un array de legends
+var sectionForm = document.querySelectorAll('.boxfield');//creo un array de boxfields
 
 
-function desplegarPlegar () {
-	sectionForm.classList.toggle('hidden');
-	closeButton.classList.toggle('hidden');
-	openButton.classList.toggle('hidden');
+for (var i = 0; i < sectionForm.length; i++) {
+	buttonLegend[i].addEventListener("click", desplegarPlegar);
+	console.log("Entro en el for");
 }
-boton.addEventListener('click', desplegarPlegar);
 
-//FIN MENÚ DESPLEGABLE
+
+function desplegarPlegar(event) {
+	
+	// event.currentTarget muestra el fragmento de código sobre el que hago click
+	var boxfieldContent = event.currentTarget.nextSibling.nextSibling;
+ 	// El modificador .nextSibling.nextSibling selecciona el hermano contiguo.
+
+	console.log(boxfieldContent);
+
+	boxfieldContent.classList.toggle('hidden');
+
+
+	var iconLegend = event.currentTarget.getElementsByTagName('span');
+	// Los spans del elemento seleccionado (legend) genera un array de spans que 
+	// contiene un elemento. Recorremos ese array con el for y le añadimos/quitamos la clase 
+	// btnMinus que sustituye el background del icono de la leyenda por el (-).
+	for (var i = 0; i < iconLegend.length; i++) {
+		iconLegend[i].classList.toggle('btnMinus');
+	}
+}
+
+//Select years
 
 
 var select = document.querySelectorAll('.years');

@@ -77,17 +77,21 @@ body {
 	color: white;
 	font-size: 7em;
 }
-.title a {
+
+.text {
 	color: white;
 	text-decoration: none;
 }
-.title:hover {
+.text:hover {
 	font-weight: bold;
 }
 .principal-logo {
 	border-bottom: 5px solid white;
 	margin-bottom: 50px;
 }
+/*.principal-logo a {
+	text-decoration: none;
+}*/
 /*FIN PÁGINA INICIO*/
 
 /*PREVIO CV*/
@@ -101,6 +105,7 @@ body {
 	margin: auto;
 	font-size: 15px;
 	padding-bottom: 30px;
+	line-height: 1.5;
 
 }
 .prev-info-personaldates {
@@ -157,7 +162,15 @@ body {
 	font-size: 14px;
 }
 .input-form input[type="file"]{
-	border: 0;
+	
+	width: 100px;
+	height: 35px;
+	background-color: #fcac0c;
+	color: #fff;
+	border: none;
+	margin: 0 8px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #888888;
 }
 .input-form textarea {
 	width: 100%;
@@ -186,8 +199,9 @@ body {
 	background-color: transparent;
 	border: none;
 }
-.hidden {
-	display: none;
+
+.btnStyles {
+	background-image: url('../images/style.svg');
 }
 .btnPersonalData {
 	background-image: url('../images/user.svg');
@@ -204,18 +218,11 @@ body {
 .btnOtherDetails {
 	background-image: url('../images/id-card.svg');
 }
-.btnRemove {
+
+.btnMinus {
 	background-image: url('../images/remove.svg');
-	position:absolute;
-	top: 5px;
-	right: 15px;
-	width: 35px;
-	height: 35px;
-	background-position: center center;
-	background-size: cover;
-	background-color: transparent;
-	border: none;
 }
+
 .input-form-buttoms {
 	position: relative;
 	display: flex;
@@ -326,26 +333,20 @@ body {
 	width: 30px;
 	height: 30px;
 	position: absolute;
-	left: 15px;
+	left: 22px;
 	background-image: url('../images/twitter.svg');
 }
 .linkedinLogo {
 	width: 30px;
 	height: 30px;
 	position: absolute;
-	left: 15px;
+	left: 22px;
 	background-image: url('../images/linkedin.svg');
 }
 
 
 /*HABILIDADES*/
-.input-form-skills {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 150px;
-	height: 100px;
-}
+
 .progress-bar {
   width: 100px;
   height: 10px;
