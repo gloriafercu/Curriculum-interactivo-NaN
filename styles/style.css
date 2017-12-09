@@ -252,7 +252,8 @@ body {
 	justify-content: center;
 	padding: 15px;
 }
-.input-form-buttoms input[type="button"]{
+.input-form-buttoms input[type="button"],
+.input-form-buttoms input[type="reset"]{
 	width: 30%;
 	height: 35px;
 	background-color: #fcac0c;
@@ -400,10 +401,12 @@ fieldset {
 .progress-bar {
 	width: 100px;
 	height: 10px;
-	background: #ccc;
+	background: #fff;
 	border-radius: 15px;
 	margin: 20px;
 	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+
 }
 
 .hidden {
