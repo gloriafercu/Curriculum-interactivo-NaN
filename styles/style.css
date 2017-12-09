@@ -109,8 +109,8 @@ body {
 	max-width: 600px;
 	margin: auto;
 	font-size: 15px;
-	padding-bottom: 30px;
 	line-height: 1.5;
+	background-color: #cbcbcb;
 
 }
 .prev-info-personaldates {
@@ -248,49 +248,37 @@ body {
 	 margin-top: 15px;
  }
 
-/*SELECCION DE COLORES*/
-.colors {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 10px;
-
-}
-.style-1,
-.style-2,
-.style-3 {
-	width: 80px;
-	height: 40px;
-	display: flex;
-	flex-direction: row;
-}
-.lateral-1,
-.lateral-2,
-.lateral-3,
-.principal-1,
-.principal-2,
-.principal-3 {
-	width: 40px;
-	height: 40px;
-}
-.lateral-1 {
-	background-color: #A84155;
-}
-.principal-1 {
-	background-color: #E1E1E1;
-}
-.lateral-2 {
-	background-color: #E0C7BC;
-}
-.principal-2 {
-	background-color: #DCDCDE;
-}
-.lateral-3 {
-	background-color: #8BCBC4;
-}
-.principal-3 {
-	background-color: #D8DAD9;
-}
+ /*SELECCION DE COLORES*/
+ .colors {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding: 10px;
+ }
+ .color-1,
+ .color-2,
+ .color-3 {
+     width: 40px;
+     height: 40px;
+ }
+ .color-1 {
+     background-color: #a02a36;
+ }
+ .color-2 {
+     background-color: #E0C7BC;
+ }
+ .color-3 {
+     background-color: #8BCBC4;
+ }
+ .theme1{
+     background-color: #a02a36;
+ }
+ .theme2{
+     background-color: #E0C7BC;
+ }
+ .theme3{
+     background-color: #8BCBC4;
+ }
 /*DATOS PERSONALES*/
 
 .section {
@@ -485,6 +473,8 @@ body {
 	}
 	.prev-info-extra {
 		width: 30%;
+	}
+	.color-base {
 		background-color: #f2f2f2;
 	}
 

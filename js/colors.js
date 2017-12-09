@@ -1,15 +1,21 @@
+'use strict';
 var colors = document.querySelectorAll('.color_option');
-var previewLateral = document.querySelectorAll('.color-lateral');
-
 function cleanColorClasses() {
-	previewLateral.classList.remove('lateral-1', 'lateral-2', 'lateral-3');
+    var previewLateral = document.querySelectorAll('.color-lateral');
+        for (var i = 0; i < previewLateral.length; i++) {
+        previewLateral[i].classList.remove('theme1', 'theme2', 'theme3', 'color-base');
+    }
 }
-
 function applyColorLateral(event) {
-	var colorClass = event.currentTarget.getAttribute('data-theme-class')
-	cleanColorClasses();
-	previewLateral.classList.add(colorClass);
+    cleanColorClasses();
+    var previewLateral = document.querySelectorAll('.color-lateral');
+    var themeClass = event.currentTarget.getAttribute('data-theme-class');
+    for (var i = 0; i < previewLateral.length; i++) {
+        previewLateral[i].classList.add(themeClass);
+    }
 }
 for (var i = 0; i < colors.length; i++) {
-	colors[i].addEventListener('click', applyColorLateral);
+    colors[i].addEventListener('click', applyColorLateral);
 }
+document.querySelector('.color_opcion').addEventListener('click', removeColorBase);
+document.querySelector('.color_opcion').addEventListener('click', applyColorLateral);
