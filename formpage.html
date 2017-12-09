@@ -30,7 +30,7 @@
 					<img class="print" src="images/print.svg" alt="icono imprimir">
 				</li>
 				<li>
-					<a class="link-aboutus"href="about-us.html">
+					<a class="link-aboutus" href="about-us.html">
 						<img class="aboutus" src="images/aboutus.svg" alt="about us">
 					</a>
 				</li>
@@ -44,14 +44,14 @@
 		<ul class="personalizar">
 			<li class="perscolor">
 				<div>
-					<img src="images/paleta.png">
+					<img src="images/paleta.png" alt="paleta">
 				</div>
 				<div><p>Paso 1: Elige el color</p>
 				</div>
 			</li>
 			<li class="persfuente">
 				<div>
-					<img src="images/fuente.png">
+					<img src="images/fuente.png" alt="fuente">
 				</div>
 				<div>
 					<p>Paso 2: Elige la fuente</p>
@@ -59,7 +59,7 @@
 			</li>
 			<li class="persestilo">
 				<div>
-					<img src="images/escribe.svg" class="lapiz">
+					<img src="images/escribe.svg" class="lapiz" alt="lapiz">
 				</div>
 				<div><p>Paso 3: Rellena tus datos</p>
 				</div>
@@ -69,7 +69,7 @@
 	<section class="forms">
 			<form id="personsaldetails-content" method="post" class="total-form" enctype="multipart/form-data">
 				<!--Selección de Colores  -->
-				<fieldset id="perdetfiel" class="section">
+				<fieldset class="section">
 					<legend class="openMenu">Elige estilos
 						<span class="btnSection btnStyles"></span>
 					</legend>
@@ -109,7 +109,7 @@
 					</div>
 				</fieldset>
 				<!-- Datos personales -->
-				<fieldset id="perdetfiel" class="section">
+				<fieldset class="section">
 					<legend class="openMenu">Datos personales
 						<span class="btnSection btnPersonalData"></span>
 					</legend>
@@ -123,7 +123,7 @@
 							<input id="name" type="text" name="name" required class="personal-fields">
 						</div>
 						<div class="input-form">
-							<label for="surnames" required>Apellidos*</label>
+							<label for="surnames">Apellidos*</label>
 							<input id="surnames" type="text" name="surnames" required class="personal-fields">
 						</div>
 						<div class="input-form">
@@ -132,7 +132,7 @@
 						</div>
 						<div class="input-form">
 							<label for="phone">Teléfono</label>
-							<input id="tel" type="tel" name="phone" class="personal-fields">
+							<input id="phone" type="tel" name="phone" class="personal-fields">
 						</div>
 						<div class="input-form">
 							<label for="address">Dirección</label>
@@ -145,12 +145,12 @@
 						<div class="input-form networks">
 							<p class="socialNetworks">Redes sociales</p>
 							<div class="twitterNetwork">
-								<span class="twitterLogo" src="images/twitter.svg" alt="twitter"></span>
+								<span class="twitterLogo"></span>
 								<label for="twitter">Twitter</label>
 								<input id="twitter" type="text" name="twitter" placeholder="Twitter" class="personal-fields">
 							</div>
 							<div class="linkedinNetwork">
-								<span class="linkedinLogo" src="images/linkedin.svg" alt="linkedin"></span>
+								<span class="linkedinLogo"></span>
 								<label for="linkedin">LinkedIn</label>
 								<input class="linkedin personal-fields" id="linkedin" type="url" name="linkedin" placeholder="LinkedIn">
 							</div>
@@ -206,7 +206,7 @@
 							</div>
 						</div>
 						<div class="input-form">
-							<label for="messjob-extract">Descripción del cargo</label>
+							<label for="job-extract">Descripción del cargo</label>
 							<textarea id="job-extract" name="job-extract" rows="6" cols="40" class="job-fields"></textarea>
 						</div>
 						<div class="input-form-buttoms">
@@ -228,7 +228,7 @@
 						</div>
 						<div class="input-form">
 							<label for="education-type-studies">Tipo de estudios</label>
-							<select id="education-type-studies" name="education-type-studies" class="type-studies edu-fields" required>
+							<select id="education-type-studies" name="education-type-studies" class="type-studies edu-fields">
 
 							</select>
 						</div>
@@ -321,7 +321,7 @@
 				</ul>
 			</section>
 			<section class="prev-description">
-				<h2 class="prev-titles">Extracto<hr></h2>
+				<h2 class="prev-titles">Extracto</h2><hr>
 				<p id="resumen" class="prev-contactdetails">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
 					ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
 					augue duis dolore te feugait nulla facilisi.</p>
@@ -329,7 +329,7 @@
 			<div class="prev-content">
 				<section class="prev-info-experience">
 					<section class="prev-education">
-						<h2 class="prev-titles">Formación académica<hr></h2>
+						<h2 class="prev-titles">Formación académica</h2><hr>
 						<ul class="prev-educationdetails">
 							<li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion" class="prev-edu"></span></li>
 							<li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios" class="prev-edu"></span></li>
@@ -340,16 +340,19 @@
 									<li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin" class="prev-edu"></span></li>
 								</ul>
 							</li>
-							<li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios"class="prev-edu"></span></li>
+							<li id="educationdetails-description" class="prev-educationdetails-description">Descripción:
+								 <span id="descripcion-estudios" class="prev-edu"></span>
+							</li>
 						</ul>
 					</section>
 
 					<section class="prev-professionalexperience">
-						<h2 class="prev-titles">Formación profesional<hr></h2>
+						<h2 class="prev-titles">Formación profesional</h2><hr>
 						<ul class="prev-jobdetails">
 							<li class="prev-jobdetails-job">Puesto de trabajo: <span id="trabajo" class="prev-job"></span></li>
 							<li class="prev-jobdetails-charge">Cargo: <span id="cargo" class="prev-job"></span></li>
-							<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa" class="prev-job"></span></li>
+							<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa" class="prev-job"></span>
+							</li>
 							<li class="prev-jobdetails-date">
 								<ul class="prev-jobdate">
 									<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes" class="prev-job"></span>/<span id="inicio-año" class="prev-job"></span class="prev-job"></li>
@@ -362,7 +365,7 @@
 				</section>
 				<section class="prev-info-extra color-lateral color-base">
 					<section class="prev-skills">
-						<h2 class="prev-titles">Habilidades<hr></h2>
+						<h2 class="prev-titles">Habilidades</h2><hr>
 						<ul class="box-skills">
 							<li class="skill1">
 								<p class="skill-name"></p>
@@ -374,7 +377,7 @@
 					</section>
 
 					<section class="prev-interestdetails">
-						<h2 class="prev-titles">Otros datos de interés<hr></h2>
+						<h2 class="prev-titles">Otros datos de interés</h2><hr>
 					</section>
 				</section>
 			</div>
