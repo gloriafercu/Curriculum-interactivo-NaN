@@ -77,7 +77,7 @@ body {
 .title {
 	font-family: 'Indie Flower';
 	color: white;
-	font-size: 7em;
+	font-size: 4em;
 }
 
 .text {
@@ -91,9 +91,12 @@ body {
 	border-bottom: 5px solid white;
 	margin-bottom: 50px;
 }
-/*.principal-logo a {
+.principal-logo img {
+ width: 250px;
+}
+.principal-logo a {
 	text-decoration: none;
-}*/
+}
 /*FIN PÁGINA INICIO*/
 
 /*PREVIO CV*/
@@ -436,6 +439,13 @@ body {
 
 /*MEDIAQUERIES*/
 @media all and (min-width: 700px) {
+	.title {
+		font-size: 6em;
+	}
+
+	.principal-logo img {
+	 width: 400px;
+	}
 	.cv {
 		display: flex;
 		flex-direction: row;
@@ -447,8 +457,6 @@ body {
 	.principal-title {
 		font-size: 4em;
 	}
-
-	
 	.personalizar {
 		max-width: 470px;
 	}
@@ -483,9 +491,16 @@ body {
 }
 
 @media all and (min-width: 900px) {
+
 .body {
 	display: flex;
 	flex-wrap: wrap;
+}
+.title {
+	font-size: 7em;
+}
+.principal-logo img {
+ width: 500px;
 }
 .principal-content {
 	flex-direction: row;

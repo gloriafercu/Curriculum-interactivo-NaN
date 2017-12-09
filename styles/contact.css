@@ -17,6 +17,9 @@
 .menu {
 	display: none;
 }
+.header {
+	height: auto;
+}
 .logo-cabecera{
 	min-width: 100px;
 }
@@ -56,6 +59,8 @@
 }
 .cell {
 	border-radius: 5px;
+	padding: 10px;
+	border-style: inset;
 }
 .button {
 	margin: 10px auto;
@@ -70,13 +75,13 @@
 @media all and (min-width: 700px) {
 	.contact-form {
 		margin: 10px auto;
-		width: 70%;
+		width: 50%;
 	}
 }
 
 @media all and (min-width: 900px) {
 	.contact-form {
 		margin: 10px auto;
-		width: 60%;
+		width: 40%;
 	}
 }
