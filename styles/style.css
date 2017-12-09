@@ -28,8 +28,6 @@ body {
 	justify-content: center;
 	}
 .personalizar {
-
-	margin: 30px;
 	display: flex;
 	flex-direction: row;
 	border: 3px solid #006D9D;
@@ -42,14 +40,18 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 	font-weight: bold;
 }
 .personalizatucv {
 	width: 100%;
+	position: relative;
 	display: flex;
-	margin: auto;
+	padding: 15px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
 	justify-content: center;
 }
 .personalizar img {
@@ -162,7 +164,7 @@ body {
 	font-size: 14px;
 }
 .input-form input[type="file"]{
-	
+
 	width: 100px;
 	height: 35px;
 	background-color: #fcac0c;
@@ -445,6 +447,8 @@ body {
 	.principal-title {
 		font-size: 4em;
 	}
+
+	
 	.personalizar {
 		max-width: 470px;
 	}
@@ -487,6 +491,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
 .header {
 	width: 100%;
 }

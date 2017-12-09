@@ -45,14 +45,14 @@
 	list-style-type: none;
 }
 
-@media all and (min-width: 700px) {
+/*@media all and (min-width: 700px) {
 	.logo-cabecera img {
-		width: 100%;
+		width: 235px;
 		max-width: 235px;
 	}
-}
+}*/
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 900px) {
 	.header {
 		display: flex;
 		flex-direction: row;
