@@ -75,8 +75,6 @@ body {
 	align-items: center;
 }
 
-/*CSS PÁGINA INICIO*/
-
 .title {
 	font-family: 'Indie Flower';
 	color: white;
@@ -265,19 +263,19 @@ body {
      height: 40px;
  }
  .color-1 {
-     background-color: #a02a36;
+     background-color: #A7D5B6;
  }
  .color-2 {
-     background-color: #E0C7BC;
+     background-color: #9D3226;
  }
  .color-3 {
      background-color: #8BCBC4;
  }
  .theme1{
-     background-color: #a02a36;
+     background-color: #A7D5B6;
  }
  .theme2{
-     background-color: #E0C7BC;
+     background-color: #9D3226;
  }
  .theme3{
      background-color: #8BCBC4;
