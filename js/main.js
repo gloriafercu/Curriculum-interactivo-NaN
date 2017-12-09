@@ -13,7 +13,7 @@ for (var i = 0; i < sectionForm.length; i++) {
 
 
 function desplegarPlegar(event) {
-	
+
 	// event.currentTarget muestra el fragmento de código sobre el que hago click
 	var boxfieldContent = event.currentTarget.nextSibling.nextSibling;
  	// El modificador .nextSibling.nextSibling selecciona el hermano contiguo.
@@ -24,8 +24,8 @@ function desplegarPlegar(event) {
 
 
 	var iconLegend = event.currentTarget.getElementsByTagName('span');
-	// Los spans del elemento seleccionado (legend) genera un array de spans que 
-	// contiene un elemento. Recorremos ese array con el for y le añadimos/quitamos la clase 
+	// Los spans del elemento seleccionado (legend) genera un array de spans que
+	// contiene un elemento. Recorremos ese array con el for y le añadimos/quitamos la clase
 	// btnMinus que sustituye el background del icono de la leyenda por el (-).
 	for (var i = 0; i < iconLegend.length; i++) {
 		iconLegend[i].classList.toggle('btnMinus');
@@ -58,7 +58,7 @@ for (var i = 0; i < select.length; i++){
 
 
 //Seleccionar estudios
-var studyOptions = ''
+var studyOptions = '';
 studyOptions = studyOptions + '<option value="Seleccionar">Seleciona estudios</option>';
 studyOptions = studyOptions + '<option value="Sin estudios">Sin estudios obligados</option>';
 studyOptions = studyOptions + '<option value="Eso">ESO</option>';
