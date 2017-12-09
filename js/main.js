@@ -11,9 +11,7 @@ for (var i = 0; i < sectionForm.length; i++) {
 	console.log("Entro en el for");
 }
 
-
 function desplegarPlegar(event) {
-
 	// event.currentTarget muestra el fragmento de código sobre el que hago click
 	var boxfieldContent = event.currentTarget.nextSibling.nextSibling;
  	// El modificador .nextSibling.nextSibling selecciona el hermano contiguo.

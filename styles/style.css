@@ -171,14 +171,14 @@ body {
 }
 .input-form input[type="file"]{
 
-	width: 100px;
+	/*width: 100px;
 	height: 35px;
 	background-color: #fcac0c;
-	color: #fff;
+	color: #fff;*/
 	border: none;
-	margin: 0 8px;
+	/*margin: 0 8px;
 	cursor: pointer;
-	box-shadow: 1px 1px 1px #888888;
+	box-shadow: 1px 1px 1px #888888;*/
 }
 .input-form textarea {
 	width: 100%;
