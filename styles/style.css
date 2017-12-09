@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 
 * {
 	box-sizing: border-box;
@@ -278,6 +281,40 @@ body {
  }
  .theme3{
      background-color: #8BCBC4;
+ }
+ /*SELECCION DE FUENTES*/
+ .fonts {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding: 10px;
+ }
+ .font-1,
+ .font-2,
+ .font-3 {
+     width: 50px;
+     height: 40px;
+ }
+ .font-1 {
+     background-image: url(../images/Playfair-Display.png);
+		 background-size: cover;
+ }
+ .font-2 {
+	 background-image: url(../images/Crimson.png);
+	 background-size: cover;
+ }
+ .font-3 {
+	 background-image: url(../images/Josefin.png);
+	 background-size: cover;
+ }
+ .font1 {
+	font-family: 'Playfair Display', serif;
+ }
+ .font2 {
+  font-family: 'Crimson Text', serif;
+ }
+ .font3 {
+  font-family: 'Josefin Slab', serif;
  }
 /*DATOS PERSONALES*/
 

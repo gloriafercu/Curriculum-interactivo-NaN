@@ -17,5 +17,25 @@ function applyColorLateral(event) {
 for (var i = 0; i < colors.length; i++) {
     colors[i].addEventListener('click', applyColorLateral);
 }
-document.querySelector('.color_opcion').addEventListener('click', removeColorBase);
+
+/*Seleccion fuentes*/
+var fonts = document.querySelectorAll('.font_option');
+function cleanFontClasses() {
+    var previewFont = document.querySelectorAll('.type-font');
+        for (var x = 0; x < previewFont.length; x++) {
+        previewFont[x].classList.remove('font1', 'font2', 'font3');
+    }
+}
+function applyFont(event) {
+    cleanFontClasses();
+    var previewFont = document.querySelectorAll('.type-font');
+    var fontClass = event.currentTarget.getAttribute('data-font-class');
+    for (var x = 0; x < previewFont.length; x++) {
+        previewFont[x].classList.add(fontClass);
+    }
+}
+for (var x = 0; x < fonts.length; x++) {
+    fonts[x].addEventListener('click', applyFont);
+}
 document.querySelector('.color_opcion').addEventListener('click', applyColorLateral);
+document.querySelector('.font_opcion').addEventListener('click', applyFont);
