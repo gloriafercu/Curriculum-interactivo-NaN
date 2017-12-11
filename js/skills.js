@@ -8,15 +8,15 @@ var percentage = document.querySelector('#percentage');
 var progress = document.querySelector('.progress-bar__item');
 var barNone = document.querySelector('.progress-bar');
 var buttonAdd = document.querySelector('#plus');
-var boxSkills = document.querySelector('.box-skills');
 var listSkill = document.querySelector('.skill1');
 
 
 
-function fillElement () {
+function fillElement() {
 	skillName.innerHTML += skill.value;
 	return skillName;
 }
+
 function fillPercentage (){
 
 		percentage.value = parseInt(percentage.value);
@@ -30,13 +30,6 @@ function fillPercentage (){
 }
 
 
-function addSkills() {
-	var content = '<li class="skill1"><p class="skill-name"></p><div class="progress-bar hidden"><div class="progress-bar__item"></div></div></li>';
-	fillElement();fillPercentage();
 
-	boxSkills.innerHTML += content;
-	return addSkills;
-}
-buttonAdd.addEventListener('click', addSkills);
 buttonSkills.addEventListener('click', fillElement);
 buttonSkills.addEventListener('click', fillPercentage);

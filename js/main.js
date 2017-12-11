@@ -38,7 +38,7 @@ var select = document.querySelectorAll('.years');
 function list(firstyear, totalyears) {
 	var options = '';
 	for (var x = 0; x < totalyears; x++){
-	options = options + '<option value="">'+(firstyear + x)+'</option>';
+	options = options + '<option value="' + (firstyear + x) + '">'+(firstyear + x)+'</option>';
 	}
 	return options;
 }
@@ -84,3 +84,5 @@ function rellena() {
 }
 
 document.querySelector('#set-progress').addEventListener('click', rellena);
+
+//Rellenar otros datos de interés
