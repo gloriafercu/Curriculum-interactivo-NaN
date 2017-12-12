@@ -96,5 +96,11 @@ var picButton = document.querySelector('.picture');
 picButton.addEventListener('change',archivo);
 
 function addMoreEducation () {
-	var moreEducation = '<ul class="prev-educationdetails"><li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion" class="prev-edu"></span></li><li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios" class="prev-edu"></span></li><li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro" class="prev-edu"></span></li><li class="prev-educationdetails-date"><ul class="prev-educationdate"><li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio" class="prev-edu"></span></li><li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin" class="prev-edu"></span></li></ul></li><li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios" class="prev-edu"></span></li></ul>'
+	var moreEducation = '<ul class="prev-educationdetails"><li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion" class="prev-edu">'+ document.querySelector("").value +'</span></li><li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios" class="prev-edu">'+ document.querySelector("").value +'</span></li><li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro" class="prev-edu">'+ document.querySelector("").value +'</span></li><li class="prev-educationdetails-date"><ul class="prev-educationdate"><li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span></span></li><li id="educationdate-end">Año de finalización: <span></span></li></ul></li><li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios" class="prev-edu">' + document.querySelector("").value + '</span></li></ul>';
+
+	var container = document.querySelector('.prev-education');
+	container.innerHTML += moreEducation;
+	var btnAddEdu = document.querySelector('.add-edu');
 }
+
+btnAddEdu.addEventListener('click', addMoreEducation);
