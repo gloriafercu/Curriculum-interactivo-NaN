@@ -418,7 +418,7 @@ fieldset {
 .progress-bar__item {
 	border-radius: inherit;
 	height: inherit;
-	background: blue;
+	background: #006E9C;
 	width: 0%;
 	transition: width ease 1s;
 
