@@ -37,5 +37,5 @@ function applyFont(event) {
 for (var x = 0; x < fonts.length; x++) {
     fonts[x].addEventListener('click', applyFont);
 }
-document.querySelector('.color_opcion').addEventListener('click', applyColorLateral);
-document.querySelector('.font_opcion').addEventListener('click', applyFont);
+document.querySelector('.color_option').addEventListener('click', applyColorLateral);
+document.querySelector('.font_option').addEventListener('click', applyFont);
