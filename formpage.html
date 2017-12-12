@@ -15,7 +15,7 @@
 
 	<header id="header" class="header">
 		<div class="logo-cabecera">
-			<img src="images/logo.png" alt="logo-equipo">
+			<a href="index.html"><img src="images/logo.png" alt="logo-equipo"/></a>
 		</div>
 		<nav>
 			<ul class="menu">
@@ -273,8 +273,9 @@
 							<input id="percentage" type="number" name="porcentaje" min="1" max="100">
 						</div>
 						<div class="input-form-buttoms">
+							<input id="plus" type="button" name="add" value="Añadir">
 							<input type="reset" name="delete" value="Borrar">
-							<input id="plus" type="button" class="add-skill" name="add" value="Añadir">
+							<input id="save-skills" type="button" name="save" value="Guardar">
 						</div>
 					</div>
 				</fieldset>
@@ -291,8 +292,9 @@
 						</div>
 
 						<div class="input-form-buttoms">
+							<input type="button" name="add" value="Añadir">
 							<input type="reset" name="delete" value="Borrar" class="delete">
-							<input type="button" name="add" class="add-detail" value="Añadir">
+							<input type="button" name="save-other" class="save-other" value="Guardar">
 						</div>
 					</div>
 				</fieldset>
@@ -362,15 +364,17 @@
 					<section class="prev-skills">
 						<h2 class="prev-titles">Habilidades</h2><hr>
 						<ul class="box-skills">
-
+							<li class="skill1">
+								<p class="skill-name"></p>
+								<div class="progress-bar hidden">
+									<div class="progress-bar__item"></div>
+								</div>
+							</li>
 						</ul>
 					</section>
 
 					<section class="prev-interestdetails">
-						<h2 class="prev-titles">Otros datos de interés</h2>
-						<ul class="prev-other">
-
-						</ul>
+						<h2 class="prev-titles">Otros datos de interés</h2><hr><p class="prev-other"></p>
 					</section>
 				</section>
 			</div>
