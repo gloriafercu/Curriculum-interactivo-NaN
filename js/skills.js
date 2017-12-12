@@ -29,7 +29,15 @@ function fillPercentage (){
 	return percentage;
 }
 
+function saveNewSkill() {
+	var addSkill = '<li class="skill1"><p class="skill-name">' + document.getElementById('skillstext').value + '</p><div class="progress-bar"><div class="progress-bar__item" style="width:' +  document.getElementById('percentage').value  + '%"></div></div></li>';
+	var newSkill = document.querySelector('.box-skills');
+	newSkill.innerHTML += addSkill;
+	document.getElementById('skillstext').value = '';
+	document.getElementById('percentage').value = '';
+	}
 
 
-buttonSkills.addEventListener('click', fillElement);
-buttonSkills.addEventListener('click', fillPercentage);
+// buttonSkills.addEventListener('click', fillElement);
+buttonSkills.addEventListener('click', saveNewSkill);
+buttonAdd.addEventListener('click', saveNewSkill);
