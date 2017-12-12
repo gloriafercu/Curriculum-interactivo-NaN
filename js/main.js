@@ -72,19 +72,6 @@ document.querySelector('.type-studies').innerHTML = studyOptions;
 //Rellenar Barras Habilidades
 var pb = document.querySelector('.progress-bar__item');
 
-function rellena() {
-  var percentage = prompt('Qué porcentaje ponemos?');
-  percentage = parseInt(percentage);
-  if (percentage <= 100 ) {
-    pb.style.width = percentage + '%';
-  } else {
-    pb.style.width = '0%';
-  }
-
-}
-
-document.querySelector('#set-progress').addEventListener('click', rellena);
-
 function archivo(evt) {
 	var files = evt.target.files; // FileList object
 	//Obtenemos la imagen del campo "file".
@@ -97,6 +84,7 @@ function archivo(evt) {
 		reader.onload = (function(theFile) {
 			return function(e) {
 				// Creamos la imagen.
+				console.log("hola");
 				document.querySelector(".prev-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
 			};
 		})(f);
@@ -106,3 +94,7 @@ function archivo(evt) {
 
 var picButton = document.querySelector('.picture');
 picButton.addEventListener('change',archivo);
+
+function addMoreEducation () {
+	var moreEducation = '<ul class="prev-educationdetails"><li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion" class="prev-edu"></span></li><li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios" class="prev-edu"></span></li><li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro" class="prev-edu"></span></li><li class="prev-educationdetails-date"><ul class="prev-educationdate"><li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span id="año-inicio" class="prev-edu"></span></li><li id="educationdate-end" class="prev-educationdate-end">Año de finalización: <span id="año-fin" class="prev-edu"></span></li></ul></li><li id="educationdetails-description" class="prev-educationdetails-description">Descripción: <span id="descripcion-estudios" class="prev-edu"></span></li></ul>'
+}
