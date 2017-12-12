@@ -2,14 +2,13 @@
 
 var skill = document.querySelector('#skillstext');
 var skillName = document.querySelector('.skill-name');
-var buttonSkills = document.querySelector('#save-skills');
 
 var percentage = document.querySelector('#percentage');
 var progress = document.querySelector('.progress-bar__item');
 var barNone = document.querySelector('.progress-bar');
 var buttonAdd = document.querySelector('#plus');
 var listSkill = document.querySelector('.skill1');
-
+var buttonAddDetails = document.querySelector('.add-detail')
 
 
 function fillElement() {
@@ -38,6 +37,14 @@ function saveNewSkill() {
 	}
 
 
-// buttonSkills.addEventListener('click', fillElement);
-buttonSkills.addEventListener('click', saveNewSkill);
+	function saveNewDetails() {
+		var addDetail = '<li>' + document.querySelector('.other-fields').value + '</li>';
+		var newDetail = document.querySelector('.prev-other');
+		newDetail.innerHTML += addDetail;
+		document.getElementById('details').value = '';
+
+		}
+
+
 buttonAdd.addEventListener('click', saveNewSkill);
+buttonAddDetails.addEventListener('click', saveNewDetails);
