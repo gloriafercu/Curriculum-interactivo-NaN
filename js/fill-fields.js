@@ -34,6 +34,18 @@ function rellenarEdu() {
 	return camposEdu.value;
 }
 
+var camposMore = document.querySelectorAll('.other-fields');
+var previewMore = document.querySelectorAll('.prev-other');
+var btnSaveMore = document.querySelector('.save-other');
+
+function rellenarMore() {
+	for (var i = 0; i < previewMore.length; i++) {
+		previewMore[i].innerHTML = camposMore[i].value;
+	}
+	return camposMore.value;
+}
+
 btnSavePersonal.addEventListener('click', rellenarPersonal);
 btnSaveJob.addEventListener('click', rellenarJobs);
 btnSaveEdu.addEventListener('click', rellenarEdu);
+btnSaveMore.addEventListener('click', rellenarMore);

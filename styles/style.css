@@ -461,31 +461,7 @@ fieldset {
 	padding:0;
 }
 
-/*FOOTER*/
-.footer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 70px;
-	background-color: #272727;
-}
-.copy {
-	color: white;
-}
 
-.up-button a {
-	background-image: url(../images/up-button.svg);
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-
-.up-button a:hover {
-	background-image: url(../images/up-button-solid.svg);
-}
 
 /*MEDIAQUERIES*/
 @media all and (min-width: 700px) {
@@ -558,10 +534,6 @@ fieldset {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-
-	.header {
-		width: 100%;
-	}
 	.text-principal {
 		width: 100%;
 	}
@@ -572,9 +544,5 @@ fieldset {
 		width: 55%;
 		margin-top: 30px;
 		margin-bottom: 20px;
-
-	}
-	.footer {
-		width: 100%;
 	}
 }

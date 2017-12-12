@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/cabecera.css">
+	<link rel="stylesheet" href="styles/header-footer.css">
 	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crea tu CV online</title>
@@ -116,7 +116,7 @@
 					<div id="personal-data" class="boxfield hidden">
 						<div class="input-form photo">
 							<label for="photo">Introduce tu foto</label>
-							<input id="photo" type="file" name="photo"  accept="image/*">
+							<input id="files" type="file" name="files[]"  accept="image/*" class="picture">
 						</div>
 						<div class="input-form">
 							<label for="name">Nombre*</label>
@@ -270,7 +270,7 @@
 							<label for="skillstext">Habilidad</label>
 							<input id="skillstext" type="text" name="skillstext" class="skillstext">
 							<label for="percentage">Porcentaje</label>
-							<input id="percentage" type="number" name="porcentaje">
+							<input id="percentage" type="number" name="porcentaje" min="1" max="100">
 						</div>
 						<div class="input-form-buttoms">
 							<input id="plus" type="button" name="add" value="Añadir">
@@ -288,14 +288,13 @@
 					<div id="other-data" class="boxfield hidden">
 						<div class="input-form">
 							<label for="details">Datos de interés</label>
-							<input id="details" type="text" name="
-							" class="details">
+							<input id="details" type="text" name="details" class="other-fields">
 						</div>
 
 						<div class="input-form-buttoms">
 							<input type="button" name="add" value="Añadir">
-							<input type="reset" name="delete" value="Borrar">
-							<input type="button" name="save" value="Guardar">
+							<input type="reset" name="delete" value="Borrar" class="delete">
+							<input type="button" name="save-other" class="save-other" value="Guardar">
 						</div>
 					</div>
 				</fieldset>
@@ -376,7 +375,7 @@
 					</section>
 
 					<section class="prev-interestdetails">
-						<h2 class="prev-titles">Otros datos de interés</h2><hr>
+						<h2 class="prev-titles">Otros datos de interés</h2><hr><p class="prev-other"></p>
 					</section>
 				</section>
 			</div>
@@ -392,6 +391,7 @@
 	<script type="text/javascript" src="js/skills.js"></script>
 	<script type="text/javascript" src="js/colors.js"></script>
 	<script type="text/javascript" src="js/fill-fields.js"></script>
+
 </body>
 
 </html>
