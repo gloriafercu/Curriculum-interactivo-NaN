@@ -18,6 +18,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 }
 .principal-title {
 	width: 100%;
@@ -107,28 +108,33 @@ li {
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
-	border: 1px solid #262626;
 	width: 95%;
 	max-width: 600px;
 	margin: auto;
 	font-size: 15px;
 	line-height: 1.5;
-	background-color: #cbcbcb;
+	background-color: #FFFFE2;
 	height: auto;
 	margin-bottom: 30px;
+	box-shadow: 4px 4px 1px #B4B6B2;
 }
 .prev-info-personaldates {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 10px;
-	background-color: #f2f2f2;
+	background-color: #ffe7b9;
 }
 .prev-photo {
 	margin-right: 10px;
+	width: 25%;
 }
 .prev-photo img{
 	border-radius: 50%;
+}
+.prev-list-personal{
+	width: 70%;
 }
 .prev-description,
 .prev-education,
@@ -141,6 +147,8 @@ li {
 	font-size: 15px;
 	font-weight: bold;
 	margin-top: 0px;
+	width: 100%;
+	text-align: left;
 }
 .camps-titles{
 	font-weight: bold;
@@ -292,22 +300,22 @@ fieldset {
 	height: 40px;
 }
 .color-1 {
-	background-color: #A7D5B6;
+	background-color: #9cb7e3;
 }
 .color-2 {
-	background-color: #9D3226;
+	background-color: #ca7544;
 }
 .color-3 {
-	background-color: #8BCBC4;
+	background-color: #c4d468;
 }
 .theme1{
-	background-color: #A7D5B6;
+	background-color: #9cb7e3;
 }
 .theme2{
-	background-color: #9D3226;
+	background-color: #ca7544;
 }
 .theme3{
-	background-color: #8BCBC4;
+	background-color: #c4d468;
 }
 /*SELECCION DE FUENTES*/
 .fonts {
@@ -478,13 +486,6 @@ fieldset {
 	.principal-logo img {
 		width: 400px;
 	}
-	.cv {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		height: 100%;
-	}
 
 	.principal-title {
 		font-size: 4em;
@@ -492,34 +493,9 @@ fieldset {
 	.personalizar {
 		max-width: 470px;
 	}
-	.prev-info-personaldates {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		width: 30%;
-		flex-shrink:1;
-	}
 	.personalizar img {
 		height: 125px;
 		width: 125px;
-	}
-	.prev-description {
-		width: 70%;
-	}
-	.prev-content {
-		display: flex;
-		flex-direction: row-reverse;
-		height: auto;
-		width: 100%;
-	}
-	.prev-info-experience {
-		width: 70%;
-	}
-	.prev-info-extra {
-		width: 30%;
-	}
-	.color-base {
-		background-color: #f2f2f2;
 	}
 
 }

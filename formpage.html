@@ -120,34 +120,34 @@
 						</div>
 						<div class="input-form">
 							<label for="name">Nombre*</label>
-							<input id="name" type="text" name="name" required class="personal-fields">
+							<input id="name" type="text" name="name" required class="personal-fields" maxlength="55">
 						</div>
 						<div class="input-form">
 							<label for="surnames">Apellidos*</label>
-							<input id="surnames" type="text" name="surnames" required class="personal-fields">
+							<input id="surnames" type="text" name="surnames" required class="personal-fields" maxlength="55">
 						</div>
 						<div class="input-form">
 							<label for="email">Email*</label>
-							<input id="email" type="email" name="email" required class="personal-fields">
+							<input id="email" type="email" name="email" required class="personal-fields" maxlength="55">
 						</div>
 						<div class="input-form">
 							<label for="phone">Teléfono</label>
-							<input id="phone" type="tel" name="phone" class="personal-fields">
+							<input id="phone" type="tel" name="phone" class="personal-fields" maxlength="55">
 						</div>
 						<div class="input-form">
 							<label for="address">Dirección</label>
-							<input id="address" type="text" name="address" class="personal-fields">
+							<input id="address" type="text" name="address" class="personal-fields" maxlength="55">
 						</div>
 						<div class="input-form">
 							<label for="profession">Profesión*</label>
-							<input id="profession" type="text" name="profession" required class="personal-fields">
+							<input id="profession" type="text" name="profession" required class="personal-fields" maxlength="55">
 						</div>
 						<div class="input-form networks">
 							<p class="socialNetworks">Redes sociales</p>
 							<div class="twitterNetwork">
 								<span class="twitterLogo"></span>
 								<label for="twitter">Twitter</label>
-								<input id="twitter" type="text" name="twitter" placeholder="Twitter" class="personal-fields">
+								<input id="twitter" type="text" name="twitter" placeholder="Twitter" class="personal-fields" maxlength="55">
 							</div>
 							<div class="linkedinNetwork">
 								<span class="linkedinLogo"></span>
@@ -302,26 +302,24 @@
 
 		<section class="cv type-font">
 			<section class="prev-info-personaldates prev-contact color-lateral">
-				<h1 class="prev-titles">Datos de contacto</h1>
-				<div class="prev-photo">
+					<h1 class="prev-titles">Datos de contacto</h1>
+				<div class="prev-photo prev-personalcontent">
 					<img src="http://via.placeholder.com/120x120" alt="Foto Personal" id="foto">
 				</div>
-				<ul>
-					<li id="nombre" class="prev-contactdetails ">Nombre</li>
-					<li id="apellidos" class="prev-contactdetails">Apellidos</li>
-					<li id="profesion" class="prev-contactdetails">Profesión</li>
-					<li id="direccion" class="prev-contactdetails"></li>
-					<li id="mail" class="prev-contactdetails">ejemplo@gmail.com</li>
-					<li id="telefono" class="prev-contactdetails">666998811</li>
-					<li class="prev-contactdetails">Twitter</li>
-					<li class="prev-contactdetails">Linkedin</li>
-				</ul>
+					<ul class="prev-list-personal">
+						<li id="nombre" class="prev-contactdetails ">Nombre</li>
+						<li id="apellidos" class="prev-contactdetails">Apellidos</li>
+						<li id="profesion" class="prev-contactdetails">Profesión</li>
+						<li id="direccion" class="prev-contactdetails"></li>
+						<li id="mail" class="prev-contactdetails">ejemplo@gmail.com</li>
+						<li id="telefono" class="prev-contactdetails">666998811</li>
+						<li class="prev-contactdetails">Twitter</li>
+						<li class="prev-contactdetails">Linkedin</li>
+					</ul>
 			</section>
 			<section class="prev-description">
 				<h2 class="prev-titles">Extracto</h2><hr>
-				<p id="resumen" class="prev-contactdetails">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-					ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-					augue duis dolore te feugait nulla facilisi.</p>
+				<p id="resumen" class="prev-contactdetails">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
 			</section>
 			<div class="prev-content">
 				<section class="prev-info-experience">
@@ -339,7 +337,7 @@
 						</ul>
 					</section>
 				</section>
-				<section class="prev-info-extra color-lateral color-base">
+				<section class="prev-info-extra color-base">
 					<section class="prev-skills">
 						<h2 class="prev-titles">Habilidades</h2><hr>
 						<ul class="box-skills">
