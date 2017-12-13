@@ -1,4 +1,4 @@
-	"use strict";
+	'use strict';
 
 //MENU DESPLEGABLE
 
@@ -8,13 +8,12 @@ var sectionForm = document.querySelectorAll('.boxfield');//creo un array de boxf
 
 for (var i = 0; i < sectionForm.length; i++) {
 	buttonLegend[i].addEventListener("click", desplegarPlegar);
-	console.log("Entro en el for");
 }
 
 function desplegarPlegar(event) {
 	// event.currentTarget muestra el fragmento de código sobre el que hago click
-	var boxfieldContent = event.currentTarget.nextSibling.nextSibling;
- 	// El modificador .nextSibling.nextSibling selecciona el hermano contiguo.
+	var boxfieldContent = event.currentTarget.nextElementSibling;
+ 	// El modificador .nextElementSibling selecciona el hermano contiguo.
 
 	console.log(boxfieldContent);
 
@@ -85,7 +84,7 @@ function archivo(evt) {
 			return function(e) {
 				// Creamos la imagen.
 				console.log("hola");
-				document.querySelector(".prev-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+				document.querySelector(".prev-photo").innerHTML = ['<img class="thumb" width="120" height="120" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
 			};
 		})(f);
 		reader.readAsDataURL(f);
