@@ -34,6 +34,7 @@ function desplegarPlegar(event) {
 
 var select = document.querySelectorAll('.years');
 
+
 function list(firstyear, totalyears) {
 	var options = '';
 	for (var x = 0; x < totalyears; x++){
@@ -44,19 +45,23 @@ function list(firstyear, totalyears) {
 //Añadir años a los select
 	for (var i = 0; i < select.length; i++){
 		select[i].innerHTML=list(1950, 100);
-	}
+		select[i].selectedIndex = -1;
+
+			}
+
 
 //Añadir meses a los selct
 var select = document.querySelectorAll('.month');
 
 for (var i = 0; i < select.length; i++){
 	select[i].innerHTML=list(1, 12);
+	select[i].selectedIndex = -1;
 }
 
 
 //Seleccionar estudios
 var studyOptions = '';
-studyOptions = studyOptions + '<option value="Seleccionar">Seleciona estudios</option>';
+studyOptions = studyOptions + '<option value="">Seleciona estudio</option>';
 studyOptions = studyOptions + '<option value="Sin estudios">Sin estudios obligados</option>';
 studyOptions = studyOptions + '<option value="Eso">ESO</option>';
 studyOptions = studyOptions + '<option value="FPBasica">FP Básica</option>';
