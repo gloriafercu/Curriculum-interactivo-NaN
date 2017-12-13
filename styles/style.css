@@ -155,7 +155,9 @@ li {
 	display: inline;
 }
 /*FORMULARIO*/
-
+.forms {
+	width: 100%;
+}
 .total-form {
 	font-family: 'Rubik', sans-serif;
 	max-width: 480px;
@@ -186,15 +188,7 @@ li {
 	font-size: 14px;
 }
 .input-form input[type="file"]{
-
-	/*width: 100px;
-	height: 35px;
-	background-color: #fcac0c;
-	color: #fff;*/
 	border: none;
-	/*margin: 0 8px;
-	cursor: pointer;
-	box-shadow: 1px 1px 1px #888888;*/
 	width: auto;
 	height: auto;
 	padding:0;
