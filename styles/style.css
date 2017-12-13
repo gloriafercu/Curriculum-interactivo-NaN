@@ -139,6 +139,7 @@ li {
 }
 .cut-url{
 	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 .prev-description,
 .prev-education,
