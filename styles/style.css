@@ -123,18 +123,22 @@ li {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
 	padding: 10px;
 	background-color: #ffe7b9;
 }
 .prev-photo {
-	margin-right: 10px;
-	width: 25%;
+	width: 30%;
+	min-width: 120px;
 }
 .prev-photo img{
-	border-radius: 50%;
+	border-radius: 50%
 }
 .prev-list-personal{
-	width: 70%;
+	width: 65%;
+}
+.cut-url{
+	overflow-wrap: break-word;
 }
 .prev-description,
 .prev-education,
@@ -155,7 +159,9 @@ li {
 	display: inline;
 }
 /*FORMULARIO*/
-
+.forms {
+	width: 100%;
+}
 .total-form {
 	font-family: 'Rubik', sans-serif;
 	max-width: 480px;
@@ -186,15 +192,7 @@ li {
 	font-size: 14px;
 }
 .input-form input[type="file"]{
-
-	/*width: 100px;
-	height: 35px;
-	background-color: #fcac0c;
-	color: #fff;*/
 	border: none;
-	/*margin: 0 8px;
-	cursor: pointer;
-	box-shadow: 1px 1px 1px #888888;*/
 	width: auto;
 	height: auto;
 	padding:0;
@@ -511,7 +509,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
 		height: 125px;
 		width: 125px;
 	}
-
+	.prev-photo {
+		width: 20%;
+	}
+	.prev-list-personal{
+		width: 70%;
+	}
 }
 
 @media all and (min-width: 900px) {
@@ -540,5 +543,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
 		width: 55%;
 		margin-top: 30px;
 		margin-bottom: 20px;
+	}
+	.prev-photo {
+		width: 24%;
+	}
+	.prev-list-personal{
+		width: 74%;
 	}
 }
