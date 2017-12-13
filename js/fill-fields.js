@@ -17,7 +17,6 @@ function rellenarPersonal() {
 
 // var camposJob = document.querySelectorAll('.job-fields');
 // var previewJob = document.querySelectorAll('.prev-job');
-// var btnSaveJob = document.querySelector('.save-job');
 
 
 // function rellenarJobs() {
@@ -51,30 +50,28 @@ function saveNewJobs() {
 	document.getElementById('job-extract').value="";
 }
 
-buttonAddJob.addEventListener('click', saveNewJobs);
+
 
 
 
 // RELLENAR Y AÑADIR EDUCACIÓN
 
 
-var camposEdu = document.querySelectorAll('.edu-fields');
-var previewEdu = document.querySelectorAll('.prev-edu');
-var btnSaveEdu = document.querySelector('.save-edu');
+var btnAddEdu = document.querySelector('.add-edu');
+function addMoreEducation () {
+	var moreEducation = '<ul class="prev-educationdetails"><li id="educationdetails-studies" class="prev-educationdetails-studies">Titulación: <span id="titulacion" class="prev-edu">' + document.querySelector(".edu-fields").value + '</span></li><li id="educationdetails-type-studies" class="prev-educationdetails-type-studies">Tipo de estudios: <span id="tipo-estudios" class="prev-edu">'+ document.querySelector(".edu-fields").value + '</span></li><li id="educationdetails-centre" class="prev-educationdetails-centre">Centro de estudios: <span id="centro" class="prev-edu">'+ document.querySelector(".edu-fields").value +'</span></li><li class="prev-educationdetails-date"><ul class="prev-educationdate"></ul>'
+	/*<li id="educationdate-start" class="prev-educationdate-start">Año de inicio: <span>'+ document.querySelector(".years edu-fields-start").value +'</span></li><li id="educationdate-end" class="prev-educationdate-end">Año de finalización:<span id="año-fin" class="prev-edu">'
+	 + document.querySelector(".years edu-fields-end").value + '</span></li></ul></li>*/
 
-function rellenarEdu() {
-	for (var i = 0; i < previewEdu.length; i++) {
-		previewEdu[i].innerHTML = camposEdu[i].value;
-	}
-	return camposEdu.value;
+	/*''
+	'
+	'<li id="educationdetails-description" class="prev-educationdetails-description"> Descripción: <span id="descripcion-estudios" class="prev-edu"></span></li>*/
+
+	var container = document.querySelector('.prev-education');
+	container.innerHTML += moreEducation;
+
 }
-//
-
-
-
-
-
 
 btnSavePersonal.addEventListener('click', rellenarPersonal);
-btnSaveJob.addEventListener('click', rellenarJobs);
-btnSaveEdu.addEventListener('click', rellenarEdu);
+buttonAddJob.addEventListener('click', saveNewJobs);
+btnAddEdu.addEventListener('click', addMoreEducation);
