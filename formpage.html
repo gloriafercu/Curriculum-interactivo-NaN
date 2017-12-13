@@ -15,7 +15,7 @@
 
 	<header id="header" class="header">
 		<div class="logo-cabecera">
-			<img src="images/logo.png" alt="logo-equipo">
+			<a href="index.html"><img src="images/logo.png" alt="logo-equipo"/></a>
 		</div>
 		<nav>
 			<ul class="menu">
@@ -210,9 +210,9 @@
 							<textarea id="job-extract" name="job-extract" rows="6" cols="40" class="job-fields"></textarea>
 						</div>
 						<div class="input-form-buttoms">
-							<input type="button" name="add" value="Añadir">
 							<input type="reset" name="delete" value="Borrar" >
-							<input type="button" name="save" value="Guardar" class="save-job">
+							<input type="button" name="add" class="add-job"value="Añadir">
+							<!-- <input type="button" name="save" value="Guardar" class="save-job"> -->
 						</div>
 					</div>
 				</fieldset>
@@ -273,8 +273,9 @@
 							<input id="percentage" type="number" name="porcentaje" min="1" max="100">
 						</div>
 						<div class="input-form-buttoms">
+							<input id="plus" type="button" name="add" value="Añadir">
 							<input type="reset" name="delete" value="Borrar">
-							<input id="plus" type="button" class="add-skill" name="add" value="Añadir">
+							<input id="save-skills" type="button" name="save" value="Guardar">
 						</div>
 					</div>
 				</fieldset>
@@ -291,8 +292,9 @@
 						</div>
 
 						<div class="input-form-buttoms">
+							<input type="button" name="add" value="Añadir">
 							<input type="reset" name="delete" value="Borrar" class="delete">
-							<input type="button" name="add" class="add-detail" value="Añadir">
+							<input type="button" name="save-other" class="save-other" value="Guardar">
 						</div>
 					</div>
 				</fieldset>
@@ -345,17 +347,16 @@
 					<section class="prev-professionalexperience">
 						<h2 class="prev-titles">Formación profesional</h2><hr>
 						<ul class="prev-jobdetails">
-							<li class="prev-jobdetails-job">Puesto de trabajo: <span id="trabajo" class="prev-job"></span></li>
+							<!-- <li class="prev-jobdetails-job">Puesto de trabajo: <span id="trabajo" class="prev-job"></span></li>
 							<li class="prev-jobdetails-charge">Cargo: <span id="cargo" class="prev-job"></span></li>
-							<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa" class="prev-job"></span>
-							</li>
+							<li id="jobdetails-company" class="prev-jobdetails-company">Empresa: <span id="empresa" class="prev-job"></span></li>
 							<li class="prev-jobdetails-date">
 								<ul class="prev-jobdate">
 									<li id="jobdate-start" class="prev-jobdate-start">Fecha de inicio: <span id="inicio-mes" class="prev-job"></span>/<span id="inicio-año" class="prev-job"></span class="prev-job"></li>
 									<li id="jobdate-end" class="prev-jobdate-end">Fecha de final: <span id="fin-mes" class="prev-job"></span>/<span id="fin-año" class="prev-job"></span></li>
 								</ul>
 							</li>
-							<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo" class="prev-job"></span></li>
+							<li class="prev-jobdetails-description">Descripción del cargo: <span id="descripcion-trabajo" class="prev-job"></span></li> -->
 						</ul>
 					</section>
 				</section>
@@ -363,15 +364,17 @@
 					<section class="prev-skills">
 						<h2 class="prev-titles">Habilidades</h2><hr>
 						<ul class="box-skills">
-
+							<li class="skill1">
+								<p class="skill-name"></p>
+								<div class="progress-bar hidden">
+									<div class="progress-bar__item"></div>
+								</div>
+							</li>
 						</ul>
 					</section>
 
 					<section class="prev-interestdetails">
-						<h2 class="prev-titles">Otros datos de interés</h2>
-						<ul class="prev-other">
-
-						</ul>
+						<h2 class="prev-titles">Otros datos de interés</h2><hr><p class="prev-other"></p>
 					</section>
 				</section>
 			</div>
