@@ -24,7 +24,6 @@ function cleanFontClasses() {
     var previewFont = document.querySelectorAll('.type-font');
         for (var x = 0; x < previewFont.length; x++) {
         previewFont[x].classList.remove('font1', 'font2', 'font3');
-
     }
 }
 function applyFont(event) {
@@ -35,7 +34,6 @@ function applyFont(event) {
         previewFont[x].classList.add(fontClass);
     }
 }
-
 
 for (var x = 0; x < fonts.length; x++) {
     fonts[x].addEventListener('click', applyFont);
